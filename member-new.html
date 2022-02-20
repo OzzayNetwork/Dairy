@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>RevenueSure | Toll Collections Transactions</title>
+    <title>Member Registration | South Imenti Dairy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -15,6 +15,11 @@
     <link rel="shortcut icon" href="assets/images/favicon.svg">
 
     <link href="assets/libs/select2/css/select2.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/bootstrap-datepicker/css/bootstrap-datepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/spectrum-colorpicker2/spectrum.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-timepicker/css/bootstrap-timepicker.min.css" rel="stylesheet" type="text/css">
+    <link href="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="assets/libs/%40chenfengyuan/datepicker/datepicker.min.css">
 
 
     <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
@@ -24,6 +29,8 @@
 
     <!-- Bootstrap Css -->
     <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap select styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
     <!-- Icons Css -->
     <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
     <!-- App Css-->
@@ -50,8 +57,6 @@
     </div>
     <!-- Begin page -->
     <div id="layout-wrapper">
-
-
         <header id="page-topbar">
             <div class="navbar-header">
                 <div class="d-flex">
@@ -222,7 +227,6 @@
                 </div>
             </div>
         </header>
-
         <!-- ========== Left Sidebar Start ========== -->
         <div class="vertical-menu">
 
@@ -350,9 +354,6 @@
             </div>
         </div>
         <!-- Left Sidebar End -->
-
-
-
         <!-- ============================================================== -->
         <!-- Start right Content here -->
         <!-- ============================================================== -->
@@ -365,12 +366,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Add an Admin</h4>
+                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Add a member</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Add an admin</li>
+                                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="member-register.html">Members</a></li>
+                                        <li class="breadcrumb-item active">Add member</li>
                                     </ol>
                                 </div>
 
@@ -386,74 +388,225 @@
                             <div class="card p-4">
 
                                 <div class="card-body">
-                                    <h4 class="card-title text-capitalize">Register a new System administrator</h4>
-                                    <p class="">Fill in the form bellow to register the system admin into the system. Once registered an OTP will be sent to the Just registered system administrator of which they are expected to use as their PIn for their very first
-                                        log in.</p>
+                                    <h4 class="card-title text-capitalize">New member registration Form</h4>
+
                                     <hr class="mb-5">
                                     <form action="">
 
                                         <!-- the names -->
-                                        <div class="row  mb-4 pb-2 align-items-center">
-                                            <label for="" class="col-form-label col-lg-2">First name <strong class="text-danger">*</strong></label>
-                                            <div class="col-lg-4">
-                                                <input id="" name="" type="text" class="form-control" placeholder="Enter the first name">
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="">First Name<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter the first name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="">Other Name(s)<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter the other name(s)">
+                                                </div>
                                             </div>
 
-                                            <label for="" class="col-form-label col-lg-2">Other Name(s) <strong class="text-danger">*</strong></label>
                                             <div class="col-lg-4">
-                                                <input id="" name="" type="text" class="form-control" placeholder="Enter the other name(s)">
+                                                <div class="row">
+                                                    <label for="" class="col-form-label col-12">Gender: <strong class="text-danger">*</strong></label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check mb-3 pr-15px">
+                                                            <input class="form-check-input" type="radio" name="gender" id="formRadios1" checked>
+                                                            <label class="form-check-label" for="formRadios1">
+                                                                Male
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="gender" id="formRadios2">
+                                                            <label class="form-check-label" for="formRadios2">
+                                                                Female
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
-
-                                        <!-- Identification -->
-                                        <div class="row  mb-4 pb-2 align-items-center">
-                                            <label for="" class="col-form-label col-lg-2">National ID Number<strong class="text-danger">*</strong></label>
-                                            <div class="col-lg-4">
-                                                <input id="" name="" type="text" class="form-control" placeholder="ID No.">
+                                        <!-- Identification and role information -->
+                                        <div class="row">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">National ID No.<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="ID No.">
+                                                </div>
                                             </div>
 
-                                            <label for="" class="col-form-label col-lg-2">Staff ID Number<strong class="text-danger">*</strong></label>
-                                            <div class="col-lg-4">
-                                                <input id="" name="" type="text" class="form-control" placeholder="Staff ID">
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">M/No.<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter the staff identification">
+                                                </div>
                                             </div>
 
+                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Route<strong class="text-danger">*</strong></label>
+                                                    <select name='length_change' class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
+                                                        <option value=''>Route 1</option>
+                                                        <option value=''>Route 2</option>
+                                                        <option value=''>Route 3</option>
+                                                        <option value=''>Route 4</option>                                                    
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Registration Date<strong class="text-danger">*</strong></label>
+                                                    <div class="input-group" id="datepicker1">
+                                                        <input type="text" class="form-control mouse-pointer" placeholder="dd M, yyyy" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
 
+                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Number of Acres</label>
+                                                    <input id="input-repeat" class="form-control input-mask" placeholder="Enter the number of acres" data-inputmask="'mask': '9', 'repeat': 10, 'greedy' : false">
+                                                    <span class="text-muted">"9999999999"</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">County<strong class="text-danger">*</strong></label>
+                                                    <select name='length_change' class="form-control selectpicker show-tick" title="Select The county" data-live-search="true">
+                                                        <option value=''>Meru County</option>
+                                                        <option value=''>Embu county</option>
+                                                        <option value=''>Isiolo County</option>
+                                                    </select>
+                                                </div>
+                                            </div>
                                         </div>
-
-                                        <!-- system roles -->
-                                        <div class="row mb-4 pb-2 align-items-center">
-                                            <label for="" class="col-form-label col-lg-2">System role <strong class="text-danger">*</strong></label>
-                                            <div class="col-4">
-                                                <select class="form-control select2" title="System role">
-                                                    <option >Read only</option>
-                                                    <option >System admin</option>
-                                                </select>
+                                        <!-- contact information -->
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h6 class="text-muted">Contact Information</h6>
+                                                <hr>
                                             </div>
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Phone number</label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter the phone number">
+
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Email address</label>
+                                                    <input id="input-email" class="form-control input-mask" data-inputmask="'alias': 'email'" placeholder="Enter the email address">
+                                                    <span class="text-muted">_@_._</span>
+                                                </div>
+                                            </div>
+
                                         </div>
 
                                         <!-- contact information -->
 
-                                        <div class="row mb-4 pb-2 align-items-center">
-                                            <label for="" class="col-form-label col-lg-2">Email address <strong class="text-danger">*</strong></label>
-                                            <div class="col-lg-4">
-                                                <input id="input-email" class="form-control input-mask" data-inputmask="'alias': 'email'" placeholder="Enter the email address">
-                                                <span class="text-muted">_@_._</span>
+                                        <div class="row pb-4">
+                                            <div class="col-12">
+                                                <h6 class="text-muted">Payment disbursement details</h6>
+                                                <hr>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="row">
+                                                    <label for="" class="col-form-label col-12">Select Preferred method of payment <strong class="text-danger">*</strong></label>
+                                                    <div class="d-flex">
+                                                        <div class="form-check mb-3 pr-15px">
+                                                            <input class="form-check-input" type="radio" name="payment" id="bank-payment" value="bank-payment" checked>
+                                                            <label class="form-check-label" for="bank-payment">
+                                                                Bank Transfer
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="payment" id="Mpesa-payment" value="Mpesa-payment">
+                                                            <label class="form-check-label" for="Mpesa-payment">
+                                                                MPESA Payment
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="row bank-option">
+                                                    <div class="col-sm-12 col-md-6 col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="" class="col-form-label">Bank<strong class="text-danger">*</strong></label>
+                                                            <select name='length_change' class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
+                                                                <option value=''>Equity Bank</option>
+                                                                <option value=''>Family bank</option>
+                                                                <option value=''>KCB</option>
+                                                                <option value=''>Cooperative bank</option>                                                    
+                                                            </select>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-3">
+                                                        <div class="form-group">
+                                                            <label for="" class="col-form-label">Bank branch<strong class="text-danger">*</strong></label>
+                                                            <select name='length_change' class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
+                                                                <option value=''>Branch 1</option>
+                                                                <option value=''>Branch two</option>
+                                                                <option value=''>Branch three</option>
+                                                                <option value=''>Branch four</option>                                                    
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="" class="col-form-label">Bank Account number <strong class="text-danger">*</strong></label>
+                                                            <input id="input-repeat" class="form-control input-mask" placeholder="Enter bank Acc. Number" data-inputmask="'mask': '9', 'repeat': 100, 'greedy' : false">
+                                                            <span class="text-muted">"9999999999"</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row mpesa-option d-none">
+
+                                                    <div class="col-sm-12 col-md-6 col-lg-6">
+                                                        <div class="form-group">
+                                                            <label for="mpesa-phone" class="col-form-label">Phone number <strong class="text-danger">*</strong></label>
+                                                            <input id="mpesa-phone" class="form-control" placeholder="Enter Mpesa phone number">
+                                                            <span class="text-muted">Send the OTP to confirm the phone number</span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <div class="form-group">
+                                                            <label for="" class="opacity-0 col-form-label">
+                                                                Confirm Mpesa phone
+                                                            </label>
+                                                            <div>
+                                                                <button type="button" class="btn btn-success waves-effect btn-label waves-light" data-bs-toggle="modal" data-bs-target=".OTP-modal"><i class="bx bx-message-rounded-dots label-icon"></i> Send OTP</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
 
-                                            <label for="" class="col-form-label col-lg-2">Phone Number<strong class="text-danger">*</strong></label>
-                                            <div class="col-lg-4">
-                                                <input id="" name="" type="text" class="form-control" placeholder="Enter the other name(s)">
-                                            </div>
                                         </div>
 
-                                        <div class="row justify-content-end">
-                                            <div class="col-lg-10">
-                                                <button type="submit" class="btn btn-primary w-100"><i class="mdi mdi-account-plus-outline me-1"></i>Register Admin</button>
+                                        <div class="row ">
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 ">
+                                                <button type="submit " class="btn btn-primary w-100 "><i class="mdi mdi-account-plus-outline me-1 "></i>Register Admin</button>
+
+                                            </div>
+                                            <div class="col-md-3 col-lg-2 col-sm-12">
+                                                <button type="reset" class=" btn btn-outline-danger w-100 "><i class="mdi mdi-close me-1 "></i>Clear form</button>
                                             </div>
                                         </div>
 
                                     </form>
                                 </div>
+
                             </div>
                         </div>
                         <!-- end col -->
@@ -465,92 +618,83 @@
             </div>
             <!-- End Page-content -->
 
-            <!-- Transaction Modal -->
-            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
+            <!-- OTP modal -->
+            <div class="modal fade OTP-modal" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="transaction-detailModalLabel">Transactions Details</h5>
+                        <div class="modal-header border-bottom-0">
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
+                            <div class="text-center mb-4">
+                                <div class="avatar-md mx-auto mb-4">
+                                    <div class="avatar-title bg-light rounded-circle text-primary h1">
+                                        <i class="mdi mdi-cellphone-message"></i>
+                                    </div>
+                                </div>
 
+                                <div class="row justify-content-center">
+                                    <div class="col-xl-10">
+                                        <h4 class="text-primary">Confirm OTP</h4>
+                                        <p class="text-muted font-size-14 mb-4">An OTP has been sent to <strong>0704549859</strong> kindly ask the Member being registered to check their phone and share the OTP sent to them with you and enetr it below to confirm</p>
 
-                            <div class="table-responsive mt-4">
-                                <table class="table align-middle table-nowrap">
-                                    <tbody>
-                                        <tr>
-                                            <td style="width: 30%">
-                                                <p class="mb-0">Car Plate Number</p>
-                                            </td>
-                                            <td style="width: 25%">
-                                                <h5 class="mb-0 text-uppercase">UAG 1235p</h5>
-                                            </td>
+                                        <form>
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="digit1-input" class="visually-hidden">Dight 1</label>
+                                                        <input type="text" class="form-control form-control-lg text-center two-step" maxLength="1" data-value="1" id="digit1-input">
+                                                    </div>
+                                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Vehicle Category</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">Salon Car</h5>
-                                            </td>
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="digit2-input" class="visually-hidden">Dight 2</label>
+                                                        <input type="text" class="form-control form-control-lg text-center two-step" maxLength="1" data-value="2" id="digit2-input">
+                                                    </div>
+                                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">Payment Date</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">22 Apr 2022 06:54PM</h5>
-                                            </td>
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="digit3-input" class="visually-hidden">Dight 3</label>
+                                                        <input type="text" class="form-control form-control-lg text-center two-step" maxLength="1" data-value="3" id="digit3-input">
+                                                    </div>
+                                                </div>
 
-                                        </tr>
-                                        <tr>
-                                            <td>
-                                                <p class="mb-0">San Diego</p>
-                                            </td>
-                                            <td>
-                                                <h5 class="mb-0">1,026</h5>
-                                            </td>
+                                                <div class="col-3">
+                                                    <div class="mb-3">
+                                                        <label for="digit4-input" class="visually-hidden">Dight 4</label>
+                                                        <input type="text" class="form-control form-control-lg text-center two-step" maxLength="1" data-value="4" id="digit4-input">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <button class="btn btn-primary btn-block w-100">
+                                                Verify phone number
+                                            </button>
+                                        </form>
 
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2">
-                                                <p class="mb-0 pb-0">Amount Paid</p>
-                                                <h3>UGX 2,000</h3>
-                                            </td>
-                                        </tr>
-                                        <TR>
-                                            <td col-span="2">
-                                                <p class="mb-2">Attended By<span class="text-primary"> Alex Sebeye</span></p>
-                                                <p class="mb-4">Toll taker's No. <span class="text-primary">0704549859</span></p>
-                                            </td>
-                                        </TR>
-                                    </tbody>
-                                </table>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                         </div>
                     </div>
                 </div>
+                <!-- /.modal-dialog -->
             </div>
             <!-- end modal -->
 
 
 
-            <footer class="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-sm-6">
+            <footer class="footer ">
+                <div class="container-fluid ">
+                    <div class="row ">
+                        <div class="col-sm-6 ">
                             <script>
                                 document.write(new Date().getFullYear())
                             </script> © RevenueSure.
                         </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-end d-sm-block">
+                        <div class="col-sm-6 ">
+                            <div class="text-sm-end d-sm-block ">
                                 South Imenti Dairy
                             </div>
                         </div>
@@ -566,49 +710,59 @@
 
 
     <!-- Right bar overlay-->
-    <div class="rightbar-overlay"></div>
-
+    <div class="rightbar-overlay "></div>
     <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
-    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
-    <script src="assets/libs/simplebar/simplebar.min.js"></script>
-    <script src="assets/libs/node-waves/waves.min.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js "></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js "></script>
+    <script src="assets/libs/simplebar/simplebar.min.js "></script>
+    <script src="assets/libs/node-waves/waves.min.js "></script>
 
 
     <!-- Required datatable js -->
-    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
-    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js "></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js "></script>
     <!-- Buttons examples -->
-    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
-    <script src="assets/libs/jszip/jszip.min.js"></script>
-    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
-    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
-    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js "></script>
+    <script src="assets/libs/jszip/jszip.min.js "></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js "></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js "></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js "></script>
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js "></script>
+
+    <script src="assets/libs/select2/js/select2.min.js "></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js "></script>
+    <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js "></script>
+    <script src="assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js "></script>
+    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js "></script>
+    <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js "></script>
+    <script src="assets/libs/%40chenfengyuan/datepicker/datepicker.min.js "></script>
+    <!-- form mask -->
+    <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js "></script>
+
+    <!-- form advanced init -->
+    <script src="assets/js/pages/form-advanced.init.js "></script>
+    <!-- form masking -->
+    <script src="assets/js/pages/form-mask.init.js "></script>
 
     <!-- Responsive examples -->
-    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
-    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
-
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js "></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js "></script>
+    <!-- numerals number formater -->
+    <script src="assets/libs/numeral/numeral.js "></script>
     <!-- Datatable init js -->
-    <script src="assets/js/pages/datatables.init.js"></script>
-
-    <!-- form mask -->
-    <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js"></script>
-
-    <!-- form mask init -->
-    <script src="assets/js/pages/form-mask.init.js"></script>
-
-
+    <script src="assets/js/pages/datatables.init.js "></script>
 
     <!-- App js -->
-    <script src="assets/js/app.js"></script>
+    <script src="assets/js/app.js "></script>
+    <script src="assets/js/custom.js "></script>
 </body>
-
-
-<!-- index.html   13:55:49 GMT -->
 
 </html>

@@ -690,6 +690,18 @@
                 content: "";
             }
             
+            .form-group {
+                padding-bottom: 15px;
+            }
+            
+            .mouse-pointer {
+                cursor: pointer !important;
+            }
+            
+            .card hr {
+                color: #2a304233;
+            }
+            
             @media (max-width: 576px) {
                 .dataTables__top .dropdown-toggle i {
                     line-height: revert

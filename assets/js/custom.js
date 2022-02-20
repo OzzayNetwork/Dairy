@@ -24,4 +24,18 @@ $(window).on('load', function() {
 
 
     $('.selectpicker').selectpicker();
+    $('[name*="payment"]').on('change', function() {
+        var paymentOption = $(this).val();
+        if (paymentOption == "Mpesa-payment") {
+            $('.mpesa-option').removeClass('d-none').siblings().addClass('d-none')
+
+        }
+        if (paymentOption == "bank-payment") {
+            $('.bank-option').removeClass('d-none').siblings().addClass('d-none')
+
+        }
+    })
+
+    // changing the payment method
+
 });
