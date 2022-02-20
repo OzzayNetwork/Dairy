@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>RevenueSure | Muigai Commercial</title>
+    <title>RevenueSure | South Imenti Dairy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -26,14 +26,22 @@
 
 </head>
 
-<body data-sidebar="dark">
-
-    <!-- <body data-layout="horizontal" data-topbar="dark"> -->
-
+<body data-sidebar="colored" data-topbar="dark">
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-chase">
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+            </div>
+        </div>
+    </div>
     <!-- Begin page -->
     <div id="layout-wrapper">
-
-
         <header id="page-topbar">
             <div class="navbar-header">
                 <div class="d-flex">
@@ -202,27 +210,23 @@
                 </div>
             </div>
         </header>
-
         <!-- ========== Left Sidebar Start ========== -->
         <div class="vertical-menu">
-
             <div data-simplebar class="h-100">
-
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
                     <ul class="metismenu list-unstyled" id="side-menu">
-                        <li class="menu-title" key="t-menu">Toll Collection System</li>
-
+                        <li class="menu-title d-none" key="t-menu">Office Mate</li>
                         <li>
                             <a href="index.html" class="waves-effect">
-                                <i class="bx bx-home-circle"></i><span>Dashboards</span>
+                                <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
                         </li>
                         <li>
                             <a href="charges.html" class="waves-effect">
-                                <i class="mdi mdi-car-cog"></i>
-                                <span>Toll charges</span>
+                                <i class="mdi mdi-water-plus"></i>
+                                <span>Milk collection</span>
                             </a>
                         </li>
 
@@ -234,96 +238,56 @@
                         </li>
 
                         <li>
-                            <a href="trasactions.html" class="waves-effect">
-                                <i class="mdi mdi-cash-check"></i>
-                                <span>Transactions</span>
+                            <a href="messages.html" class="waves-effect">
+                                <i class="mdi mdi-sprout"></i>
+                                <span>Farm Input prices</span>
                             </a>
                         </li>
 
-                        <li class="menu-title" key="t-apps">System Users</li>
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-boom-gate-up"></i>
-                                <span>Toll takers</span>
+                                <i class="mdi mdi-account-group"></i>
+                                <span>Members</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="toll-takerlist.html">Toll takers list</a></li>
-                                <li><a href="toll-takernew.html">Add a toll taker</a></li>
+                                <li><a href="toll-takerlist.html">Members register</a></li>
+                                <li><a href="toll-takernew.html">Member payments</a></li>
+                                <li><a href="toll-takernew.html">Member deductions</a></li>
+                                <li><a href="toll-takernew.html">Add a Member</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-shield-account-outline"></i>
-                                <span>System Admins</span>
+                                <i class="mdi mdi-cog"></i>
+                                <span>Setups</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="admin-list.html">Admins list</a></li>
-                                <li><a href="admin-new.html">Add an admin</a></li>
-                            </ul>
-                        </li>
-
-
-
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-account-cash-outline"></i>
-                                <span>Client Agents</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="agents-list.html">Agents list</a></li>
-                                <li><a href="agents-requests.html">Agent Requests</a></li>
+                                <li><a href="toll-takerlist.html">System users</a></li>
+                                <li><a href="toll-takernew.html">Routes</a></li>
                             </ul>
                         </li>
 
                         <li class="menu-title" key="t-apps">Reports</li>
                         <li>
                             <a href="wallet-topups.html" class="waves-effect">
-                                <i class="mdi mdi-wallet-plus-outline"></i>
-                                <span>Wallet top ups</span>
+                                <i class="mdi mdi-water-outline"></i>
+                                <span>Milk Collection</span>
                             </a>
                         </li>
                         <li>
                             <a href="clients.html" class="waves-effect">
-                                <i class="mdi mdi-account-details"></i>
-                                <span>Clients register</span>
+                                <i class="mdi mdi-account-cash"></i>
+                                <span>Member Payments</span>
                             </a>
                         </li>
                         <li>
                             <a href="vehicles.html" class="waves-effect">
-                                <i class="bx bx-car"></i>
-                                <span>Vehicles</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="Toll-taker-collection.html" class="waves-effect">
-                                <i class="mdi mdi-boom-gate-outline"></i>
-                                <span>Toll takers Reports</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="category.html" class="waves-effect">
-                                <i class="mdi mdi-car-info"></i>
-                                <span>Collections by category</span>
+                                <i class="mdi mdi-account-arrow-right"></i>
+                                <span>Farm Input purchase</span>
                             </a>
                         </li>
 
-
-
-                        <li class="menu-title d-none" key="t-apps">My Account</li>
-                        <li class="d-none">
-                            <a href="myprofile.html" class="waves-effect">
-                                <i class="bx bx-user"></i>
-                                <span>My profile</span>
-                            </a>
-                        </li>
-
-                        <li class="d-none">
-                            <a href="auth-login.html" class="waves-effect">
-                                <i class="bx bx-power-off"></i>
-                                <span>Log out</span>
-                            </a>
-                        </li>
                     </ul>
                 </div>
                 <!-- Sidebar -->
@@ -807,7 +771,7 @@
                         </div>
                         <div class="col-sm-6 ">
                             <div class="text-sm-end d-sm-block ">
-                                Developed by Nouveta LTD.
+                                South Imenti Dairy
                             </div>
                         </div>
                     </div>
