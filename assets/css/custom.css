@@ -681,7 +681,7 @@
             }
             
             .auth-full-bg .bg-overlay::before {
-                background-image: linear-gradient(to bottom, #ff000036, #556ee6bf);
+                background-image: linear-gradient(to bottom, #ff000036, #09f700bf);
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -700,6 +700,14 @@
             
             .card hr {
                 color: #2a304233;
+            }
+            
+            .boarder-bottom-1 {
+                border-bottom: 1px solid #f3f3f9;
+            }
+            
+            .dtr-title {
+                font-weight: bold;
             }
             
             @media (max-width: 576px) {

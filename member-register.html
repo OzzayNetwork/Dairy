@@ -363,12 +363,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Toll takers</h4>
+                                <h4 class="mb-sm-0 font-size-18">Members Register</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Toll Takers</li>
+                                        <li class="breadcrumb-item active">Members List</li>
                                     </ol>
                                 </div>
 
@@ -382,15 +382,15 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header">
+                                <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row">
                                         <div class="col-6">
-                                            <h4 class="card-title">Toll takers</h4>
+                                            <h4 class="card-title">List of all registered members</h4>
                                         </div>
 
                                         <div class="col-sm-6 col-6">
                                             <div class="text-sm-end">
-                                                <a href="toll-takernew.html" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-account-plus-outline me-1"></i> New Toll taker</a>
+                                                <a href="member-new.html" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-account-plus-outline me-1"></i> Register A Member</a>
                                             </div>
                                         </div>
                                     </div>
@@ -404,35 +404,27 @@
                                     <table id="datatable-buttons" class="table  dt-responsive nowrap w-100 table-striped">
                                         <thead class="table-dark">
                                             <tr>
-                                                <th>Toll taker</th>
+                                                <th>Member</th>
                                                 <th>Email/Phone</th>
-                                                <th>Added By</th>
+                                                <th>Route</th>
+                                                <th>Ha</th>
+                                                <th>Payment</th>
                                                 <th>Status</th>
-                                                <th>Last seen</th>
-                                                <th>Clients Served</th>
-                                                <th class="text-right">Total collections</th>
-                                                <th>Actions</th>
+                                                <th>Last Seen</th>
+                                                <th>All Collections</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
 
 
                                         <tbody class="table-striped">
                                             <tr>
-                                                <td class="">
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Abel Babu
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
 
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Housen Mushema</h5>
-                                                        </div>
-                                                    </div>
                                                 </td>
 
                                                 <td>
@@ -444,1091 +436,412 @@
                                                     </p>
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0"><a href="">Adroa Balinda</a></p>
-                                                    <p class="mb-0"><small>14 Nov 2021 9:46AM</small></p>
+                                                    Mukinduri
+                                                </td>
+                                                <td>
+                                                    1 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-secondary font-size-11 text-uppercase">Bank</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    231 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Abel Kathambi
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Nkubu
+                                                </td>
+                                                <td>
+                                                    11 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-secondary font-size-11 text-uppercase">Bank</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    301 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Peter Nkirote
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Nkubu
+                                                </td>
+                                                <td>
+                                                    11 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-secondary font-size-11 text-uppercase">Bank</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    758 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Peter Nkirote
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Mutithi
+                                                </td>
+                                                <td>
+                                                    63 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Mpesa</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    254 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        John Kananu
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Mutithi
+                                                </td>
+                                                <td>
+                                                    3 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-secondary font-size-11 text-uppercase">Bank</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    306 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Ezekiel Kananu
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Kathangare
+                                                </td>
+                                                <td>
+                                                    1.8 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-secondary font-size-11 text-uppercase">Bank</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    123,236 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Kelvin Muriuki
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Kathangare
+                                                </td>
+                                                <td>
+                                                    1.5 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Mpesa</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    10,000 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Kiraitu Murungi
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td>
+                                                    1.5 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Mpesa</span>
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Active</span>
+                                                </td>
+                                                <td class="">
+                                                    Today
+                                                </td>
+                                                <td class="">
+                                                    5,231 L
+                                                </td>
+                                                <td class="text-right">
+                                                    <!-- Button trigger modal -->
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <p class="mb-0">
+                                                        Kelvin Babu
+                                                    </p>
+                                                    <span class="text-muted">M/No. 12345</span>
+
+                                                </td>
+
+                                                <td>
+                                                    <p class="mb-0">
+                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
+                                                    </p>
+                                                    <p class="mb-0">
+                                                        <a href="tel:0704524883">0704 524 883</a>
+                                                    </p>
+                                                </td>
+                                                <td>
+                                                    Mukinduri
+                                                </td>
+                                                <td>
+                                                    1 Ha
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Mpesa</span>
                                                 </td>
                                                 <td>
                                                     <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
                                                 </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">26 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="52444">UGx 52,444</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Michael Kasaija</h5>
-                                                        </div>
-                                                    </div>
+                                                    Today
                                                 </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:kasaijamicha22@gmail.com">kasaijamicha22@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704549779">0704 549 778</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Moris Mugisha</a></p>
-                                                    <p class="mb-0"><small>18 Nov 2021 10:36AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">28 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="58700">UGx 58,700</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
                                                 <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Norbat Yoweri</h5>
-                                                        </div>
-                                                    </div>
+                                                    200 L
                                                 </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:yowerinorbat22@gmail.com">yowerinorbat22@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704549850">0704 549 850</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Paul mirenda</a></p>
-                                                    <p class="mb-0"><small>20 Nov 2021 6:40AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">25 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="53080">UGx 53,080</strong>
-                                                </td>
-                                                <td>
+                                                <td class="text-right">
                                                     <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
+                                                    <button type="button" class="btn btn-success btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Activate
                                                     </button>
 
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Ryan Mobetu</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:ryanmobet21@gmail.com">ryanmobet21@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0724549772">0724 549 772</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Patrick Kaguta</a></p>
-                                                    <p class="mb-0"><small>21 Nov 2021 4:36AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">23 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="50360">UGx 50,360</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Milton Obote</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:oboteton80@gmail.com">oboteton80@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0722347962">0722 347 962</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Lilian Mwenyenya</a></p>
-                                                    <p class="mb-0"><small>22 Nov 2021 7:36AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">24 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="40000">UGx 40000</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Salia Saleeh</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:saliasaleeh125@gmail.com">saliasaleeh125@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704549121">0704 549 121</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Richard Lukwiya</a></p>
-                                                    <p class="mb-0"><small>28 Nov 2021 6:56AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">26 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="51013">UGx 51,013</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Yusuf Lula</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:lulayusu247@gmail.com">lulayusu247@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704519299">0704 519 299</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Usama Mukwaya</a></p>
-                                                    <p class="mb-0"><small>2 Dec 2021 4:26AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">29 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="44342">UGx 44,342</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">David Ojok</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:ojokdau350@gmail.com">ojokdau350@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0774200209">0774 200 209</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Emmey Okelo</a></p>
-                                                    <p class="mb-0"><small>8 Dec 2021 4:46AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">13 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="40123">UGx 40,123</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Charles Bakabulindi</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:bakabulindi134@gmail.com">bakabulindi134@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704549821">0704 549 821</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Jannet Luwanya</a></p>
-                                                    <p class="mb-0"><small>14 Dec 2021 5:30AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">20 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="52876">UGx 52,876</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Bettinah Tiannah</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:tiannah240@gmail.com">tiannah240@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704509890">0704 509 890</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Gabriel Opio</a></p>
-                                                    <p class="mb-0"><small>23 Dec 2021 6:30AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">24 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="54000">UGx 54,000</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Geoffrey Oryema</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:oryemageo121@gmail.com">oryemageo121@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0744529359">0744 529 359</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Ifran Afridi</a></p>
-                                                    <p class="mb-0"><small>10 Jan 2022 5:30AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">22 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="45003">UGx 45,003</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Isaac Musumba</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:musumbai44@gmail.com">musumbai44@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704543873">0704 543 873</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Janani Luwun</a></p>
-                                                    <p class="mb-0"><small>15 Jan 2022 10:20AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">30 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="45104">UGx 45,104</strong>
-
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Kiddu Makubuya</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:makubuyakiddu250@gmail.com">makubuyakiddu250@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0701538006">0701 538 006</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Matia Kasaija</a></p>
-                                                    <p class="mb-0"><small>20 Feb 2022 4:00AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">15 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="42233">UGx 42,233</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Odong Latek</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:latekodongo34@gmail.com">latekodongo34@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704765207">0704 765 207</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Patrick Etolu</a></p>
-                                                    <p class="mb-0"><small>8 Feb 2022 9:40AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">18 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="50550">UGx 50,550</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Omwony Ojwok</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:ojokonywo356@gmail.com">ojokonywo356@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0729549259">0729 549 259</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Phiona Mutesi</a></p>
-                                                    <p class="mb-0"><small>10 Feb 2022 10:31AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">20 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="53899">UGx 53,899</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Tarsis Kabwegere</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:kabwegeretar120@gmail.com">kabwegeretar120@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704549389">0704 549 389</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Crispus Kiyonga</a></p>
-                                                    <p class="mb-0"><small>17 Feb 2022 4:36AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">26 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="55786">UGx 55,786</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Bright Rwamirama</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:rwamirama@gmail.com">rwamirama@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0714541869">0714 541 869</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Emmanuel Otale</a></p>
-                                                    <p class="mb-0"><small>24 Feb 2022 8:00AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">22 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="49482">UGx 49,482</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <h5 class="font-size-14 mb-0">Fred Mukisa</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mukisafred5@gmail.com">mukisafred5@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0703002403">0703 002 403</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Gabriel Bukenya</a></p>
-                                                    <p class="mb-0"><small>14 Mar 2022 9:36AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">25 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="52370">UGx 52,370</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Deactivate Account
-                                                    </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                        Account details
-                                                    </button>
-
-
+                                                    <a href="member-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
                                                 </td>
                                             </tr>
 
 
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                                                                        <strong>MG</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex-grow-2">
-                                                            <h5 class="font-size-14 mb-0">Henry Bagiire</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-
-
-                                                <td>
-
-                                                    <p class="mb-0">
-                                                        <a href="mailto:bagiirehen243@gmail.com">bagiirehen243@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-
-                                                        <a href="tel:0755769067">0755769067</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0"><a href="">Janet Museveni</a></p>
-                                                    <p class="mb-0"><small>16 Mar 2022 7:30AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill  badge-soft-danger font-size-11">inactive</span>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">27 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="52300">UGx 52,300</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                Deactivate Account
-                            </button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                Account details
-                            </button>
-
-
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class="">
-
-                                                    <div class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary">
-                            <strong>MG</strong>
-                        </span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="flex-grow-4">
-                                                            <h5 class="font-size-14 mb-0">Paul Aratubo</h5>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:aratubopau12@gmail.com">aratubopau12@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0700124567">0700 124 567</a>
-                                                    </p>
-                                                </td>
-
-
-
-                                                <td>
-                                                    <p class="mb-0"><a href="">Apolo Kivebulaya</a></p>
-                                                    <p class="mb-0"><small>22 Mar 2022 10:26AM</small></p>
-                                                </td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11"><i class="mdi mdi-checkbox-blank-circle pr-5"></i>Online</span>
-                                                </td>
-                                                <td>
-                                                    <i class="mdi mdi-account-multiple mr-2"></i><span class="ml-3">20 Clients</span>
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="data-carrency" data-selected-currency="UGX" data-base="UGX" data-amount="55361">UGx 55,361</strong>
-                                                </td>
-                                                <td>
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-Deactivate Account
-</button>
-
-                                                    <button type="button" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-Account details
-</button>
-                                                </td>
-                                            </tr>
-
-
-
-                                            </td>
-                                            </tr>
 
 
                                         </tbody>
@@ -1618,6 +931,115 @@ Account details
                 </div>
             </div>
             <!-- end modal -->
+            <!-- filter right of canvus -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="dt__filter" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Filter Member Register</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="col-12 mb-4">
+                        <div class="alert alert-info alert-border" role="alert">
+                            Use this section to filter the table
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Last collection date Range</label>
+
+                            <div class="input-daterange input-group" id="datepicker6" data-date-format="dd M, yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container='#datepicker6'>
+                                <input type="text" class="form-control date-drop-input" name="start" placeholder="Start Date" readonly />
+                                <input type="text" class="form-control date-drop-input" name="end" placeholder="End Date" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Milk collections amount range</label>
+
+                            <div class="input-daterange input-group">
+                                <input type=" text " class="form-control " name="" placeholder="Min Amount" />
+                                <input type="text " class="form-control " name="" placeholder="Max Amount" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Land Size</label>
+
+                            <div class="input-daterange input-group">
+                                <input type=" text " class="form-control " name="" placeholder="Min Size" />
+                                <input type="text " class="form-control " name="" placeholder="Max size" />
+                            </div>
+                            <span class="text-muted"><small>Specify a range for the field size</small></span>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Route</label>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="allTollTakers" checked>
+                                        <label class="form-check-label text-capitalize" for="allTollTakers">
+                                            All Routes
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker1">
+                                        <label class="form-check-label text-capitalize" for="tollTaker1">
+                                            Nkubu
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker3">
+                                        <label class="form-check-label text-capitalize" for="tollTaker3">
+                                            Mutithi
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker4">
+                                        <label class="form-check-label text-capitalize" for="tollTaker4">
+                                            Mukinduri
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker5">
+                                        <label class="form-check-label text-capitalize" for="tollTaker5">
+                                            Kathangeri
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <button type="button" class="btn btn-primary waves-effect waves-light w-100">
+                                <i class="mdi mdi-filter-variant font-size-16 align-middle me-2"></i> Filter Table
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
 
@@ -1649,7 +1071,9 @@ Account details
     <div class="rightbar-overlay"></div>
 
     <!-- JAVASCRIPT -->
-    <script src="assets/libs/jquery/jquery.min.js"></script>
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
     <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/libs/metismenu/metisMenu.min.js"></script>
     <script src="assets/libs/simplebar/simplebar.min.js"></script>
@@ -1668,6 +1092,23 @@ Account details
     <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
     <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
     <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- advanced forms plugins -->
+
+    <script src="assets/libs/select2/js/select2.min.js "></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js "></script>
+    <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js "></script>
+    <script src="assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js "></script>
+    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js "></script>
+    <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js "></script>
+    <script src="assets/libs/%40chenfengyuan/datepicker/datepicker.min.js "></script>
+    <!-- form mask -->
+    <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js "></script>
+
+    <!-- form advanced init -->
+    <script src="assets/js/pages/form-advanced.init.js "></script>
+    <!-- form masking -->
+    <script src="assets/js/pages/form-mask.init.js "></script>
     <!-- numerals number formater -->
     <script src="assets/libs/numeral/numeral.js "></script>
 
@@ -1684,6 +1125,11 @@ Account details
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
+
+
+<!-- index.html   13:55:49 GMT -->
+
+</html>
 
 
 <!-- index.html   13:55:49 GMT -->
