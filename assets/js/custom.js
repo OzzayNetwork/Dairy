@@ -46,6 +46,13 @@ $(window).on('load', function() {
             $(this).parent().parent().parent().addClass("highlighted-raw").siblings().removeClass("highlighted-raw");
         });
 
+    $('body').on("hidden.bs.dropdown", '#datatable-buttons_wrapper td .dropdown>a',
+        function() {
+            $(this).parent().parent().parent().removeClass("highlighted-raw").siblings().removeClass("highlighted-raw");
+        });
+
+
+
 
     $('.selectpicker').selectpicker();
 
