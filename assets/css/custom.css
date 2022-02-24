@@ -485,6 +485,15 @@
                     color: #ffffffb3;
                 }
                 
+                .calendar-selecor>button::before {
+                    position: absolute;
+                    font-family: boxicons!important;
+                    content: "\e9c2";
+                    left: 10px;
+                    font-size: 22px;
+                    color: white;
+                }
+                
                 .pr-15px {
                     padding-right: 15px !important;
                 }
@@ -767,6 +776,12 @@
                     /* z-index: 100; */
                     background-color: #556ee6;
                     left: .5rem;
+                }
+                
+                .highlighted-raw td,
+                .table-striped>tbody>tr.highlighted-raw:nth-of-type(odd)>* {
+                    background-color: #00bcd438 !important;
+                    --bs-table-accent-bg: #00bcd438 !important;
                 }
                 
                 @media (max-width: 576px) {
