@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Members wedges payments or the period Feb 2022| South Imenti Dairy</title>
+    <title>Daily collections 3 Mar 2022 | South Imenti Dairy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -364,13 +364,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Member's wedges</h4>
+                                <h4 class="mb-sm-0 font-size-18">Daily collections report</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="member-register.html">Members</a></li>
-                                        <li class="breadcrumb-item active">All members wedges</li>
+                                        <li class="breadcrumb-item"><a href="#">Reports</a></li>
+                                        <li class="breadcrumb-item active">Daily collections</li>
                                     </ol>
                                 </div>
 
@@ -378,35 +378,31 @@
                         </div>
                     </div>
                     <!-- end page title -->
-
-
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
                                 <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row d-flex justify-content-between">
                                         <div class="col-6">
-                                            <h4 class="card-title mb-0">Member wedges for <span>February 2022</span></h4>
+                                            <h4 class="card-title mb-0">Milk collections and Deductions for <span>February</span></h4>
                                         </div>
 
-                                        <div class="col-auto col-auto">
+                                        <div class="col-auto col-auto d-flex">
+                                            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                                <input type="radio" class="btn-check" name="transaction-type" id="btn-all" autocomplete="off" checked>
+                                                <label class="btn btn-outline-primary" for="btn-all">All</label>
+
+                                                <input type="radio" class="btn-check" name="transaction-type" id="btn-collections" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-collections">Collections</label>
+
+                                                <input type="radio" class="btn-check" name="transaction-type" id="btn-rejections" autocomplete="off">
+                                                <label class="btn btn-outline-primary" for="btn-rejections">Rejections</label>
+                                            </div>
                                             <div class="text-sm-end">
-                                                <select name='length_change' class="form-control selectpicker table-rows-selector show-tick btn btn-auto calendar-selecor" data-style="btn-success" data-live-search="true" title="Select a month">
-                                                    <option value='5'>Jan 2021</option>
-                                                    <option value='50' selected="true">Feb 2021</option>
-                                                    <option value='100'>Mar 2021</option>
-                                                    <option value='150'>Apr 2021</option>
-                                                    <option value='200'>May 2021</option>
-                                                    <option value='0'>Jun 2021</option>
-                                                    <option value='0'>Jul 2021</option>
-                                                    <option value='0'>Aug 2021</option>
-                                                    <option value='0'>Sep 2021</option>
-                                                    <option value='0'>Oct 2021</option>
-                                                    <option value='0'>Nov 2021</option>
-                                                    <option value='0'>Dec 2021</option>
-                                                    <option value='0'>Jan 2022</option>
-                                                    <option value='0'>Feb 2022</option>
-                                                </select>
+                                                <div class="input-group ml-7px" id="datepicker2">
+                                                    <input type="text" class="form-control cursor-pinter" readonly placeholder="Select a date" data-date-format="dd M, yyyy" data-date-container='#datepicker2' data-provide="datepicker" data-date-autoclose="true">
+                                                    <span class="input-group-text bg-success text-white"><i class="mdi mdi-calendar"></i></span>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -422,63 +418,51 @@
                                             <tr>
                                                 <th>#</th>
                                                 <th>Member</th>
-                                                <th title="Date Paid">Paid on</th>
-                                                <th title="Payment Period">Period</th>
-                                                <th>Approved by</th>
-                                                <th>Status</th>
-                                                <th>Payment Mode</th>
-                                                <th class="text-right">Gross</th>
-                                                <th class="text-right">Deductions</th>
-                                                <th class="text-right">Net income</th>
+                                                <th>Date</th>
+                                                <th>Type</th>
+                                                <th>Attended/Collected By</th>
+                                                <th>Route</th>
+                                                <th class="text-right">QTY</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tfoot class="table-light">
                                             <tr>
-                                                <th colspan="2">Totals</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11 text-uppercase">2 UnPaid</span>
-                                                </td>
-                                                <td class="text-right text-info" colspan="2">KES 231,205</td>
-                                                <td class="text-right text-danger">-KES 231,205</td>
-                                                <th class="text-right text-capitalize text-success">KES 231,205</th>
-                                                <th></th>
+                                                <th>X 22</th>
+                                                <td>From 320 Members</td>
+                                                <td colspan="2">Gross Collections: <strong class="text-success">23,569 KGs</strong></th>
+                                                    <td>Deductions: <strong class="text-danger">236 KGs</strong></td>
+                                                    <td class="text-right" colspan="2">Net Collections <strong class="text-info">23,123 KGs</strong></td>
+                                                    <td></td>
                                             </tr>
                                         </tfoot>
+
+
                                         <tbody class="table-striped">
+
                                             <tr>
-                                                <td>1.</td>
+                                                <td>2.</td>
+
                                                 <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
                                                 </td>
                                                 <td>
                                                     1 Feb 2022 11:45 AM
                                                 </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
                                                 <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
+                                                    Nchiru
                                                 </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 65 KG</strong>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -496,177 +480,29 @@
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
 
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
                                             <tr>
                                                 <td>1.</td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
 
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
                                                 </td>
                                                 <td>
                                                     1 Feb 2022 11:45 AM
                                                 </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
                                                 <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Deduction</span>
                                                 </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
 
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td>1.</td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
+                                                    Kelvin Mutunga
                                                 </td>
                                                 <td>
-                                                    1 Feb 2022 11:45 AM
+                                                    Nchiru
                                                 </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
+                                                <td class="text-right">
+                                                    <strong class="text-danger">- 22 KG</strong>
                                                 </td>
                                                 <td>
                                                     <div class="dropdown">
@@ -686,6 +522,328 @@
                                             </tr>
 
 
+                                            <tr>
+                                                <td>3.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 52 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>4.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 52 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>5.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 52 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>6.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Deduction</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-danger"> 12 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>7.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 52 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>8.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 52 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>9.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-success font-size-11">Collection</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-success">+ 52 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>10.</td>
+                                                <td>
+                                                    <p class="mb-0 b-0 text-muted"><span>Kelvin Njuguna</span></p>
+                                                    <span>12354</span>
+
+                                                </td>
+                                                <td>
+                                                    1 Feb 2022 11:45 AM
+                                                </td>
+                                                <td>
+                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Deduction</span>
+                                                </td>
+
+                                                <td>
+                                                    Kelvin Mutunga
+                                                </td>
+                                                <td>
+                                                    Nchiru
+                                                </td>
+                                                <td class="text-right">
+                                                    <strong class="text-danger">- 21 KG</strong>
+                                                </td>
+                                                <td>
+                                                    <div class="dropdown">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>

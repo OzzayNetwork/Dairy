@@ -778,10 +778,18 @@
                     left: .5rem;
                 }
                 
+                .cursor-pinter {
+                    cursor: pointer !important;
+                }
+                
                 .highlighted-raw td,
                 .table-striped>tbody>tr.highlighted-raw:nth-of-type(odd)>* {
                     background-color: #00bcd438 !important;
                     --bs-table-accent-bg: #00bcd438 !important;
+                }
+                
+                .member-wedges-card {
+                    height: calc(100% - 23px);
                 }
                 
                 @media (max-width: 576px) {

@@ -44,6 +44,25 @@ $(function() {
         $(cloneItem).eq(0).clone(true).appendTo('.table-editable tbody').removeClass('d-none');
         $('.table-editable tbody tr').last().children('.categoryIndex').text(currentIndex + 1);
         // $(cloneItem).eq(clickedIndex).removeClass('d-none');
+        //$('.date-picker').datepicker('refresh');
+
+        $('.date-picker').datepicker({
+            refresh: true,
+            format: "dd mm, yyyy",
+            todayHighlight: true,
+            autoclose: true,
+            clearBtn: true
+        });
+
+        $('.cloneCharges').eq(1).find('.selectpicker-add').each(function(index) {
+            console.log(index + ": " + $(this).text());
+            $(this).selectpicker('render');
+            $(this).selectpicker('refresh');
+
+
+
+
+        });
     });
 
     $('body').on('click', '.cancel-new-category', function() {
