@@ -366,13 +366,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Add a member</h4>
+                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Add a collector</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="member-register.html">Members</a></li>
-                                        <li class="breadcrumb-item active">Add member</li>
+                                        <li class="breadcrumb-item"><a href="collector-register.html">collectors</a></li>
+                                        <li class="breadcrumb-item active">Add a collector</li>
                                     </ol>
                                 </div>
 
@@ -388,7 +388,7 @@
                             <div class="card p-4">
 
                                 <div class="card-body">
-                                    <h4 class="card-title text-capitalize">New member registration Form</h4>
+                                    <h4 class="card-title text-capitalize">Collector registration form</h4>
 
                                     <hr class="mb-5">
                                     <form action="">
@@ -440,7 +440,7 @@
 
                                             <div class="col-md-6 col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="" class="col-form-label">M/No.<strong class="text-danger">*</strong></label>
+                                                    <label for="" class="col-form-label">Collector No.<strong class="text-danger">*</strong></label>
                                                     <input id="" name="" type="text" class="form-control" placeholder="Enter the staff identification">
                                                 </div>
                                             </div>
@@ -448,12 +448,13 @@
                                             <div class="col-md-6 col-lg-4 col-sm-12">
                                                 <div class="form-group">
                                                     <label for="" class="col-form-label">Route<strong class="text-danger">*</strong></label>
-                                                    <select name='length_change' class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
+                                                    <select name='length_change' multiple class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
                                                         <option value=''>Route 1</option>
                                                         <option value=''>Route 2</option>
                                                         <option value=''>Route 3</option>
                                                         <option value=''>Route 4</option>                                                    
                                                     </select>
+                                                    <small>Assign a route to the collector</small>
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-lg-4 col-sm-12">
@@ -466,23 +467,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="" class="col-form-label">Number of Acres</label>
-                                                    <input id="input-repeat" class="form-control input-mask" placeholder="Enter the number of acres" data-inputmask="'mask': '9', 'repeat': 10, 'greedy' : false">
-                                                    <span class="text-muted">"9999999999"</span>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 col-lg-4 col-sm-12">
-                                                <div class="form-group">
-                                                    <label for="" class="col-form-label">County<strong class="text-danger">*</strong></label>
-                                                    <select name='length_change' class="form-control selectpicker show-tick" title="Select The county" data-live-search="true">
-                                                        <option value=''>Meru County</option>
-                                                        <option value=''>Embu county</option>
-                                                        <option value=''>Isiolo County</option>
-                                                    </select>
-                                                </div>
-                                            </div>
+
                                         </div>
                                         <!-- contact information -->
                                         <div class="row">
@@ -509,87 +494,6 @@
 
                                         <!-- contact information -->
 
-                                        <div class="row pb-4">
-                                            <div class="col-12">
-                                                <h6 class="text-muted">Payment disbursement details</h6>
-                                                <hr>
-                                            </div>
-                                            <div class="col-lg-12">
-                                                <div class="row">
-                                                    <label for="" class="col-form-label col-12">Select Preferred method of payment <strong class="text-danger">*</strong></label>
-                                                    <div class="d-flex">
-                                                        <div class="form-check mb-3 pr-15px">
-                                                            <input class="form-check-input" type="radio" name="payment" id="bank-payment" value="bank-payment" checked>
-                                                            <label class="form-check-label" for="bank-payment">
-                                                                Bank Transfer
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="payment" id="Mpesa-payment" value="Mpesa-payment">
-                                                            <label class="form-check-label" for="Mpesa-payment">
-                                                                MPESA Payment
-                                                            </label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="row bank-option">
-                                                    <div class="col-sm-12 col-md-6 col-lg-3">
-                                                        <div class="form-group">
-                                                            <label for="" class="col-form-label">Bank<strong class="text-danger">*</strong></label>
-                                                            <select name='length_change' class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
-                                                                <option value=''>Equity Bank</option>
-                                                                <option value=''>Family bank</option>
-                                                                <option value=''>KCB</option>
-                                                                <option value=''>Cooperative bank</option>                                                    
-                                                            </select>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="col-sm-12 col-md-6 col-lg-3">
-                                                        <div class="form-group">
-                                                            <label for="" class="col-form-label">Bank branch<strong class="text-danger">*</strong></label>
-                                                            <select name='length_change' class="form-control selectpicker show-tick" title="Select Member's Route" data-live-search="true">
-                                                                <option value=''>Branch 1</option>
-                                                                <option value=''>Branch two</option>
-                                                                <option value=''>Branch three</option>
-                                                                <option value=''>Branch four</option>                                                    
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-sm-12 col-md-6 col-lg-6">
-                                                        <div class="form-group">
-                                                            <label for="" class="col-form-label">Bank Account number <strong class="text-danger">*</strong></label>
-                                                            <input id="input-repeat" class="form-control input-mask" placeholder="Enter bank Acc. Number" data-inputmask="'mask': '9', 'repeat': 100, 'greedy' : false">
-                                                            <span class="text-muted">"9999999999"</span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row mpesa-option d-none">
-
-                                                    <div class="col-sm-12 col-md-6 col-lg-6">
-                                                        <div class="form-group">
-                                                            <label for="mpesa-phone" class="col-form-label">Phone number <strong class="text-danger">*</strong></label>
-                                                            <input id="mpesa-phone" class="form-control" placeholder="Enter Mpesa phone number">
-                                                            <span class="text-muted">Send the OTP to confirm the phone number</span>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <div class="form-group">
-                                                            <label for="" class="opacity-0 col-form-label">
-                                                                Confirm Mpesa phone
-                                                            </label>
-                                                            <div>
-                                                                <button type="button" class="btn btn-success waves-effect btn-label waves-light" data-bs-toggle="modal" data-bs-target=".OTP-modal"><i class="bx bx-message-rounded-dots label-icon"></i> Send OTP</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>
 
                                         <div class="row ">
                                             <div class="col-12">
