@@ -7,7 +7,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Collectors Register | South Imenti Dairy</title>
+    <title>Selesio Mutugi Details | South Imenti Dairy</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -363,12 +363,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Collectors Register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Member Profile</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Collectors List</li>
+                                        <li class="breadcrumb-item"><a href="member-register.html">Members</a></li>
+                                        <li class="breadcrumb-item active">Selesio Mutugi</li>
                                     </ol>
                                 </div>
 
@@ -377,436 +378,329 @@
                     </div>
                     <!-- end page title -->
 
-                    <!-- eTransactions table -->
-
+                    <!-- tool bar -->
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header bg-white boarder-bottom-1">
-                                    <div class="row">
-                                        <div class="col-6 d-flex align-items-center">
-                                            <h4 class="card-title mb-0">List of all registered Collectors</h4>
-                                        </div>
+                                <div class="card-body pt-2 pb-3">
+                                    <nav class="navbar navbar-expand-md navbar-white bg-white py-2">
+                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="mdi mdi-menu"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav">
+                                                <a class="nav-item nav-link active" href="member-details.html">Member's Profile<span class="sr-only">(current)</span></a>
+                                                <a class="nav-item nav-link" href="member-collections.html">Collections</a>
+                                                <a class="nav-item nav-link" href="member-decuctions.html">Deductions</a>
+                                                <a class="nav-item nav-link" href="member-payments.html">Payments</a>
 
-                                        <div class="col-sm-6 col-6">
-                                            <div class="text-sm-end">
-                                                <a href="collector-new.html" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-account-plus-outline me-1"></i> Register A Collector</a>
                                             </div>
+                                            <div class="navbar-nav">
+                                                <a href="member-edit.html" type="button" class="btn btn-primary waves-effect waves-light text-white">
+                                                    <i class="bx bx bxs-edit-alt font-size-16 align-middle me-2"></i> Edit Account
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- end of tool bar -->
+
+                    <div class="row">
+                        <div class="col-xl-4">
+                            <div class="card">
+                                <div class="card-body pb-5">
+
+                                    <div>
+                                        <div class="mb-4 me-3">
+                                            <i class="mdi mdi-account-circle text-primary h1"></i>
+                                        </div>
+                                        <div>
+                                            <h5>Selesio Mutugi <span class="badge badge-pill badge-soft-success font-size-11">Active</span></h5>
+                                            <p class="text-muted mb-0">
+                                                <span>M/No. 12345</span>
+                                            </p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="card-body border-top">
+                                    <p class="text-muted mb-0 d-flex align-items-center">
+                                        <a href="tel:0704549859" class="d-flex align-items-center"><i class="mdi mdi-phone me-2 font-size-18"></i> 0704 549 859</a> <span class="px-3 px-3">|</span>
+                                        <a class="d-flex align-items-center" href="mailto:email@email.com"><i class="mdi mdi-email-outline font-size-18 me-2"></i> email@email.com</a>
+                                    </p>
+                                </div>
+                                <div class="card-body border-top">
+                                    <p class="p-0 m-0"><span class="text-muted">National ID No.</span> 3132165598</p>
 
                                 </div>
-                                <div class="card-body">
 
+                                <div class="card-body border-top pb-2 pt-3">
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <div class="d-flex">
+                                                <div class="avatar-xs">
+                                                    <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-cash-multiple"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="ms-3">
+                                                    <p class="fw-medium mb-0">Balance</p>
+                                                    <h4>KES 16,134.39</h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <br><br>
 
+                                    </div>
+                                </div>
 
-
-                                    <table id="datatable-buttons" class="table  dt-responsive nowrap w-100 table-striped">
-                                        <thead class="table-dark">
-                                            <tr>
-                                                <th>Member</th>
-                                                <th>Email/Phone</th>
-                                                <th>Route(s)</th>
-
-                                                <th>Status</th>
-                                                <th>Last Seen</th>
-                                                <th>All Collections</th>
-                                                <th></th>
-                                            </tr>
-                                        </thead>
-
-
-                                        <tbody class="table-striped">
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mukinduri
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    231 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Kathambi
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Nkubu
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    301 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Peter Nkirote
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Nkubu
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    758 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Peter Nkirote
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mutithi
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    254 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        John Kananu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mutithi
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    306 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Ezekiel Kananu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Kathangare
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    123,236 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Kelvin Muriuki
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Kathangare
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    10,000 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Kiraitu Murungi
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Nchiru
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    5,231 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Kelvin Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mukinduri
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    200 L
-                                                </td>
-                                                <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-success btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Activate
-                                                    </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
-                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
-                                                    </a>
-                                                </td>
-                                            </tr>
-
-
-
-
-                                        </tbody>
-                                    </table>
+                                <div class="card-footer bg-transparent border-top pt-4 pb-4 pb-4">
+                                    <div class="text-left">
+                                        <a href="javascript: void(0);" class="btn btn-outline-light me-2 w-md">Deduct</a>
+                                        <a href="javascript: void(0);" class="btn btn-primary me-2 w-md">Pay</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <!-- end col -->
-                    </div>
 
+                        <div class="col-xl-8">
+                            <div class="card">
+                                <div>
+                                    <div class="row">
+                                        <div class="col-lg-9 col-sm-8">
+                                            <div class="p-4">
+                                                <h5 class="text-primary">Quick stats and info</h5>
+                                                <div class="row">
+                                                    <div class="col-sm-12 col-md-10 col-lg-7">
+                                                        <div class="text-muted">
+                                                            <table class="table table-borderless mb-0 table-sm">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Route</td>
+                                                                        <td class="pb-0"><span class="text-black">Mukinduri</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Farm size</td>
+                                                                        <td class="pb-0"><span class="text-black">22 Ha</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Date Registered</td>
+                                                                        <td class="pb-0"><span class="text-black">22 Mar 2021</span></td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td colspan="2" class="pl-0 pb-0 text-muted">
+                                                                            <hr>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Supply Frequency</td>
+                                                                        <td class="pb-0"><span class="text-black">2,232 Kg Per Month</span></td>
+                                                                    </tr>
+
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Last collection</td>
+                                                                        <td class="pb-0"><span class="text-black">10 Mar 2022</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Rejected Quantity</td>
+                                                                        <td class="pb-0"><span class="text-black text-uppercase">5,231 Kg</span></td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td class="pl-0 pb-0 text-muted"><i class="mdi mdi-circle-medium align-middle text-primary me-1"></i>Net collected Milk</td>
+                                                                        <td class="pb-0"><span class="text-black text-uppercase">202,236,360 Kg</span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-sm-4 align-self-center">
+                                            <div>
+                                                <img src="assets/images/crypto/features-img/img-1.png" alt="" class="img-fluid d-block">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-muted mb-4 d-flex">
+                                                <i class="mdi mdi-water-plus h2 text-success align-middle mb-0 me-3 font-size-30"></i>
+                                                <div class="d-flex flex-column">
+                                                    <span>Collected Quantity</span>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-link dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Feb 2022 <i class="mdi mdi-chevron-down"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Feb 2022</a>
+                                                            <a class="dropdown-item" href="#">Jan 2022</a>
+                                                            <a class="dropdown-item" href="#">Dec 2021</a>
+                                                            <a class="dropdown-item" href="#">Nov 2021</a>
+                                                            <a class="dropdown-item" href="#">Oct 2021</a>
+                                                            <a class="dropdown-item" href="#">Sep 2021</a>
+                                                            <a class="dropdown-item" href="#">Aug 2021</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <h5>135.50 Kg</h5>
+                                                        <p class="text-muted text-truncate mb-0">+3.45(0.2%)<i class="mdi mdi-arrow-up ms-1 text-success"></i></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <div id="area-sparkline-chart-1" class="apex-charts"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-muted mb-4 d-flex">
+                                                <i class="mdi mdi-water-remove h2 text-danger align-middle mb-0 me-3 font-size-30"></i>
+                                                <div class="d-flex flex-column">
+                                                    <span> Rejected Quantity</span>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-link dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Feb 2022 <i class="mdi mdi-chevron-down"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Feb 2022</a>
+                                                            <a class="dropdown-item" href="#">Jan 2022</a>
+                                                            <a class="dropdown-item" href="#">Dec 2021</a>
+                                                            <a class="dropdown-item" href="#">Nov 2021</a>
+                                                            <a class="dropdown-item" href="#">Oct 2021</a>
+                                                            <a class="dropdown-item" href="#">Sep 2021</a>
+                                                            <a class="dropdown-item" href="#">Aug 2021</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <h5>22.03 Kg</h5>
+                                                        <p class="text-muted text-truncate mb-0">-4.10(0.1%) <i class="mdi mdi-arrow-down ms-1 text-danger"></i></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <div id="area-sparkline-chart-2" class="apex-charts"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="text-muted mb-4 d-flex">
+                                                <i class="mdi mdi-cash-remove h2 text-warning align-middle mb-0 me-3 font-size-30"></i>
+                                                <div class="d-flex flex-column">
+                                                    <span> Total deductions</span>
+                                                    <div class="btn-group">
+                                                        <button class="btn btn-link dropdown-toggle btn-sm px-0 text-left pt-0 card-month-filter" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            Feb 2022 <i class="mdi mdi-chevron-down"></i>
+                                                        </button>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Feb 2022</a>
+                                                            <a class="dropdown-item" href="#">Jan 2022</a>
+                                                            <a class="dropdown-item" href="#">Dec 2021</a>
+                                                            <a class="dropdown-item" href="#">Nov 2021</a>
+                                                            <a class="dropdown-item" href="#">Oct 2021</a>
+                                                            <a class="dropdown-item" href="#">Sep 2021</a>
+                                                            <a class="dropdown-item" href="#">Aug 2021</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <div>
+                                                        <h5>KES 2,230</h5>
+                                                        <p class="text-muted text-truncate mb-0">+1.792(0.1%) <i class="mdi mdi-arrow-up ms-1 text-success"></i></p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div>
+                                                        <div id="area-sparkline-chart-3" class="apex-charts"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                     <!-- end row -->
+
+                    <div class="row">
+                        <div class="col-xl-7">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-end">
+                                        <a href="member-payments.html" class="btn btn-primary waves-effect waves-light text-white btn-sm"><i class="font-size-16 align-middle me-2 me-2 mdi-account-cash mdi"></i> Payments Table</a>
+                                    </div>
+                                    <h4 class="card-title mb-0">Payments</h4>
+                                    <small class="mb-3 text-muted">The last 12 Months</small>
+
+                                    <div>
+                                        <div id="member-salary-chart" class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-xl-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-end">
+                                        <a href="member-collections.html" class="btn btn-secondary waves-effect waves-light text-white btn-sm"><i class="font-size-16 align-middle me-2 me-2 mdi-account-cash mdi"></i> Collections Table</a>
+                                    </div>
+                                    <h4 class="card-title mb-0">Milk Collections</h4>
+                                    <small class="mb-3 text-muted">Milk collections within the last 12 Months</small>
+
+                                    <div>
+
+                                        <div id="overview-chart" class="apex-charts" dir="ltr">
+                                            <div id="overview-chart-timeline"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end row -->
+
+
+
                 </div>
                 <!-- container-fluid -->
             </div>
@@ -1075,15 +969,16 @@
     <!-- Datatable init js -->
     <script src="assets/js/pages/datatables.init.js"></script>
 
+    <!-- apexcharts -->
+    <script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+
+    <!-- crypto dash init js -->
+    <script src="assets/js/pages/member-chart.js"></script>
+
     <!-- App js -->
     <script src="assets/js/app.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
-
-
-<!-- index.html   13:55:49 GMT -->
-
-</html>
 
 
 <!-- index.html   13:55:49 GMT -->
