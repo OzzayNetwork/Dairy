@@ -792,6 +792,10 @@
                     height: calc(100% - 23px);
                 }
                 
+                .calc-h-3px {
+                    height: calc(100% - 23px);
+                }
+                
                 @media (max-width: 576px) {
                     .dataTables__top .dropdown-toggle i {
                         line-height: revert
