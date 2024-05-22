@@ -362,12 +362,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Collectors Register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Farmers' Input issuance report</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Collectors List</li>
+                                        <li class="breadcrumb-item active">Input Issuance Report</li>
                                     </ol>
                                 </div>
 
@@ -384,12 +384,12 @@
                                 <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row">
                                         <div class="col-6 d-flex align-items-center">
-                                            <h4 class="card-title mb-0">List of all registered Collectors</h4>
+                                            <h4 class="card-title mb-0">Report On Inputs Issued To farmers</h4>
                                         </div>
 
                                         <div class="col-sm-6 col-6">
                                             <div class="text-sm-end">
-                                                <a href="collector-new.html" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-account-plus-outline me-1"></i> Register A Collector</a>
+                                                <input type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03" aria-label="Upload File">
                                             </div>
                                         </div>
                                     </div>
@@ -403,401 +403,244 @@
                                     <table id="datatable-buttons" class="table  dt-responsive nowrap w-100 table-striped">
                                         <thead class="table-dark">
                                             <tr>
-                                                <th>Member</th>
-                                                <th>Email/Phone</th>
-                                                <th>Route(s)</th>
-
-                                                <th>Status</th>
-                                                <th>Last Seen</th>
-                                                <th>All Collections</th>
+                                                <th>Date</th>
+                                                <th>Farmer</th>
+                                                <th>Phone</th>
+                                                <th>Item Issued</th>
+                                                <th>Quantity</th>
+                                                <th>Value of Item</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
-
-
+                                        
                                         <tbody class="table-striped">
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mukinduri
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    231 L
-                                                </td>
+                                                <td>15/01/24</td>
+                                                <td>Alex Wanjala</td>
+                                                <td>0705549859</td>
+                                                <td>CAN Fertiliser</td>
+                                                <td>4 Bags</td>
+                                                <td>3,400</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Kathambi
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Nkubu
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    301 L
-                                                </td>
+                                                <td>20/02/24</td>
+                                                <td>Mary Njoroge</td>
+                                                <td>0712345678</td>
+                                                <td>DAP Fertiliser</td>
+                                                <td>3 Bags</td>
+                                                <td>2,550</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Peter Nkirote
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Nkubu
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    758 L
-                                                </td>
+                                                <td>15/03/24</td>
+                                                <td>John Mwangi</td>
+                                                <td>0723456789</td>
+                                                <td>Seedlings</td>
+                                                <td>100 Units</td>
+                                                <td>5,000</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Peter Nkirote
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mutithi
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    254 L
-                                                </td>
+                                                <td>10/04/24</td>
+                                                <td>Jane Otieno</td>
+                                                <td>0734567890</td>
+                                                <td>Animal Feed</td>
+                                                <td>5 Bags</td>
+                                                <td>4,500</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        John Kananu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mutithi
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    306 L
-                                                </td>
+                                                <td>05/05/24</td>
+                                                <td>Peter Kimani</td>
+                                                <td>0745678901</td>
+                                                <td>Urea Fertiliser</td>
+                                                <td>2 Bags</td>
+                                                <td>1,800</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Ezekiel Kananu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Kathangare
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    123,236 L
-                                                </td>
+                                                <td>12/06/24</td>
+                                                <td>Grace Onyango</td>
+                                                <td>0756789012</td>
+                                                <td>Insecticides</td>
+                                                <td>10 Liters</td>
+                                                <td>3,200</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Kelvin Muriuki
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Kathangare
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    10,000 L
-                                                </td>
+                                                <td>18/07/24</td>
+                                                <td>David Ochieng</td>
+                                                <td>0767890123</td>
+                                                <td>Pesticides</td>
+                                                <td>5 Liters</td>
+                                                <td>2,500</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Kiraitu Murungi
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Nchiru
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    5,231 L
-                                                </td>
+                                                <td>22/08/24</td>
+                                                <td>Lucy Mwikali</td>
+                                                <td>0778901234</td>
+                                                <td>Fungicides</td>
+                                                <td>4 Liters</td>
+                                                <td>3,600</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
                                             <tr>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Kelvin Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-
-                                                </td>
-
-                                                <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
-                                                </td>
-                                                <td>
-                                                    Mukinduri
-                                                </td>
-
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11">Inactive</span>
-                                                </td>
-                                                <td class="">
-                                                    Today
-                                                </td>
-                                                <td class="">
-                                                    200 L
-                                                </td>
+                                                <td>29/09/24</td>
+                                                <td>Samuel Kiplagat</td>
+                                                <td>0789012345</td>
+                                                <td>Herbicides</td>
+                                                <td>8 Liters</td>
+                                                <td>4,800</td>
                                                 <td class="text-right">
-                                                    <!-- Button trigger modal -->
-                                                    <button type="button" class="btn btn-success btn-sm btn-rounded waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
-                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Activate
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
-
-                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light">
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
                                                         <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
                                                     </a>
                                                 </td>
                                             </tr>
-
-
-
-
+                                            <tr>
+                                                <td>04/10/24</td>
+                                                <td>Angela Mutua</td>
+                                                <td>0790123456</td>
+                                                <td>Seedlings</td>
+                                                <td>150 Units</td>
+                                                <td>7,500</td>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>11/11/24</td>
+                                                <td>James Omondi</td>
+                                                <td>0701123456</td>
+                                                <td>Fungicides</td>
+                                                <td>6 Liters</td>
+                                                <td>5,400</td>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>25/11/24</td>
+                                                <td>Sarah Kiptoo</td>
+                                                <td>0712234567</td>
+                                                <td>Pesticides</td>
+                                                <td>7 Liters</td>
+                                                <td>3,500</td>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>10/12/24</td>
+                                                <td>Michael Njoroge</td>
+                                                <td>0723345678</td>
+                                                <td>Herbicides</td>
+                                                <td>10 Liters</td>
+                                                <td>6,000</td>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>20/12/24</td>
+                                                <td>Rebecca Mutiso</td>
+                                                <td>0734456789</td>
+                                                <td>Animal Feed</td>
+                                                <td>6 Bags</td>
+                                                <td>5,400</td>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
+                                                    </button>
+                                                    <a href="collector-details.html" class="btn btn-primary btn-sm btn-rounded waves-effect waves-light d-none">
+                                                        <i class="bx bx-show-alt font-size-16 align-middle me-2"></i> View
+                                                    </a>
+                                                </td>
+                                            </tr>
                                         </tbody>
+                                        
+                                        
                                     </table>
                                 </div>
                             </div>

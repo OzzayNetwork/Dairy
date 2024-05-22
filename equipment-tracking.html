@@ -334,10 +334,10 @@
                                 <span>Member Payments</span>
                             </a>
                         </li>
-                        <li>
-                            <a href="all-member-deductions.html" class="waves-effect">
+                       <li>
+                            <a href="input-report.html" class="waves-effect">
                                 <i class="mdi mdi-account-arrow-right"></i>
-                                <span>Farm Input purchase</span>
+                                <span>Farm Input Issuance</span>
                             </a>
                         </li>
 
@@ -362,12 +362,12 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Equipment Register</h4>
+                                <h4 class="mb-sm-0 font-size-18">Equipment Tracking Report</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item active">Equipment Register</li>
+                                        <li class="breadcrumb-item active">Equipment Tracking Report</li>
                                     </ol>
                                 </div>
 
@@ -384,7 +384,7 @@
                                 <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row">
                                         <div class="col-6 d-flex align-items-center">
-                                            <h4 class="card-title mb-0">List of All equipments and their current status</h4>
+                                            <h4 class="card-title mb-0">Equipment Tracking Report</h4>
                                         </div>
 
                                         <div class="col-sm-6 col-6">
@@ -405,12 +405,13 @@
                                             <tr>
                                                 <th>#</th>
                                                 <th>Reg No.</th>
-                                                <th>Type of Equipment</th>
-                                                <th>Model</th>
-                                                <th>Current status</th>
-                                                <th>Times Hired</th>
-                                                <th>Hours Hired Out</th>
-                                                <th class="text-right">Generated Revenue</th>
+                                                <th>Hired To</th>
+                                                <th>Date from</th>
+                                                <th>Date to</th>
+                                                <th>Hired Hours</th>
+                                                <th>Payment Method</th>
+                                                <th>Farmers Address</th>
+                                                <th class="text-right">Amount</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -419,11 +420,12 @@
                                             <tr>
                                                 <td>1</td>
                                                 <td>KAE457Y</td>
-                                                <td>Tractor</td>
-                                                <td>John Deere</td>
-                                                <td><span class="badge bg-success font-size-10">RENTED OUT</span></td>
-                                                <td>45</td>
-                                                <td>54 Hrs</td>
+                                                <td>Alex Wanjala</td>
+                                                <td>12/02/2024 11:00 AM</td>
+                                                <td>12/02/2024 12:30 PM</td>
+                                                <td>1.3</td>
+                                                <td>MPESA</td>
+                                                <td>Nambale, Busia</td>
                                                 <td class="text-right">56,090</td>
                                                 <td class="text-right">
                                                     <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
@@ -437,13 +439,14 @@
                                             <tr>
                                                 <td>2</td>
                                                 <td>KBD678Z</td>
-                                                <td>Excavator</td>
-                                                <td>Caterpillar</td>
-                                                <td><span class="badge bg-danger font-size-10">AVAILABLE</span></td>
-                                                <td>30</td>
-                                                <td>120 Hrs</td>
-                                                <td class="text-right">150,000</td>
-                                               <td class="text-right">
+                                                <td>Mary Njoroge</td>
+                                                <td>13/03/2024 09:00 AM</td>
+                                                <td>13/03/2024 11:00 AM</td>
+                                                <td>2.0</td>
+                                                <td>MPESA</td>
+                                                <td>Port Victoria, Busia</td>
+                                                <td class="text-right">25,000</td>
+                                                <td class="text-right">
                                                     <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
@@ -455,13 +458,14 @@
                                             <tr>
                                                 <td>3</td>
                                                 <td>KCF789X</td>
-                                                <td>Bulldozer</td>
-                                                <td>Komatsu</td>
-                                                <td><span class="badge bg-success font-size-10">RENTED OUT</span></td>
-                                                <td>20</td>
-                                                <td>80 Hrs</td>
-                                                <td class="text-right">95,000</td>
-                                               <td class="text-right">
+                                                <td>John Mwangi</td>
+                                                <td>14/04/2024 08:00 AM</td>
+                                                <td>14/04/2024 10:00 AM</td>
+                                                <td>2.0</td>
+                                                <td>Bank Transfer</td>
+                                                <td>Malaba, Busia</td>
+                                                <td class="text-right">30,000</td>
+                                                <td class="text-right">
                                                     <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
@@ -473,13 +477,14 @@
                                             <tr>
                                                 <td>4</td>
                                                 <td>KDE123Y</td>
-                                                <td>Loader</td>
-                                                <td>Hitachi</td>
-                                                <td><span class="badge bg-danger font-size-10">AVAILABLE</span></td>
-                                                <td>10</td>
-                                                <td>40 Hrs</td>
-                                                <td class="text-right">50,000</td>
-                                               <td class="text-right">
+                                                <td>Jane Otieno</td>
+                                                <td>15/05/2024 07:00 AM</td>
+                                                <td>15/05/2024 08:30 AM</td>
+                                                <td>1.5</td>
+                                                <td>PayPal</td>
+                                                <td>Funyula, Busia</td>
+                                                <td class="text-right">45,000</td>
+                                                <td class="text-right">
                                                     <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
@@ -491,13 +496,14 @@
                                             <tr>
                                                 <td>5</td>
                                                 <td>KFG456Z</td>
-                                                <td>Crane</td>
-                                                <td>Liebherr</td>
-                                                <td><span class="badge bg-success font-size-10">RENTED OUT</span></td>
-                                                <td>25</td>
-                                                <td>70 Hrs</td>
-                                                <td class="text-right">120,000</td>
-                                               <td class="text-right">
+                                                <td>Peter Kimani</td>
+                                                <td>16/06/2024 06:00 AM</td>
+                                                <td>16/06/2024 07:30 AM</td>
+                                                <td>1.5</td>
+                                                <td>MPESA</td>
+                                                <td>Busia Town, Busia</td>
+                                                <td class="text-right">50,000</td>
+                                                <td class="text-right">
                                                     <button type="button" class="btn btn-danger btn-sm btn-rounded waves-effect waves-light d-none" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
                                                        <i class="bx bx-block font-size-16 align-middle me-2"></i> Deactivate
                                                     </button>
@@ -507,6 +513,7 @@
                                                 </td>
                                             </tr>
                                         </tbody>
+                                        
                                         
                                     </table>
                                 </div>
