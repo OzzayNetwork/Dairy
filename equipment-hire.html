@@ -357,13 +357,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Add A Equipment</h4>
+                                <h4 class="mb-sm-0 font-size-18 text-capitalize">Equipment Hiring</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                        <li class="breadcrumb-item"><a href="member-register.html">Farm Equipments</a></li>
-                                        <li class="breadcrumb-item active">Add Equipment</li>
+                                        <li class="breadcrumb-item"><a href="member-register.html">Members</a></li>
+                                        <li class="breadcrumb-item active">Add member</li>
                                     </ol>
                                 </div>
 
@@ -379,7 +379,7 @@
                             <div class="card p-4">
 
                                 <div class="card-body">
-                                    <h4 class="card-title text-capitalize">New Equipment Registration</h4>
+                                    <h4 class="card-title text-capitalize">Equipment Hiring Form</h4>
 
                                     <hr class="mb-5">
                                     <form action="">
@@ -388,42 +388,80 @@
                                         <div class="row">
                                             <div class="col-md-6 col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="">Registration Number<strong class="text-danger">*</strong></label>
-                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter Registration Number">
+                                                    <label for="">Farmers ID No.<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter ID Number of yhe farmer">
                                                 </div>
                                             </div>
                                             <div class="col-md-6 col-lg-4">
                                                 <div class="form-group">
-                                                    <label for="">Equipment Type<strong class="text-danger">*</strong></label>
-                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter the other name(s)">
-                                                </div>
-                                            </div>
-
-                                            
-                                        </div>
-                                        <!-- Identification and role information -->
-                                        <div class="row">
-                                            <div class="col-md-6 col-lg-4">
-                                                <div class="form-group">
-                                                    <label for="" class="col-form-label">Hiring fees<strong class="text-danger">*</strong></label>
-                                                    <input id="" name="" type="text" class="form-control" placeholder="Enter amount">
+                                                    <label for="">Equipments Reg No.<strong class="text-danger">*</strong></label>
+                                                    <select name='length_change' class="form-control selectpicker show-tick" title="Select Equipment" data-live-search="true">
+                                                        <option value=''>KAD123T</option>
+                                                        <option value=''>KAD123T</option>
+                                                        <option value=''>KDG790P</option>
+                                                        <option value=''>VJFO98P</option>                                                    
+                                                    </select>
                                                 </div>
                                             </div>
 
                                            
+                                        </div>
+                                        <!-- Identification and role information -->
+                                        <div class="row">
+
                                             <div class="col-md-6 col-lg-4 col-sm-12">
                                                 <div class="form-group">
-                                                    <label for="" class="col-form-label">Per ..<strong class="text-danger">*</strong></label>
-                                                    <select name='length_change' class="form-control selectpicker show-tick" title="Select Unit" data-live-search="true">
-                                                        <option value=''>Acre</option>
-                                                        <option value=''>Hour</option>
-                                                                                                    
-                                                    </select>
+                                                    <label for="" class="col-form-label">Date From<strong class="text-danger">*</strong></label>
+                                                    <div class="input-group" id="datepicker1">
+                                                        <input type="text" class="form-control mouse-pointer" placeholder="dd M, yyyy" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
+
+                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        
+
+                                            <div class="col-md-6 col-lg-4 col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Date to<strong class="text-danger">*</strong></label>
+                                                    <div class="input-group" id="datepicker1">
+                                                        <input type="text" class="form-control mouse-pointer" placeholder="dd M, yyyy" readonly data-date-format="dd M, yyyy" data-date-container='#datepicker1' data-provide="datepicker" data-date-autoclose="true">
+
+                                                        <span class="input-group-text"><i class="mdi mdi-calendar"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Acres<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Land size">
+                                                    <small>Include land size where applicable</small>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6 col-lg-4">
+                                                <div class="form-group">
+                                                    <label for="" class="col-form-label">Computed Price<strong class="text-danger">*</strong></label>
+                                                    <input id="" name="" type="text" class="form-control" placeholder="Price to be computed" value="KES 4,500">
+                                                </div>
+                                            </div>
                                         </div>
-                                       
+                                      
+
+                                      
+                                        <div class="row ">
+                                            <div class="col-12">
+                                                <hr>
+                                            </div>
+                                            <div class="col-md-4 col-sm-12 ">
+                                                <button type="submit " class="btn btn-primary w-100 "><i class="mdi mdi-account-plus-outline me-1 "></i>Receive Payment</button>
+
+                                            </div>
+                                            <div class="col-md-3 col-lg-2 col-sm-12">
+                                                <button type="reset" class=" btn btn-outline-danger w-100 "><i class="mdi mdi-close me-1 "></i>Clear form</button>
+                                            </div>
+                                        </div>
 
                                     </form>
                                 </div>
