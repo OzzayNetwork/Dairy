@@ -43,10 +43,10 @@ var options = {
             }
         },
         series: [{
-            name: "Net Wedges",
+            name: "Issued To Farmers",
             data: [4023658, 5123456, 41458975, 67123654, 22123654, 43789654, 36789623, 52320365, 24023147, 18012586, 36036985, 48025820]
         }, {
-            name: "Deductions",
+            name: "New Acquisitions",
             data: [13025856, 23025632, 20032145, 8021457, 13032568, 27456987, 18235897, 22235789, 10213214, 16365478, 24456987, 22123568]
         }],
         xaxis: {
@@ -96,7 +96,7 @@ chart.render();
 // milk collections main chart
 options = {
     series: [{
-        name: "Collected Milk",
+        name: "Issued Loans",
         data: [
             [13273596e5, 30.95],
             [1327446e6, 31.34],
@@ -414,8 +414,8 @@ options = {
 
 // member wedges accumulation
 var options = {
-        series: [{ name: "Accepted", data: [18, 21, 45, 36, 65, 47, 51, 32, 40, 28, 31, 26] },
-            { name: "Rejected", data: [30, 11, 22, 18, 32, 23, 58, 45, 30, 36, 15, 34] }
+        series: [{ name: "Issued Loans", data: [18789, 27891, 47895, 37896, 67895, 47897, 5789, 37892, 47890, 27898, 37891, 78926] },
+            { name: "Repaid Loans", data: [37890, 17891, 27892, 17898, 37892, 27893, 78958, 47895, 30789, 36789, 17895, 37894] }
         ],
         chart: { height: 350, type: "area", toolbar: { show: !1 } },
         colors: ["#34c38f", "#f46a6a"],
