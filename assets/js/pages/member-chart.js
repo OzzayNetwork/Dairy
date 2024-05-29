@@ -97,20 +97,20 @@ var options = {
 
             },
             title: {
-                text: "Amount in KES",
+                text: "Clients",
             }
         },
         series: [{
-            name: "Net Wedges",
+            name: "Account Views",
             data: [4023658, 5123456, 41458975, 67123654, 22123654, 43789654, 36789623, 52320365, 24023147, 18012586, 36036985, 48025820]
         }, {
-            name: "Deductions",
+            name: "Services Provided",
             data: [13025856, 23025632, 20032145, 8021457, 13032568, 27456987, 18235897, 22235789, 10213214, 16365478, 24456987, 22123568]
         }],
         xaxis: {
             categories: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         },
-        colors: ["#556ee6", "#f46a6a"],
+        colors: ["#556ee6", "#41E2BA"],
         legend: {
             position: "bottom"
         },

@@ -1,6 +1,10 @@
                 .navbar-brand-box {
                     text-align: left;
                 }
+
+                .cursor-pointer{
+                    cursor: pointer !important;
+                }
                 
                 body[data-sidebar=dark] .mm-active .active i {
                     color: #54becc!important;
