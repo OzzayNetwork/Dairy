@@ -8,7 +8,7 @@
 <head>
 
     <meta charset="utf-8" />
-    <title>Members wedges payments or the period Feb 2022| Busia County</title>
+    <title>Artificial Incemination | Busia County</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
     <meta content="Themesbrand" name="author" />
@@ -223,7 +223,7 @@
         </header>
 
         <!-- ========== Left Sidebar Start ========== -->
-        <div class="vertical-menu">
+         <div class="vertical-menu">
             <div data-simplebar class="h-100">
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
@@ -266,6 +266,17 @@
                             <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="artificial-register.html">Service Providers Register</a></li>
                                 <li><a href="artificial-reports.html">AI Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-truck-delivery-outline"></i>
+                                <span>Off-Takers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="offtakers-register.html">Off-Taker Listings</a></li>
+                                <li><a href="offtakers-reports.html">Off-Taker Reports</a></li>
                             </ul>
                         </li>
 
@@ -374,13 +385,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Member's wedges</h4>
+                                <h4 class="mb-sm-0 font-size-18">Service Provider History</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="member-register.html">Members</a></li>
-                                        <li class="breadcrumb-item active">All members wedges</li>
+                                        <li class="breadcrumb-item"><a href="member-register.html">Artificial Incemination</a></li>
+                                        <li class="breadcrumb-item active">Kelvin's History</li>
                                     </ol>
                                 </div>
 
@@ -389,11 +400,43 @@
                     </div>
                     <!-- end page title -->
 
+                      <!-- tool bar -->
+                      <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-body pt-2 pb-3">
+                                    <nav class="navbar navbar-expand-md navbar-white bg-white py-2">
+                                        <button class="navbar-toggler btn btn-sm px-3 font-size-16 header-item waves-effect h-auto text-primary" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                          <span class="mdi mdi-menu"></span>
+                                        </button>
+                                        <div class="collapse navbar-collapse justify-content-between" id="navbarNavAltMarkup">
+                                            <div class="navbar-nav">
+                                                <a class="nav-item nav-link" href="artificial-register-details.html">Profile<span class="sr-only">(current)</span></a>
+                                                <a class="nav-item nav-link" href="artificial-register-history.html">History</a>
+
+                                            </div>
+                                            <div class="navbar-nav">
+                                                <a href="#" type="button" class="btn btn-primary waves-effect waves-light text-white">
+                                                    <i class="bx bx bxs-edit-alt font-size-16 align-middle me-2"></i> Edit Account
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- end of tool bar -->
+
+
 
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
-                                <div class="card-header bg-white boarder-bottom-1">
+                                <div class="card-header bg-white boarder-bottom-1 d-none">
                                     <div class="row d-flex justify-content-between">
                                         <div class="col-6">
                                             <h4 class="card-title mb-0">Member wedges for <span>February 2022</span></h4>
@@ -424,279 +467,198 @@
                                 </div>
                                 <div class="card-body">
 
-
-
-
                                     <table id="datatable-buttons" class="table  dt-responsive nowrap w-100 table-striped">
                                         <thead class="table-dark">
                                             <tr>
-                                                <th>#</th>
-                                                <th>Member</th>
-                                                <th title="Date Paid">Paid on</th>
-                                                <th title="Payment Period">Period</th>
-                                                <th>Approved by</th>
-                                                <th>Status</th>
-                                                <th>Payment Mode</th>
-                                                <th class="text-right">Gross</th>
-                                                <th class="text-right">Deductions</th>
-                                                <th class="text-right">Net income</th>
+                                                <th>Date</th>
+                                                <th>Farmer</th>
+                                                <th title="Date Paid">Service</th>
+                                                <th title="Payment Period">Rating</th>
+                                                <th>Comments</th>
+                                                
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tfoot class="table-light">
                                             <tr>
-                                                <th colspan="2">Totals</th>
-                                                <td></td>
-                                                <td></td>
-                                                <td></td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-danger font-size-11 text-uppercase">2 UnPaid</span>
-                                                </td>
-                                                <td class="text-right text-info" colspan="2">KES 231,205</td>
-                                                <td class="text-right text-danger">-KES 231,205</td>
-                                                <th class="text-right text-capitalize text-success">KES 231,205</th>
+                                                <th colspan="2">45 Clients</th>
+                                                <th>2 services</th>
+                                                <th colspan="2">3.7</th>
                                                 <th></th>
                                             </tr>
                                         </tfoot>
-                                        <tbody class="table-striped">
+                                        <tbody>
                                             <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>12/02/2023 12:34 AM</td>
+                                                <td>Kelvin Kimotho</td>
+                                                <td>Artificial Insemination - Basic Procedure</td>
+                                                <td>3.5</td>
+                                                <td>The work was done to perfection</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>14/02/2023 08:21 AM</td>
+                                                <td>Jane Mwangi</td>
+                                                <td>Artificial Insemination - Advanced Techniques</td>
+                                                <td>4.0</td>
+                                                <td>Very detailed and professional service</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>15/02/2023 03:45 PM</td>
+                                                <td>Paul Otieno</td>
+                                                <td>Artificial Insemination - Follow-up Consultation</td>
+                                                <td>3.8</td>
+                                                <td>Effective service but slightly delayed</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>17/02/2023 11:10 AM</td>
+                                                <td>Mary Wanjiku</td>
+                                                <td>Artificial Insemination - Success Rate Analysis</td>
+                                                <td>4.5</td>
+                                                <td>Excellent insights, very professional</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>1.</td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        Abel Babu
-                                                    </p>
-                                                    <span class="text-muted">M/No. 12345</span>
-                                                </td>
-                                                <td>
-                                                    1 Feb 2022 11:45 AM
-                                                </td>
-                                                <td>Jan 2022</td>
-                                                <td>Ben Kanchai</td>
-                                                <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11 text-uppercase">Paid</span>
-                                                </td>
-                                                <td>
-                                                    <p class="mb-0">
-                                                        MPESA
-                                                    </p>
-                                                    <span class="text-muted">070 458 9563</span>
-                                                </td>
-                                                <td class="text-right text-uppercase text-info">
-                                                    KES 12,230
-                                                </td>
-                                                <td class="text-right text-uppercase text-danger">
-                                                    - KES 4,500
-                                                </td>
-                                                <td class="text-right text-uppercase">
-                                                    <strong class="text-success">KES 11,854</strong>
-                                                </td>
-                                                <td>
-                                                    <div class="dropdown">
-                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
-                                                            <i class="bx bx-dots-vertical-rounded"></i>
-                                                        </a>
-
-                                                        <div class="dropdown-menu dropdown-menu-end">
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-chat-processing-outline me-3"></i>Send as SMS</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-whatsapp me-3"></i>Send as WhatsApp</a>
-                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-email-send-outline me-3"></i> Send as Email</a>
-                                                        </div>
-                                                    </div>
-                                                </td>
+                                                <td>18/02/2023 01:22 PM</td>
+                                                <td>John Njoroge</td>
+                                                <td>Artificial Insemination - Hormone Treatments</td>
+                                                <td>4.2</td>
+                                                <td>Great results with the treatment</td>
+                                                <td></td>
                                             </tr>
-
-
+                                            <tr>
+                                                <td>20/02/2023 09:05 AM</td>
+                                                <td>Grace Nduta</td>
+                                                <td>Artificial Insemination - Post-procedure Care</td>
+                                                <td>3.9</td>
+                                                <td>Thorough care and helpful tips</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>21/02/2023 02:14 PM</td>
+                                                <td>Peter Kariuki</td>
+                                                <td>Artificial Insemination - Semen Collection</td>
+                                                <td>4.1</td>
+                                                <td>Professional and efficient</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>23/02/2023 10:33 AM</td>
+                                                <td>Lucy Wambui</td>
+                                                <td>Artificial Insemination - Estrus Synchronization</td>
+                                                <td>4.3</td>
+                                                <td>Well-coordinated and effective</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>24/02/2023 04:45 PM</td>
+                                                <td>George Mwangi</td>
+                                                <td>Artificial Insemination - Genetic Counseling</td>
+                                                <td>4.4</td>
+                                                <td>Highly knowledgeable and helpful</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>25/02/2023 11:15 AM</td>
+                                                <td>David Kamau</td>
+                                                <td>Artificial Insemination - Pregnancy Diagnosis</td>
+                                                <td>4.0</td>
+                                                <td>Accurate and timely service</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>26/02/2023 03:12 PM</td>
+                                                <td>Nancy Ndung'u</td>
+                                                <td>Artificial Insemination - Embryo Transfer</td>
+                                                <td>4.5</td>
+                                                <td>Successful transfer, very satisfied</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>28/02/2023 09:30 AM</td>
+                                                <td>James Kariuki</td>
+                                                <td>Artificial Insemination - Ultrasonography</td>
+                                                <td>4.2</td>
+                                                <td>Detailed imaging and analysis</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>01/03/2023 07:22 AM</td>
+                                                <td>Faith Njuguna</td>
+                                                <td>Artificial Insemination - Reproductive Health Check</td>
+                                                <td>4.3</td>
+                                                <td>Comprehensive and thorough checkup</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>02/03/2023 01:45 PM</td>
+                                                <td>Andrew Kilonzo</td>
+                                                <td>Artificial Insemination - Semen Analysis</td>
+                                                <td>4.1</td>
+                                                <td>Accurate and informative report</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>04/03/2023 08:15 AM</td>
+                                                <td>Sarah Muthoni</td>
+                                                <td>Artificial Insemination - Fertility Enhancement</td>
+                                                <td>4.0</td>
+                                                <td>Effective methods, good results</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>06/03/2023 11:30 AM</td>
+                                                <td>Michael Njenga</td>
+                                                <td>Artificial Insemination - Heat Detection</td>
+                                                <td>3.9</td>
+                                                <td>Accurate and timely detection</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>08/03/2023 10:05 AM</td>
+                                                <td>Betty Njoroge</td>
+                                                <td>Artificial Insemination - Breeding Program Planning</td>
+                                                <td>4.4</td>
+                                                <td>Well-organized and effective plan</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>10/03/2023 03:50 PM</td>
+                                                <td>Charles Mwangi</td>
+                                                <td>Artificial Insemination - Sire Selection</td>
+                                                <td>4.3</td>
+                                                <td>Excellent selection and advice</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>12/03/2023 09:12 AM</td>
+                                                <td>Margaret Wairimu</td>
+                                                <td>Artificial Insemination - Insemination Scheduling</td>
+                                                <td>4.1</td>
+                                                <td>Well-timed and efficient</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>14/03/2023 01:37 PM</td>
+                                                <td>Francis Ndungu</td>
+                                                <td>Artificial Insemination - Record Keeping</td>
+                                                <td>4.0</td>
+                                                <td>Accurate and detailed records</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>16/03/2023 07:50 AM</td>
+                                                <td>Elizabeth Wanjiru</td>
+                                                <td>Artificial Insemination - Genetic Improvement Program</td>
+                                                <td>4.5</td>
+                                                <td>Significant improvements observed</td>
+                                                <td></td>
+                                            </tr>
                                         </tbody>
+                                        
+                                        
                                     </table>
                                 </div>
                             </div>
