@@ -284,7 +284,7 @@
                                 <i class="mdi mdi-sprout"></i>
                                 <span>Farm Inputs</span>
                             </a>
-                           <ul class="sub-menu" aria-expanded="false">
+                            <ul class="sub-menu" aria-expanded="false">
                                 <li><a href="input-stores.html">Stores</a></li>
                                 <li><a href="input-inventory.html">Inputs Inventory</a></li>
                                 <li><a href="input-issuance.html">Input Issuance</a></li>
@@ -398,13 +398,13 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Input Issuance</h4>
+                                <h4 class="mb-sm-0 font-size-18">Inputs Inventory Items</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
                                         <li class="breadcrumb-item active">Farm Inputs</li>
-                                        <li class="breadcrumb-item active">Input Issuance</li>
+                                        <li class="breadcrumb-item active">Inventory Items</li>
                                     </ol>
                                 </div>
 
@@ -421,12 +421,14 @@
                                 <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row">
                                         <div class="col-6 d-flex align-items-center text-uppercase">
-                                            <h4 class="card-title mb-0">Select the store to issue from</h4>
+                                            <h4 class="card-title mb-0">Stock Levels By Stores</h4>
                                         </div>
 
-                                        <div class="col-sm-6 col-6 d-none">
-                                            <div class="text-sm-end">
-                                                <a href="#" data-bs-toggle="modal" data-bs-target=".SPRegistrationForm" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-store-plus me-1"></i> Add Store</a>
+                                        <div class="col-sm-6 col-6">
+                                            <div class="text-sm-end text-uppercase">
+                                                <a href="input-inventory-items-intake.html" type="button" class="btn btn-info btn-rounded waves-effect waves-light mb-2 me-2"><i class="bx bx-box me-1"></i> Inventory Intake</a>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target=".SPRegistrationForm" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="bx bx-plus me-1"></i> Add Inventory Item</a>
+                                                <a href="#" data-bs-toggle="modal" data-bs-target=".SPRegistrationCategory" type="button" class="btn btn-primary btn-rounded waves-effect waves-light mb-2 me-2"><i class="bx bx-list-plus me-1"></i> Add Inventory Category</a>
                                             </div>
                                         </div>
                                     </div>
@@ -437,254 +439,439 @@
                                         <thead class="table-dark">
                                             <tr>
                                                 <th>#</th>
-                                                <th>Store Name</th>
-                                                <th>Sub County</th>
-                                                <th>Address</th>
-                                                <th>Incharge's Name</th>
-                                                <th>Incharge's Phone</th>
+                                                <th>Item</th>
+                                                <th>SKU NO.</th>
+                                                <th>UOM</th>
+                                                <th>Stock Qty</th>
+                                                <th>Reorder Level</th>
+                                                <th>Last Inventory Update</th>
+                                                <th>Status</th>
+                                                <th>Category</th>
+                                                <th class="text-right">Unit Price</th>
+                                                <th class="text-right">Stock Value</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tbody class="table-striped">
                                             <tr>
-                                                <td>1</td>
-                                                <td>Headquarter Store</td>
-                                                <td>Bunyala</td>
-                                                <td>Next to Dubois Supermarket</td>
-                                                <td>Kelvin Kipto</td>
-                                                <td>0704549859</td>
-                                                <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>1.</td>
+                                                <td>Planting Maize</td>
+                                                <td>8FSDF87</td>
+                                                <td>Packet</td>
+                                                <td>2345</td>
+                                                <td>56</td>
+                                                <td>11/02/2023 11:56 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 23,000</td>
+                                                <td class="text-right">KES 234,890</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>2</td>
-                                                <td>Eastside Agri Store</td>
-                                                <td>Matayos</td>
-                                                <td>Opposite Main Market</td>
-                                                <td>James Omondi</td>
-                                                <td>0712345678</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>2.</td>
+                                                <td>Fertilizer DAP</td>
+                                                <td>9GHDK56</td>
+                                                <td>Bag</td>
+                                                <td>1200</td>
+                                                <td>200</td>
+                                                <td>12/03/2023 09:15 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Fertilizers</td>
+                                                <td class="text-right">KES 3,500</td>
+                                                <td class="text-right">KES 4,200,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>3</td>
-                                                <td>Green Valley Supplies</td>
-                                                <td>Nambale</td>
-                                                <td>Next to Green Park</td>
-                                                <td>Anne Atieno</td>
-                                                <td>0723456789</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>3.</td>
+                                                <td>Pesticide - Amistar</td>
+                                                <td>7HJFG45</td>
+                                                <td>L</td>
+                                                <td>500</td>
+                                                <td>50</td>
+                                                <td>15/03/2023 10:30 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Pesticides</td>
+                                                <td class="text-right">KES 850</td>
+                                                <td class="text-right">KES 425,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>4</td>
-                                                <td>Harvest Hub</td>
-                                                <td>Butula</td>
-                                                <td>Beside Bus Station</td>
-                                                <td>Peter Ochieng</td>
-                                                <td>0734567890</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>4.</td>
+                                                <td>Herbicide - Roundup</td>
+                                                <td>6LKJH89</td>
+                                                <td>L</td>
+                                                <td>300</td>
+                                                <td>30</td>
+                                                <td>20/03/2023 01:00 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Herbicides</td>
+                                                <td class="text-right">KES 1,200</td>
+                                                <td class="text-right">KES 360,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>5</td>
-                                                <td>AgriSupport Store</td>
-                                                <td>Teso North</td>
-                                                <td>Next to County Office</td>
-                                                <td>Lucy Nduta</td>
-                                                <td>0745678901</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>5.</td>
+                                                <td>Tomato Seeds</td>
+                                                <td>5DFGJ34</td>
+                                                <td>Packet</td>
+                                                <td>1500</td>
+                                                <td>100</td>
+                                                <td>25/03/2023 11:20 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 200</td>
+                                                <td class="text-right">KES 300,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>6</td>
-                                                <td>Farmers Choice</td>
-                                                <td>Teso South</td>
-                                                <td>Along Market Road</td>
-                                                <td>David Mutua</td>
-                                                <td>0756789012</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>6.</td>
+                                                <td>Onion Seeds</td>
+                                                <td>4VBNM12</td>
+                                                <td>Packet</td>
+                                                <td>1800</td>
+                                                <td>150</td>
+                                                <td>30/03/2023 03:45 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 150</td>
+                                                <td class="text-right">KES 270,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>7</td>
-                                                <td>AgriPro Solutions</td>
-                                                <td>Samia</td>
-                                                <td>Next to Vihiga Plaza</td>
-                                                <td>Mary Wambui</td>
-                                                <td>0767890123</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>7.</td>
+                                                <td>Rice Seeds</td>
+                                                <td>3LKJN23</td>
+                                                <td>Packet</td>
+                                                <td>900</td>
+                                                <td>100</td>
+                                                <td>05/04/2023 08:50 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 180</td>
+                                                <td class="text-right">KES 162,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>8</td>
-                                                <td>Urban Harvest Store</td>
-                                                <td>Busia</td>
-                                                <td>Opposite City Mall</td>
-                                                <td>John Ndungu</td>
-                                                <td>0778901234</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>8.</td>
+                                                <td>Cabbage Seeds</td>
+                                                <td>2HJGF56</td>
+                                                <td>Packet</td>
+                                                <td>750</td>
+                                                <td>80</td>
+                                                <td>10/04/2023 02:10 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 100</td>
+                                                <td class="text-right">KES 75,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>9</td>
-                                                <td>Sunrise Agri</td>
-                                                <td>Bunyala</td>
-                                                <td>Beside Main Square</td>
-                                                <td>Pauline Kamau</td>
-                                                <td>0789012345</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>9.</td>
+                                                <td>Carrot Seeds</td>
+                                                <td>1LKJH78</td>
+                                                <td>Packet</td>
+                                                <td>1200</td>
+                                                <td>100</td>
+                                                <td>15/04/2023 04:00 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 130</td>
+                                                <td class="text-right">KES 156,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>10</td>
-                                                <td>AgriMart</td>
-                                                <td>Matayos</td>
-                                                <td>Near Kericho Market</td>
-                                                <td>Andrew Kiptoo</td>
-                                                <td>0790123456</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>10.</td>
+                                                <td>Spinach Seeds</td>
+                                                <td>0KJHG89</td>
+                                                <td>Packet</td>
+                                                <td>1100</td>
+                                                <td>90</td>
+                                                <td>20/04/2023 09:30 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 140</td>
+                                                <td class="text-right">KES 154,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>11</td>
-                                                <td>Green Acre Store</td>
-                                                <td>Nambale</td>
-                                                <td>Next to Westside Mall</td>
-                                                <td>Susan Njeri</td>
-                                                <td>0801234567</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>11.</td>
+                                                <td>Wheat Seeds</td>
+                                                <td>9LKJH67</td>
+                                                <td>Packet</td>
+                                                <td>1300</td>
+                                                <td>120</td>
+                                                <td>25/04/2023 11:40 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 150</td>
+                                                <td class="text-right">KES 195,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>12</td>
-                                                <td>AgriDepot</td>
-                                                <td>Butula</td>
-                                                <td>Beside Laikipia Plaza</td>
-                                                <td>Michael Mwangi</td>
-                                                <td>0812345678</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>12.</td>
+                                                <td>Bean Seeds</td>
+                                                <td>8MNBG56</td>
+                                                <td>Packet</td>
+                                                <td>1600</td>
+                                                <td>100</td>
+                                                <td>30/04/2023 03:20 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 90</td>
+                                                <td class="text-right">KES 144,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>13</td>
-                                                <td>FarmGate Store</td>
-                                                <td>Teso North</td>
-                                                <td>Opposite Central Market</td>
-                                                <td>Grace Wairimu</td>
-                                                <td>0823456789</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>13.</td>
+                                                <td>Sorghum Seeds</td>
+                                                <td>7LKJH56</td>
+                                                <td>Packet</td>
+                                                <td>950</td>
+                                                <td>70</td>
+                                                <td>05/05/2023 10:00 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 110</td>
+                                                <td class="text-right">KES 104,500</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>14</td>
-                                                <td>Harvest Depot</td>
-                                                <td>Teso South</td>
-                                                <td>Along Main Road</td>
-                                                <td>Samuel Kariuki</td>
-                                                <td>0834567890</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>14.</td>
+                                                <td>Millet Seeds</td>
+                                                <td>6LKJH78</td>
+                                                <td>Packet</td>
+                                                <td>800</td>
+                                                <td>60</td>
+                                                <td>10/05/2023 12:15 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 120</td>
+                                                <td class="text-right">KES 96,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>15</td>
-                                                <td>AgriNeeds</td>
-                                                <td>Samia</td>
-                                                <td>Next to Post Office</td>
-                                                <td>Emily Wanjiru</td>
-                                                <td>0845678901</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>15.</td>
+                                                <td>Pigeon Peas Seeds</td>
+                                                <td>5LKJH89</td>
+                                                <td>Packet</td>
+                                                <td>1000</td>
+                                                <td>80</td>
+                                                <td>15/05/2023 02:30 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 110</td>
+                                                <td class="text-right">KES 110,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>16</td>
-                                                <td>Farm Supplies Hub</td>
-                                                <td>Busia</td>
-                                                <td>Opposite Tharaka Plaza</td>
-                                                <td>Joseph Kimathi</td>
-                                                <td>0856789012</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>16.</td>
+                                                <td>Peanut Seeds</td>
+                                                <td>4LKJH12</td>
+                                                <td>Packet</td>
+                                                <td>700</td>
+                                                <td>50</td>
+                                                <td>20/05/2023 04:45 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 140</td>
+                                                <td class="text-right">KES 98,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>17</td>
-                                                <td>AgroMart</td>
-                                                <td>Bunyala</td>
-                                                <td>Near Embu Market</td>
-                                                <td>Agnes Ndungu</td>
-                                                <td>0867890123</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>17.</td>
+                                                <td>Cowpea Seeds</td>
+                                                <td>3LKJH34</td>
+                                                <td>Packet</td>
+                                                <td>600</td>
+                                                <td>40</td>
+                                                <td>25/05/2023 08:10 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 130</td>
+                                                <td class="text-right">KES 78,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>18</td>
-                                                <td>Green Growers Store</td>
-                                                <td>Matayos</td>
-                                                <td>Next to County Hall</td>
-                                                <td>Esther Mumo</td>
-                                                <td>0878901234</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>18.</td>
+                                                <td>Sunflower Seeds</td>
+                                                <td>2LKJH56</td>
+                                                <td>Packet</td>
+                                                <td>900</td>
+                                                <td>70</td>
+                                                <td>30/05/2023 09:25 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 100</td>
+                                                <td class="text-right">KES 90,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>19</td>
-                                                <td>Harvest House</td>
-                                                <td>Nambale</td>
-                                                <td>Along Main Street</td>
-                                                <td>Peter Mutuku</td>
-                                                <td>0889012345</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>19.</td>
+                                                <td>Soybean Seeds</td>
+                                                <td>1LKJH78</td>
+                                                <td>Packet</td>
+                                                <td>800</td>
+                                                <td>60</td>
+                                                <td>05/06/2023 11:30 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 120</td>
+                                                <td class="text-right">KES 96,000</td>
+                                                <td></td>
                                             </tr>
                                             <tr>
-                                                <td>20</td>
-                                                <td>Agri Solutions Store</td>
-                                                <td>Butula</td>
-                                                <td>Near Makueni Plaza</td>
-                                                <td>Rose Mwende</td>
-                                                <td>0890123456</td>
-                                                     <td class="text-uppercase text-right">
-                                                    <a href="input-issuance-form.html" class="btn btn-sm btn-success text-uppercase">Issue Items</a>
-                                                    <a href="input-issuance-inventory.html" class="btn btn-sm btn-primary">View Inventory</a>
-                                                </td>
+                                                <td>20.</td>
+                                                <td>Cotton Seeds</td>
+                                                <td>0LKJH90</td>
+                                                <td>Packet</td>
+                                                <td>500</td>
+                                                <td>40</td>
+                                                <td>10/06/2023 01:00 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 150</td>
+                                                <td class="text-right">KES 75,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>21.</td>
+                                                <td>Planting Maize</td>
+                                                <td>9HSDF88</td>
+                                                <td>Packet</td>
+                                                <td>2450</td>
+                                                <td>60</td>
+                                                <td>15/06/2023 03:45 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 23,000</td>
+                                                <td class="text-right">KES 276,900</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>22.</td>
+                                                <td>Fertilizer DAP</td>
+                                                <td>8GHDK66</td>
+                                                <td>Bag</td>
+                                                <td>1500</td>
+                                                <td>180</td>
+                                                <td>20/06/2023 10:15 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Fertilizers</td>
+                                                <td class="text-right">KES 3,500</td>
+                                                <td class="text-right">KES 5,250,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>23.</td>
+                                                <td>Pesticide - Amistar</td>
+                                                <td>7HJFG66</td>
+                                                <td>L</td>
+                                                <td>400</td>
+                                                <td>60</td>
+                                                <td>25/06/2023 01:20 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Pesticides</td>
+                                                <td class="text-right">KES 850</td>
+                                                <td class="text-right">KES 340,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>24.</td>
+                                                <td>Herbicide - Roundup</td>
+                                                <td>6LKJH79</td>
+                                                <td>L</td>
+                                                <td>250</td>
+                                                <td>30</td>
+                                                <td>30/06/2023 04:10 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Herbicides</td>
+                                                <td class="text-right">KES 1,200</td>
+                                                <td class="text-right">KES 300,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>25.</td>
+                                                <td>Tomato Seeds</td>
+                                                <td>5DFGJ78</td>
+                                                <td>Packet</td>
+                                                <td>1300</td>
+                                                <td>100</td>
+                                                <td>05/07/2023 10:00 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 200</td>
+                                                <td class="text-right">KES 260,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>26.</td>
+                                                <td>Onion Seeds</td>
+                                                <td>4VBNM89</td>
+                                                <td>Packet</td>
+                                                <td>1600</td>
+                                                <td>130</td>
+                                                <td>10/07/2023 11:00 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 150</td>
+                                                <td class="text-right">KES 240,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>27.</td>
+                                                <td>Rice Seeds</td>
+                                                <td>3LKJN78</td>
+                                                <td>Packet</td>
+                                                <td>750</td>
+                                                <td>90</td>
+                                                <td>15/07/2023 01:00 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 180</td>
+                                                <td class="text-right">KES 135,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>28.</td>
+                                                <td>Cabbage Seeds</td>
+                                                <td>2HJGF78</td>
+                                                <td>Packet</td>
+                                                <td>1000</td>
+                                                <td>80</td>
+                                                <td>20/07/2023 02:00 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 100</td>
+                                                <td class="text-right">KES 100,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>29.</td>
+                                                <td>Carrot Seeds</td>
+                                                <td>1LKJH89</td>
+                                                <td>Packet</td>
+                                                <td>1400</td>
+                                                <td>100</td>
+                                                <td>25/07/2023 04:30 PM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 130</td>
+                                                <td class="text-right">KES 182,000</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td>30.</td>
+                                                <td>Spinach Seeds</td>
+                                                <td>0KJHG90</td>
+                                                <td>Packet</td>
+                                                <td>1000</td>
+                                                <td>70</td>
+                                                <td>30/07/2023 09:00 AM</td>
+                                                <td><span class="badge rounded-pill bg-success text-uppercase" key="t-new">In stock</span></td>
+                                                <td>Seeds</td>
+                                                <td class="text-right">KES 140</td>
+                                                <td class="text-right">KES 140,000</td>
+                                                <td></td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -889,64 +1076,110 @@
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title text-uppercase" id="transaction-detailModalLabel">Store registration</h5>
+                            <h5 class="modal-title text-uppercase" id="transaction-detailModalLabel">Adding Incentory item</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <div class="row">
-                                <div class="col-12 mb-3">
-                                    <label for="">Store Name</label>
-                                    <input type="text" placeholder="Enter Store Name" class="form-control">
-                                </div>
 
                                 <div class="col-12 mb-3">
-                                    <label for="">Subcounty</label>
+                                    <label for="">Item Name</label>
+                                    <input type="text" placeholder="Enter Item Name" class="form-control">
+                                </div>
+
+                                <div class="col-6 mb-3">
+                                    <label for="">Unit Of Measure</label>
                                     <select class="form-select">
-                                        <option value="" disabled>Select Sub-counties</option>
-                                        <option>Bunyala</option>
-                                        <option>Butula</option>
-                                        <option>Funyula</option>
-                                        <option>Matayos</option>
-                                        <option>Nambale</option>
-                                        <option>Teso North</option>
-                                        <option>Teso South</option>
+                                        <option value="" disabled>Select Item</option>
+                                        <option>Pieces</option>
+                                        <option>Kilograms</option>
+                                        <option>Grams</option>
+                                        <option>Liters</option>
+                                        <option>Milliliters</option>
+                                        <option>Packets</option>
+                                        <option>Bags</option>
+                                        <option>Boxes</option>
+                                        <option>Pallets</option>
+                                        <option>Bundles</option>
+                                        <option>Dozens</option>
+                                        <option>Units</option>
+                                        <option>Gallons</option>
+                                        <option>Ounces</option>
+                                        <option>Tonnes</option>
+                                        <option>Cartons</option>
+                                        <option>Barrels</option>
+                                        <option>Trays</option>
+                                        <option>Rolls</option>
+                                        <option>Cans</option>
                                     </select>
-                                </div>  
-
-                                <div class="col-12 mb-3">
-                                    <label for="">Person Incharge</label>
-                                    <input type="text" placeholder="Incharge's Name" class="form-control">
-                                </div>
-
-                                <div class="col-12 mb-3">
-                                    <label for="">ID NO.</label>
-                                    <input type="text" placeholder="Enter License No." class="form-control">
-                                </div>  
-
-                                <div class="col-12 mb-3">
-                                    <label for="">Staff  ID NO.</label>
-                                    <input type="text" placeholder="Enter License No." class="form-control">
-                                </div>  
-
-                                <div class="col-6 mb-3">
-                                    <label for="">Phone Number</label>
-                                    <input type="text" placeholder="Enter Phone" class="form-control">
                                 </div>
 
                                 <div class="col-6 mb-3">
-                                    <label for="">Email</label>
-                                    <input type="email" placeholder="Enter Email Address" class="form-control">
+                                    <label for="">MOQ</label>
+                                    <input type="text" placeholder="Enter Minimum Order Quantity" class="form-control">
                                 </div>
 
+                                <div class="col-12 mb-3">
+                                    <label for="store-select">Category</label>
+                                    <select id="store-select" class="form-select">
+                                        <option value="" disabled selected>Select Category</option>
+                                        <option>Seeds</option>
+                                        <option>Fertilizers</option>
+                                        <option>Pesticides</option>
+                                        <option>Herbicides</option>
+                                        <option>Insecticides</option>
+                                        <option>Fungicides</option>
+                                        <option>Growth Regulators</option>
+                                        <option>Soil Conditioners</option>
+                                        <option>Feed</option>
+                                        <option>Veterinary Supplies</option>
+                                        <option>Tools and Equipment</option>
+                                        <option>Packaging Materials</option>
+                                        <option>Irrigation Supplies</option>
+                                        <option>Greenhouse Supplies</option>
+                                        <option>Planting Materials</option>
+                                        <option>Mulching Materials</option>
+                                        <option>Harvesting Tools</option>
+                                        <option>Storage Supplies</option>
+                                        <option>Protective Gear</option>
+                                        <option>Other Inputs</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-success w-100" >Submit Form</button>
+                            <button type="button" class="btn btn-success w-100 text-uppercase" >Submit</button>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- end modal -->
+
+            <!-- add category -->
+            <div class="modal fade SPRegistrationCategory" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title text-uppercase" id="transaction-detailModalLabel">Adding Incentory item</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+
+                                <div class="col-12 mb-3">
+                                    <label for="">category Name</label>
+                                    <input type="text" placeholder="Enter inventory Category Name" class="form-control">
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary w-100 text-uppercase" >Add Category</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end of category -->
 
 
 
