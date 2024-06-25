@@ -195,7 +195,8 @@ function initMap() {
     //the map options
     var options = {
         zoom: 15,
-        center: { lat: -1.2921, lng: 36.8219 }
+        center: { lat:  0.43495099828700357, lng: 34.24214897111555 }
+
     }
 
 
@@ -297,59 +298,20 @@ function initMap() {
         // alert("ready");
     });
 
-    //rented add plate
-    // addMarker({
-    //     coords: { lat: -1.289999, lng: 36.838173 },
-    //     iconImage: multiPlate,
-    //     content: `<p class="d-none">multi-plate|identifier</p><h6 class="text-uppercase d-flex align-items-center">
-    //         <span class="active-agent mr-2">
-    //         </span>1254THY<span></h6>
-    //         <p class="mb-4"><strong>Large Billboard</strong></p>
-
-    //         <p></span><strong class="">2 sides of 4 sides available</strong><span></h6></p>
-    //         <div class="progress"> 
-    //         <div class="progress-bar progress-bar-info" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-    //         </div>
-
-    //         <h5 class="text-primary mt-3"><strong>Renting details</strong></h5>
-
-    //         <p class="mt-2 mb-2">Nouveta Ltd : 25th Nov, 2020 10:25PM - 25th Dec, 2020 10:25PM</p>
-
-    //         <p></span><strong>28 sides of 203 Days Remaining</strong><span></h6></p>
-    //         <div class="progress"> 
-    //         <div class="progress-bar progress-bar-info" style="width: 73%" aria-valuenow="73" aria-valuemin="0" aria-valuemax="100"></div>
-    //         </div>
-
-    //         <hr>
-    //         <p>Kev & Co. Ltd : 28th Jan, 2020 09:23PM - 6Th Jan, 2020 12:00PM</p>
-    //         <p></span><strong>12 sides of 63 Days Remaining</strong><span></h6></p>
-    //         <div class="progress"> 
-    //         <div class="progress-bar progress-bar-info" style="width: 54%" aria-valuenow="54" aria-valuemin="0" aria-valuemax="100"></div>
-    //         </div>
-
-    //         <hr>
-
-    //         <p>Click to view more details</p>
-
-
-
-
-    //         `
-    // });
-
+   
 
 
 
     //taxi on transit
     addMarker({
-        coords: { lat: -1.284319, lng: 36.8238173 },
+        coords: { lat: 0.4867, lng: 34.1146 },
         iconImage: taxi_transit,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="flex-shrink-0 align-self-center me-3 d-none">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
@@ -418,14 +380,14 @@ function initMap() {
 
     //taxi on transit
     addMarker({
-        coords: { lat: -1.29899, lng: 36.9187 },
+        coords: { lat: 0.1906, lng: 33.9937 },
         iconImage: taxi_transit,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="flex-shrink-0 align-self-center me-3 d-none">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
@@ -493,14 +455,14 @@ function initMap() {
 
     //Taxi ontransit
     addMarker({
-        coords: { lat: -1.27199, lng: 36.8187 },
+        coords: { lat: 0.4511, lng: 34.0844 },
         iconImage: taxi_transit,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="flex-shrink-0 align-self-center me-3 d-none">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
@@ -569,14 +531,14 @@ function initMap() {
     //Booked Taxi
 
     addMarker({
-        coords: { lat: -1.26199, lng: 36.8987 },
+        coords: { lat: 0.4228, lng: 34.2286 },
         iconImage: taxi_booked,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
@@ -644,14 +606,14 @@ function initMap() {
 
     //Taxi on transit
     addMarker({
-        coords: { lat: -1.29889, lng: 36.8186003 },
+        coords: { lat: 0.3134, lng: 33.9850 },
         iconImage: taxi_transit,
         content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3">
+               <div class="flex-shrink-0 align-self-center me-3 d-none">
                    <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
                </div>
                
@@ -717,45 +679,17 @@ function initMap() {
         `
     });
 
-    //inactive agent
-    // addMarker({
-    //     coords: { lat: -1.29889, lng: 36.8386003 },
-    //     iconImage: inactiveAgent,
-    //     content: '<p class="d-none">agent|plate num</p><h6 class="text-capitalize d-flex align-items-center"><span class="offline-agent mr-2"></span> <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span></h6> <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p><p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong><div class="listview text-align-left text-capitalize pl-0">  <div class="listview__header text-align-left text-capitalize text-left"><strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong></div> <div class="progress"> <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div> </div></div></p> '
-    // });
-
-    //active agent
-    // addMarker({
-    //     coords: { lat: -1.3289, lng: 36.8452003 },
-    //     iconImage: activeAgent,
-    //     content: `<p class="d-none">agent|plate num</p>
-    //         <h6 class="text-capitalize d-flex align-items-center">
-    //         <span class="offline-agent mr-2"></span> 
-    //         <span>Alex Wanjala <small><strong>(INACTIVE)</strong></small></span>
-    //         </h6>
-    //          <p class="pb-0 mb-0">Last seen at <strong>Tom Mboya Street</strong> at 2:06 PM </strong></p>
-    //          <p>Most recent activity: <strong>Queried Car plate Number KBW 2589T at 11:41PM</strong>
-    //          <div class="listview text-align-left text-capitalize pl-0">  
-    //          <div class="listview__header text-align-left text-capitalize text-left">
-    //          <strong>23MB data (70%)</strong> Consumed in the <strong>last 13 Days</strong>
-    //          </div> 
-    //          <div class="progress"> 
-    //          <div class="progress-bar progress-bar-warning" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-    //          </div>
-    //          </div>
-    //          </p> `
-    // });
-
+    
     //Taxi incident
     addMarker({
-        coords: { lat: -1.2974586, lng: 36.8087993 },
+        coords: { lat: 0.3707, lng: 34.1306 },
         iconImage: taxi_incident,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
@@ -796,14 +730,14 @@ function initMap() {
 
     //available taxis
     addMarker({
-        coords: { lat: -1.29948, lng: 36.8151453 },
+        coords: { lat: 0.4662, lng: 34.1381 },
         iconImage: taxi_available,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
@@ -814,12 +748,12 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i>Mixed Farmer</p>
+                        <p class="text-muted mb-0 d-none"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
                    </div>
                    </div>
             </div>
@@ -856,14 +790,14 @@ function initMap() {
 
     //available Taxis
     addMarker({
-        coords: { lat: -1.294219, lng: 36.806824 },
+        coords: { lat: 0.4445, lng: 34.3127 },
         iconImage: taxi_available,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
@@ -904,14 +838,14 @@ function initMap() {
 
     //booked taxi
     addMarker({
-        coords: { lat: -1.2925606, lng: 36.7809636 },
+        coords: { lat: 0.4717, lng: 34.1807 },
         iconImage: taxi_booked,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
@@ -981,14 +915,14 @@ function initMap() {
 
     // Booked taxi
     addMarker({
-        coords: { lat: -1.2924789, lng: 36.8243687 },
+        coords: { lat: 0.6411, lng: 34.2701 },
         iconImage: taxi_booked,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
@@ -1064,14 +998,14 @@ function initMap() {
 
     //Taxi offline
     addMarker({
-        coords: { lat: -1.27576, lng: 36.834851 },
+        coords: { lat: 0.4619, lng: 34.1118 },
         iconImage: taxi_offline,
         content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
                  
-                   <div class="flex-shrink-0 align-self-center me-3">
+                   <div class="flex-shrink-0 align-self-center me-3 d-none">
                        <img src="assets/images/users/avatar-2.jpg" class="rounded-circle avatar-xs" alt="">
                    </div>
                    
