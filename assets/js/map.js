@@ -337,7 +337,7 @@ function initMap() {
         </div>
 
         <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
+            <ul class="verti-timeline list-unstyled d-none">        
                 <li class="event-list">
                     <div class="event-timeline-dot">
                         <i class="mdi mdi-square font-size-18 text-black"></i>
@@ -413,7 +413,7 @@ function initMap() {
         </div>
 
         <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
+           <ul class="verti-timeline list-unstyled d-none">         
                 <li class="event-list">
                     <div class="event-timeline-dot">
                         <i class="mdi mdi-square font-size-18 text-black"></i>
@@ -488,7 +488,7 @@ function initMap() {
         </div>
 
         <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
+           <ul class="verti-timeline list-unstyled d-none">         
                 <li class="event-list">
                     <div class="event-timeline-dot">
                         <i class="mdi mdi-square font-size-18 text-black"></i>
@@ -564,7 +564,7 @@ function initMap() {
             </div>
 
             <div class="card-body">
-                <ul class="verti-timeline list-unstyled">        
+               <ul class="verti-timeline list-unstyled d-none">         
                     <li class="event-list">
                         <div class="event-timeline-dot">
                             <i class="mdi mdi-square font-size-18 text-black"></i>
@@ -639,7 +639,7 @@ function initMap() {
         </div>
 
         <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
+           <ul class="verti-timeline list-unstyled d-none">         
                 <li class="event-list">
                     <div class="event-timeline-dot">
                         <i class="mdi mdi-square font-size-18 text-black"></i>
@@ -871,7 +871,7 @@ function initMap() {
             </div>
 
             <div class="card-body">
-                <ul class="verti-timeline list-unstyled">        
+               <ul class="verti-timeline list-unstyled d-none">         
                     <li class="event-list">
                         <div class="event-timeline-dot">
                             <i class="mdi mdi-square font-size-18 text-black"></i>
@@ -948,7 +948,7 @@ function initMap() {
             </div>
 
             <div class="card-body">
-                <ul class="verti-timeline list-unstyled">        
+               <ul class="verti-timeline list-unstyled d-none">         
                     <li class="event-list">
                         <div class="event-timeline-dot">
                             <i class="mdi mdi-square font-size-18 text-black"></i>
