@@ -322,7 +322,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -398,7 +398,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">10 Ha</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -473,7 +473,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -549,7 +549,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">4 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
@@ -624,7 +624,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">5 Ha</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -700,7 +700,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">1.5 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
@@ -808,7 +808,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
@@ -856,7 +856,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">4 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
@@ -933,7 +933,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">4 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
@@ -1016,7 +1016,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
                    </div>
 
                    <div class="font-size-11 text-right">
