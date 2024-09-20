@@ -1,0 +1,2 @@
+assets/js/data/path_to_your_json_file.json filter=lfs diff=lfs merge=lfs -text
+assets/js/data/Busia-Profiles-farmers.json filter=lfs diff=lfs merge=lfs -text

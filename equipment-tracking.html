@@ -1,0 +1,908 @@
+<!doctype html>
+<html lang="en">
+
+
+<!-- index.html   13:53:02 GMT -->
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Collectors Register | Busia County</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.svg">
+
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap select styling -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/css/bootstrap-select.min.css">
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    <!-- custom Css-->
+    <link href="assets/css/custom.css" id="app-style" rel="stylesheet" type="text/css" />
+
+
+</head>
+
+<body data-sidebar="colored" data-topbar="dark">
+    <!-- Loader -->
+    <div id="preloader">
+        <div id="status">
+            <div class="spinner-chase">
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+                <div class="chase-dot"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Begin page -->
+    <div id="layout-wrapper">
+
+
+        <header id="page-topbar">
+            <div class="navbar-header">
+                <div class="d-flex">
+                    <!-- LOGO -->
+                    <div class="navbar-brand-box pl-15px">
+                        <a href="index.html" class="logo logo-dark">
+                            <span class="logo-sm">
+                                    <img src="assets/images/logo.svg" alt="" height="22">
+                                </span>
+                            <span class="logo-lg">
+                                    <img src="assets/images/logo-dark.png" alt="" height="17">
+                                </span>
+                        </a>
+
+                        <a href="index.html" class="logo logo-light ">
+                            <span class="logo-sm ">
+                                    <img  class="" src="assets/images/logo-light.svg" alt="" height="40">
+                                </span>
+                            <span class="logo-lg">
+                                    <img src="assets/images/logo-light.png" alt="" height="45">
+                                </span>
+                        </a>
+                    </div>
+
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+                    <!-- App Search-->
+                    <form class="app-search d-none d-lg-block">
+                        <div class="position-relative">
+                            <input type="text" class="form-control" placeholder="Search...">
+                            <span class="bx bx-search-alt"></span>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="d-flex">
+
+                    <div class="dropdown d-inline-block d-lg-none ms-2">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
+
+                            <form class="p-3">
+                                <div class="form-group m-0">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+
+                    <div class="dropdown d-none d-lg-inline-block ms-1">
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                                <i class="bx bx-fullscreen"></i>
+                            </button>
+                    </div>
+
+                    <div class="dropdown d-inline-block d-none">
+                        <!-- notifications, i will come to this later -->
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-bell bx-tada"></i>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-notifications-dropdown">
+                            <div class="p-3">
+                                <div class="row align-items-center">
+                                    <div class="col">
+                                        <h6 class="m-0" key="t-notifications"> Notifications </h6>
+                                    </div>
+                                    <div class="col-auto">
+                                        <a href="#!" class="small" key="t-view-all"> View All</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div data-simplebar style="max-height: 230px;">
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">James Lemire</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <div class="avatar-xs me-3">
+                                            <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                        </div>
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+
+                                <a href="javascript: void(0);" class="text-reset notification-item">
+                                    <div class="d-flex">
+                                        <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <div class="flex-grow-1">
+                                            <h6 class="mb-1">Salena Layfield</h6>
+                                            <div class="font-size-12 text-muted">
+                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="p-2 border-top d-grid">
+                                <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown d-inline-block">
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1" key="t-henry">Adroa Balinda</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-end">
+                            <!-- item-->
+                            <a class="dropdown-item" href="myprofile.html"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">My Profile</span></a>
+                            <a class="dropdown-item" href="my-logs.html"><i class="bx bx-time font-size-16 align-middle me-1"></i> <span key="t-profile">My Logs</span></a>
+                            <a class="dropdown-item" href="auth-lock-screen.html"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item text-danger" href="auth-login.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </header>
+
+        <!-- ========== Left Sidebar Start ========== -->
+        <div class="vertical-menu">
+            <div data-simplebar class="h-100">
+                <!--- Sidemenu -->
+                <div id="sidebar-menu">
+                    <!-- Left Menu Start -->
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title d-none" key="t-menu">Office Mate</li>
+                        <li>
+                            <a href="index.html" class="waves-effect">
+                                <i class="bx bx-home-circle"></i><span>Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-water-check"></i>
+                                <span>Collections/ Reductions</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="milk-collections.html">Collections</a></li>
+                                <li><a href="milk-decutions.html">Reductions</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-tractor-variant"></i>
+                                <span>Tractors</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="equipment-add.html">Add Equipment</a></li>
+                                <li><a href="equipment-hire.html">Hire Equipment</a></li>
+                                <li><a href="equipment-register.html">Equipment Register</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-cow"></i>
+                                <span>Service Providers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="artificial-register.html">Service Providers Register</a></li>
+                                <li><a href="artificial-reports.html">Services Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-truck-delivery-outline"></i>
+                                <span>Off-Takers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="offtakers-register.html">Off-Taker Listings</a></li>
+                                <li><a href="offtakers-reports.html">Off-Taker Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-badge-account-horizontal-outline"></i>
+                                <span>Extension Officers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="extension-register.html">Officer's Register</a></li>
+                                <li><a href="extension-reports.html">Officer's Reports</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-sprout"></i>
+                                <span>Farm Inputs</span>
+                            </a>
+                           <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="input-stores.html">Stores</a></li>
+                                <li><a href="input-inventory.html">Inputs Inventory</a></li>
+                                <li><a href="input-issuance.html">Input Issuance</a></li>
+                                <li><a href="input-inventory-items.html">Inventory Items</a></li>
+                                <li><a href="input-inventory-items-intake.html">Inventory Intake</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="messages.html" class="waves-effect">
+                                <i class="bx bx-chat"></i>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="input-intake.html" class="waves-effect">
+                                <i class="mdi mdi-sprout"></i>
+                                <span>Input Intake</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="map-view.html" class="waves-effect">
+                                <i class="mdi mdi-map-marker"></i>
+                                <span>Map View</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-account-group"></i>
+                                <span>Members</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                 <li><a href="member-register.html">Members register</a></li>
+                                <li class="d-none"><a href="member-payments-all.html">Member payments</a></li>
+                                <li class="d-none"><a href="toll-takernew.html">Member deductions</a></li>
+                                <li><a href="member-new.html">Add a Member</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-badge-account-horizontal-outline"></i>
+                                <span>Collectors</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="collector-register.html">Collector's register</a></li>
+                                <li><a href="collector-new.html">Add a Collector</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="d-none">
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-cog"></i>
+                                <span>Setups</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="toll-takerlist.html">System users</a></li>
+                                <li><a href="toll-takernew.html">Routes</a></li>
+                            </ul>
+                        </li>
+                        <hr class="bg-white text-white m-0 p-0">
+
+                        <li class="menu-title" key="t-apps">Reports</li>
+                        
+                        <li>
+                            <a href="equipment-tracking.html" class="waves-effect">
+                                <i class="bx bxs-report"></i>
+                                <span>Equipment Tracking</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-water-outline"></i>
+                                <span>Milk Collection</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="collections-daily-report.html">Daily report</a></li>
+                                <li><a href="collections-monthly-report.html">Monthly report</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="member-payments-all.html" class="waves-effect">
+                                <i class="mdi mdi-account-cash"></i>
+                                <span>Member Payments</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="input-report.html" class="waves-effect">
+                                <i class="mdi mdi-account-arrow-right"></i>
+                                <span>Farm Input Issuance</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Sidebar -->
+            </div>
+        </div>
+        <!-- Left Sidebar End -->
+
+
+
+        <!-- ============================================================== -->
+        <!-- Start right Content here -->
+        <!-- ============================================================== -->
+        <div class="main-content">
+
+            <div class="page-content">
+                <div class="container-fluid">
+
+                    <!-- start page title -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                <h4 class="mb-sm-0 font-size-18">Equipment Tracking Report</h4>
+
+                                <div class="page-title-right">
+                                    <ol class="breadcrumb m-0">
+                                        <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
+                                        <li class="breadcrumb-item active">Equipment Tracking Report</li>
+                                    </ol>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end page title -->
+
+                    <!-- eTransactions table -->
+
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="card">
+                                <div class="card-header bg-white boarder-bottom-1">
+                                    <div class="row">
+                                        <div class="col-6 d-flex align-items-center">
+                                            <h4 class="card-title mb-0">Equipment Tracking Report</h4>
+                                        </div>
+
+                                        <div class="col-sm-6 col-6">
+                                            <div class="text-sm-end">
+                                                <a href="collector-new.html" type="button" class="btn btn-success btn-rounded waves-effect waves-light mb-2 me-2"><i class="mdi mdi-account-plus-outline me-1"></i> Register A Collector</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="card-body">
+
+
+
+
+                                    <table id="datatable-buttons" class="table  dt-responsive nowrap w-100 table-striped">
+                                        <thead class="table-dark">
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Reg No.</th>
+                                                <th>Hired To</th>
+                                                <th>Date from</th>
+                                                <th>Date to</th>
+                                                <th>Hired Hours</th>
+                                                <th>Payment Method</th>
+                                                <th>Farmers Address</th>
+                                                <th class="text-right">Amount</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        
+                                        <tbody class="table-striped">
+                                            <tr>
+                                                <td>1</td>
+                                                <td>KAE457Y</td>
+                                                <td>Alex Wanjala</td>
+                                                <td>12/02/2024 11:00 AM</td>
+                                                <td>12/02/2024 12:30 PM</td>
+                                                <td>1.3</td>
+                                                <td>MPESA</td>
+                                                <td>Nambale, Busia</td>
+                                                <td class="text-right">56,090</td>
+                                                <td class="text-right">
+                                                   <button type="button" class="btn btn-info btn-sm btn-rounded waves-effect waves-light d-non" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="mdi-eye-outline mdi font-size-16 align-middle me-2"></i> Details
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td>KBD678Z</td>
+                                                <td>Mary Njoroge</td>
+                                                <td>13/03/2024 09:00 AM</td>
+                                                <td>13/03/2024 11:00 AM</td>
+                                                <td>2.0</td>
+                                                <td>MPESA</td>
+                                                <td>Port Victoria, Busia</td>
+                                                <td class="text-right">25,000</td>
+                                                <td class="text-right">
+                                                   <button type="button" class="btn btn-info btn-sm btn-rounded waves-effect waves-light d-non" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="mdi-eye-outline mdi font-size-16 align-middle me-2"></i> Details
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td>KCF789X</td>
+                                                <td>John Mwangi</td>
+                                                <td>14/04/2024 08:00 AM</td>
+                                                <td>14/04/2024 10:00 AM</td>
+                                                <td>2.0</td>
+                                                <td>Bank Transfer</td>
+                                                <td>Malaba, Busia</td>
+                                                <td class="text-right">30,000</td>
+                                                <td class="text-right">
+                                                   <button type="button" class="btn btn-info btn-sm btn-rounded waves-effect waves-light d-non" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="mdi-eye-outline mdi font-size-16 align-middle me-2"></i> Details
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td>KDE123Y</td>
+                                                <td>Jane Otieno</td>
+                                                <td>15/05/2024 07:00 AM</td>
+                                                <td>15/05/2024 08:30 AM</td>
+                                                <td>1.5</td>
+                                                <td>PayPal</td>
+                                                <td>Funyula, Busia</td>
+                                                <td class="text-right">45,000</td>
+                                                <td class="text-right">
+                                                   <button type="button" class="btn btn-info btn-sm btn-rounded waves-effect waves-light d-non" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="mdi-eye-outline mdi font-size-16 align-middle me-2"></i> Details
+                                                    </button>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td>KFG456Z</td>
+                                                <td>Peter Kimani</td>
+                                                <td>16/06/2024 06:00 AM</td>
+                                                <td>16/06/2024 07:30 AM</td>
+                                                <td>1.5</td>
+                                                <td>MPESA</td>
+                                                <td>Busia Town, Busia</td>
+                                                <td class="text-right">50,000</td>
+                                                <td class="text-right">
+                                                    <button type="button" class="btn btn-info btn-sm btn-rounded waves-effect waves-light d-non" data-bs-toggle="modal" data-bs-target=".transaction-detailModal">
+                                                       <i class="mdi-eye-outline mdi font-size-16 align-middle me-2"></i> Details
+                                                    </button>
+                                                   
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                        
+                                        
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end col -->
+                    </div>
+
+                    <!-- end row -->
+                </div>
+                <!-- container-fluid -->
+            </div>
+            <!-- End Page-content -->
+
+            <!-- Transaction Modal -->
+            <div class="modal fade transaction-detailModal" tabindex="-1" role="dialog" aria-labelledby="transaction-detailModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="transaction-detailModalLabel">Hire Details</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+
+                            <div class="table-responsive mt-4">
+                                <table class="table align-middle table-nowrap">
+                                    <tbody>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Equipment Reg No.</p>
+                                            </td>
+                                            <td>
+                                                KAE457Y
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Equipment Reg No.</p>
+                                            </td>
+                                            <td>
+                                                Tractor, John Deere
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="width: 30%">
+                                                <p class="mb-0">Date From</p>
+                                            </td>
+                                            <td>
+                                                10 Oct 2024 10:50 AM
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Date to</p>
+                                            </td>
+                                            <td>
+                                                11 Oct 2024 12:30 PM 
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                               Payment Date
+                                            </td>
+                                            <td>
+                                                22 Apr 2022 06:54PM
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Hired To</p>
+                                            </td>
+                                            <td>
+                                                Alex Wanjala
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Physical Address</p>
+                                            </td>
+                                            <td>
+                                                Busia Town
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Phone Number</p>
+                                            </td>
+                                            <td>
+                                                0704549859
+                                            </td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Payment Mode </p>
+                                            </td>
+                                            <td>
+                                                MPESA (Ref No. JFYUUYGJHFY)
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Payment Date</p>
+                                            </td>
+                                            <td>
+                                                12 Jan 2024 11:45 AM
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>
+                                                <p class="mb-0">Amount Paid</p>
+                                            </td>
+                                            <td>
+                                                KES 45,000
+                                            </td>
+                                        </tr>
+
+
+                                       
+                                        <TR>
+                                            <td col-span="2">
+                                                <p class="mb-2">Attended By<span class="text-primary"> Alex Sebeye</span></p>
+                                                <p class="mb-4">Toll taker's No. <span class="text-primary">0704549859</span></p>
+                                            </td>
+                                        </TR>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="PrintDocs/Equipment Rental Agreement and Receipt/permit.html" target="new" type="button" class="btn btn-primary text-uppercase" >Print</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end modal -->
+            <!-- filter right of canvus -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="dt__filter" aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasRightLabel">Filter Member Register</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="col-12 mb-4">
+                        <div class="alert alert-info alert-border" role="alert">
+                            Use this section to filter the table
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Last collection date Range</label>
+
+                            <div class="input-daterange input-group" id="datepicker6" data-date-format="dd M, yyyy" data-date-autoclose="true" data-provide="datepicker" data-date-container='#datepicker6'>
+                                <input type="text" class="form-control date-drop-input" name="start" placeholder="Start Date" readonly />
+                                <input type="text" class="form-control date-drop-input" name="end" placeholder="End Date" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Milk collections amount range</label>
+
+                            <div class="input-daterange input-group">
+                                <input type=" text " class="form-control " name="" placeholder="Min Amount" />
+                                <input type="text " class="form-control " name="" placeholder="Max Amount" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Land Size</label>
+
+                            <div class="input-daterange input-group">
+                                <input type=" text " class="form-control " name="" placeholder="Min Size" />
+                                <input type="text " class="form-control " name="" placeholder="Max size" />
+                            </div>
+                            <span class="text-muted"><small>Specify a range for the field size</small></span>
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <label>Route</label>
+                            <div class="row">
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="allTollTakers" checked>
+                                        <label class="form-check-label text-capitalize" for="allTollTakers">
+                                            All Routes
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker1">
+                                        <label class="form-check-label text-capitalize" for="tollTaker1">
+                                            Nkubu
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker3">
+                                        <label class="form-check-label text-capitalize" for="tollTaker3">
+                                            Mutithi
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker4">
+                                        <label class="form-check-label text-capitalize" for="tollTaker4">
+                                            Mukinduri
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="form-check form-check-primary mb-3">
+                                        <input class="form-check-input" type="checkbox" id="tollTaker5">
+                                        <label class="form-check-label text-capitalize" for="tollTaker5">
+                                            Kathangeri
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <div class="mb-4">
+                            <button type="button" class="btn btn-primary waves-effect waves-light w-100">
+                                <i class="mdi mdi-filter-variant font-size-16 align-middle me-2"></i> Filter Table
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+              
+
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <script>
+                                document.write(new Date().getFullYear())
+                            </script> © Early Bird
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="text-sm-end d-sm-block">
+                                Busia County
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+
+
+    <!-- Right bar overlay-->
+    <div class="rightbar-overlay"></div>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/libs/jquery/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/libs/metismenu/metisMenu.min.js"></script>
+    <script src="assets/libs/simplebar/simplebar.min.js"></script>
+    <script src="assets/libs/node-waves/waves.min.js"></script>
+
+
+    <!-- Required datatable js -->
+    <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+
+    <!-- advanced forms plugins -->
+
+    <script src="assets/libs/select2/js/select2.min.js "></script>
+    <script src="assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js "></script>
+    <script src="assets/libs/spectrum-colorpicker2/spectrum.min.js "></script>
+    <script src="assets/libs/bootstrap-timepicker/js/bootstrap-timepicker.min.js "></script>
+    <script src="assets/libs/bootstrap-touchspin/jquery.bootstrap-touchspin.min.js "></script>
+    <script src="assets/libs/bootstrap-maxlength/bootstrap-maxlength.min.js "></script>
+    <script src="assets/libs/%40chenfengyuan/datepicker/datepicker.min.js "></script>
+    <!-- form mask -->
+    <script src="assets/libs/inputmask/min/jquery.inputmask.bundle.min.js "></script>
+
+    <!-- form advanced init -->
+    <script src="assets/js/pages/form-advanced.init.js "></script>
+    <!-- form masking -->
+    <script src="assets/js/pages/form-mask.init.js "></script>
+    <!-- numerals number formater -->
+    <script src="assets/libs/numeral/numeral.js "></script>
+
+    <!-- Responsive examples -->
+    <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+    <!-- Bootstrap select -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.14/dist/js/bootstrap-select.min.js"></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/datatables.init.js"></script>
+
+    <!-- App js -->
+    <script src="assets/js/app.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+
+<!-- index.html   13:55:49 GMT -->
+
+</html>
+
+
+<!-- index.html   13:55:49 GMT -->
+
+</html>
