@@ -400,7 +400,7 @@ function initMap() {
     for (let i = 0; i < Math.min(250, farmersData.length); i++) {
         const farmer = farmersData[i];
         console.log(`Farmer ${i + 1}: GpsLatitude: ${farmer.GpsLatitude}, GpsLongitude: ${farmer.GpsLongitude}`);
-
+        $('.farmeers-name').text(farmer.FarmerName)
         addMarker({
             coords: { lat: farmer.GpsLatitude, lng: farmer.GpsLongitude},
             iconImage: taxi_transit,
@@ -450,6 +450,18 @@ function initMap() {
                 <div class="alert alert-info border border-info align-items-center" role="alert">
                    <i class="fas fa-fish  fs-3 me-2"></i> <span>Fish Farming: ${farmer.FishFarming}</span>
                 </div>
+            </div>
+
+            <div class=""specific-data>
+                subcounty:${farmer.Subcounty}
+                farmer:${farmer.FarmerName}
+                ward:${farmer.Ward}
+                shopping:${farmer.ShoppingCenter}
+                crop:${farmer.CropProduction}
+                fish:${farmer.FishFarming}
+                stock:${farmer.LivestockProduction}
+                house:${farmer.HouseholdSize}
+
             </div>
     
             <div class="card-body">
