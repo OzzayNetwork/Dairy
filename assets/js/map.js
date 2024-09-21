@@ -400,7 +400,7 @@ function initMap() {
     for (let i = 0; i < Math.min(250, farmersData.length); i++) {
         const farmer = farmersData[i];
         console.log(`Farmer ${i + 1}: GpsLatitude: ${farmer.GpsLatitude}, GpsLongitude: ${farmer.GpsLongitude}`);
-        $('.farmeers-name').text(farmer.FarmerName)
+       
         addMarker({
             coords: { lat: farmer.GpsLatitude, lng: farmer.GpsLongitude},
             iconImage: taxi_transit,
@@ -452,16 +452,19 @@ function initMap() {
                 </div>
             </div>
 
-            <div class=""specific-data>
-                subcounty:${farmer.Subcounty}
-                farmer:${farmer.FarmerName}
-                ward:${farmer.Ward}
-                shopping:${farmer.ShoppingCenter}
-                crop:${farmer.CropProduction}
-                fish:${farmer.FishFarming}
-                stock:${farmer.LivestockProduction}
-                house:${farmer.HouseholdSize}
-
+            <div class="specific-data d-none">
+                <div class="subcounty">${farmer.Subcounty}</div>
+                <div class="FarmerName">${farmer.FarmerName}</div>
+                <div class="Ward2">Ward ${farmer.Ward}</div>
+                <div class="ShoppingCenter">${farmer.ShoppingCenter}</div>
+                <div class="CropProduction">${farmer.CropProduction}</div>
+                <div class="FishFarming">${farmer.FishFarming}</div>
+                <div class="LivestockProduction">${farmer.LivestockProduction}</div>
+                <div class="HouseholdSize">${farmer.HouseholdSize}</div>
+                <div class="Gender">${farmer.Gender}</div>
+               <div class="year">${farmer.YearOfBirth}</div>
+                <div class="phone">${farmer.FarmerMobileNumber}</div>
+               
             </div>
     
             <div class="card-body">
@@ -607,8 +610,74 @@ function initMap() {
 
                 }
 
+                // farmers data
+
+                var farmSub
+                var farmersName
+                var farmersWard
+                var farmersCenter
+                var farmersCrop
+                var farmersLivestock
+                var farmersFish
+                var farmersHouse
+                var farmersGender
+                var farmersYear
+
+
                 var theContent = infowindow.content.substr(18);
                 var theContent = theContent.substring(0, theContent.indexOf('<'));
+                var farmData=infowindow.content
+                console.log(farmData)
+
+                // Create a temporary DOM element to hold the farmData content
+                var tempElement = document.createElement('div');
+                tempElement.innerHTML = farmData;
+
+                // Use querySelector to find the element with the class 'specific-data'
+                var specificDataElement = tempElement.querySelector('.specific-data');
+
+                // If the element is found, get its text content
+                if (specificDataElement) {
+                    var specificDataContent = specificDataElement.textContent.trim();
+                    console.log(specificDataContent); // This will output the specific data content
+                  //  alert(specificDataElement.querySelector(".FarmerName").text())
+                  console.log(tempElement.querySelector(".ward2"))
+                 // alert()
+                 //$('.specific-data').children
+                  farmersName=$('.specific-data').children(".FarmerName").text()
+                  farmSub=$('.specific-data').children(".subcounty").text()
+                  farmersWard=$('.specific-data').children(".ward2").text()
+                  farmersCenter=$('.specific-data').children(".ShoppingCenter").text()
+                  farmersCrop=$('.specific-data').children(".CropProduction").text()
+                  farmersFish=$('.specific-data').children(".FishFarming").text()
+                  farmersLivestock=$('.specific-data').children(".LivestockProduction").text()
+                  farmersHouse=$('.specific-data').children(".HouseholdSize").text()
+                  farmersGender=$('.specific-data').children(".Gender").text()
+                  farmersYear=$('.specific-data').children(".year").text()
+                  farmersPhone=$('.specific-data').children(".phone").text()
+                 // alert($('.specific-data').children(".ward2").text())
+                 // farmersName=$(".FarmerName").text()
+                 console.log($('.specific-data').children(".ward2").text())
+
+                 //updating data on click
+                 //$('.offcanvas').children('.farmeers-name').text(farmersName)
+                $('.farmeers-name').text(farmersName)
+                $('.farmeers-sub').text(farmSub)
+                $('.farmeers-ward').text(farmersWard)
+                $('.farmeers-Center').text(farmersCenter)
+                $('.farmeers-Crop').text(farmersCrop)
+                $('.farmeers-Fish').text(farmersFish)
+                $('.farmeers-Livestock').text(farmersLivestock)
+                $('.farmeers-House').text(farmersHouse)
+                $('.farmeers-Gender').text(farmersGender)
+                $('.farmeers-Year').text(farmersYear)
+                $('.farmeers-Phone').text(farmersPhone)
+                // alert(farmersName)                  
+                } else {
+                    console.log('specific-data class not found.');
+                }
+
+               /// alert(farmData)
 
                 //the group of markers eg car,incident,collection points etc
                 var theGroup = theContent.substring(0, theContent.indexOf('|'));
@@ -965,11 +1034,13 @@ function initMap() {
                 toggleBounce(marker);
 
                 //   adding marker click event
+                let farmerData=""
 
                 google.maps.event.addListener(marker, "click", function(e) {
 
                     var thePlace = place.name;
                     var newCoords = e.latLng;
+                    
 
                     newCoords = newCoords.toString();
 
