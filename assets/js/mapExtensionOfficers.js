@@ -192,8 +192,8 @@ function initMap() {
         anchor: new google.maps.Point(0, 0) // anchor
     }
 
-    //working tractor
-    var working_tractor = {
+     //working tractor
+     var working_tractor = {
         url: "assets/images/map-assets/tractor-green.svg", // url
         scaledSize: new google.maps.Size(75, 75), // scaled size
         origin: new google.maps.Point(0, 0), // origin
@@ -215,7 +215,7 @@ function initMap() {
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     } 
-    
+
 
 
 
@@ -332,83 +332,83 @@ function initMap() {
 
 
     //taxi on transit
-    // addMarker({
-    //     coords: { lat: 0.4867, lng: 34.1146 },
-    //     iconImage: working_tractor,
-    //     content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
-    //     <div class="card mb-0">
-    //     <div class="card-body p-0 mb-2">
-    //            <div class="d-flex">
+    addMarker({
+        coords: { lat: 0.4867, lng: 34.1146 },
+        iconImage: taxi_transit,
+        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        <div class="card mb-0">
+        <div class="card-body p-0 mb-2">
+               <div class="d-flex">
              
-    //            <div class="flex-shrink-0 align-self-center me-3 d-none">
-    //                <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-    //            </div>
+               <div class="flex-shrink-0 align-self-center me-3 d-none">
+                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
+               </div>
                
-    //            <div class="flex-grow-1 overflow-hidden pe-5">
-    //                <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-    //                Kelvin Kinoti
-    //                 <div class="rating-star">
-    //                         <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-    //                     </div>
-    //                </h5>
-    //                <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
-    //            </div>
+               <div class="flex-grow-1 overflow-hidden pe-5">
+                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                   Kelvin Kinoti
+                    <div class="rating-star">
+                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
+                        </div>
+                   </h5>
+                   <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
+               </div>
 
-    //            <div class="font-size-11 text-right">
-    //                 <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-    //                 <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
-    //            </div>
-    //            </div>
-    //     </div>
+               <div class="font-size-11 text-right">
+                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
+                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
+               </div>
+               </div>
+        </div>
 
-    //     <div class="card-body bg-light p-1>                
-    //         <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-    //     </div>
+        <div class="card-body bg-light p-1>                
+            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
+        </div>
 
-    //     <div class="card-body">
-    //         <ul class="verti-timeline list-unstyled d-none">        
-    //             <li class="event-list">
-    //                 <div class="event-timeline-dot">
-    //                     <i class="mdi mdi-square font-size-18 text-black"></i>
-    //                 </div>
-    //                 <div class="d-flex">
+        <div class="card-body">
+            <ul class="verti-timeline list-unstyled d-none">        
+                <li class="event-list">
+                    <div class="event-timeline-dot">
+                        <i class="mdi mdi-square font-size-18 text-black"></i>
+                    </div>
+                    <div class="d-flex">
                         
-    //                     <div class="flex-grow-1">
-    //                     <span class="text-muted">
-    //                      Base Location
-    //                     </span>
-    //                         <div>
-    //                         90 Degrees by TSAVO, Nairobi, Kenya
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //             </li>
-    //             <li class="event-list">
-    //                 <div class="event-timeline-dot">
-    //                     <i class="mdi mdi-circle font-size-18 text-primary"></i>
-    //                 </div>
-    //                 <div class="d-flex">
+                        <div class="flex-grow-1">
+                        <span class="text-muted">
+                         Base Location
+                        </span>
+                            <div>
+                            90 Degrees by TSAVO, Nairobi, Kenya
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="event-list">
+                    <div class="event-timeline-dot">
+                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
+                    </div>
+                    <div class="d-flex">
                        
-    //                     <div class="flex-grow-1">
-    //                     <span class="text-muted">
-    //                      Destination
-    //                     </span>
-    //                         <div>
-    //                         Tulip House, Mombasa Road, Nairobi, Kenya
-    //                         </div>
-    //                     </div>
-    //                 </div>
-    //             </li>
-    //         </ul>
-    //     </div>
-    // </div>
+                        <div class="flex-grow-1">
+                        <span class="text-muted">
+                         Destination
+                        </span>
+                            <div>
+                            Tulip House, Mombasa Road, Nairobi, Kenya
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
        
-    //     `
-    // });
+        `
+    });
 
     //fetching data starts here
     // Use fetch to get the JSON data
-    fetch('assets/js/data/tractors.json')
+    fetch('assets/js/data/extensionOfficers.json')
     .then(response => {
     if (!response.ok) {
         throw new Error('Network response was not ok ' + response.statusText);
@@ -421,35 +421,31 @@ function initMap() {
     console.log('Number of farmers:', farmersData.length); // Log the number of items
 
     // Loop through the first five farmers
-    for (let i = 0; i < Math.min(250, farmersData.length); i++) {
+    for (let i = 0; i < Math.min(20, farmersData.length); i++) {
         const farmer = farmersData[i];
         console.log(`Farmer ${i + 1}: GpsLatitude: ${farmer.GpsLatitude}, GpsLongitude: ${farmer.GpsLongitude}`);
-
-        console.log(farmer.CurrentStatus)
 
         var whatIcon=dormant
         var textColor="text-warning"
 
         if(farmer.CurrentStatus=="Dormant"){
-            whatIcon=dormant
+            whatIcon=inactiveAgent
             textColor="text-warning"
         }
 
         if(farmer.CurrentStatus==="Under Service"){
-            whatIcon=UnderService
+            whatIcon=inactiveAgent
             textColor="text-danger"
 
             //alert("underservice found")
         }
 
         if(farmer.CurrentStatus=="Working"){
-            whatIcon=working_tractor
+            whatIcon=activeAgent
             textColor="text-success"
         }
        
         addMarker({
-
-           
             coords: { lat: farmer.GpsLatitude, lng: farmer.GpsLongitude},
             iconImage: whatIcon,
             content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
@@ -463,17 +459,17 @@ function initMap() {
                    
                    <div class="flex-grow-1 overflow-hidden pe-5">
                        <h5 class="text-truncate fs-5 mb-1 text-capitalize">
-                       Model: ${farmer.TypeModel}
+                       ${farmer.FarmerName}
                         <div class="rating-star">
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase fs-7">Operator: ${farmer.OperatorFirstName} ${farmer.OperatorLastName}</p>
+                       <p class="text-truncate mb-0 text-uppercase fs-7">Household Size: ${farmer.HouseholdSize}</p>
                    </div>
     
                    <div class="font-size-11 text-right">
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> ${farmer.MaritalStatus}</p>
                         <p class="text-muted mb-2"><i class="mdi mdi-circle ${textColor} align-middle me-1"></i> ${farmer.CurrentStatus}</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last Service Date:  ${farmer.lastServiceDate} </p>
                    </div>
                    </div>
             </div>
@@ -484,24 +480,35 @@ function initMap() {
 
             <div class="card-body px-0 mb-0 pb-0">
                 <div class="alert alert-success border border-success align-items-center" role="alert">
-                   <i class="mdi-phone mdi  fs-3 me-2"></i> <span>Operator's Phone No. ${farmer.OperatorsPhone}</span>
+                   <i class="mdi-leaf mdi  fs-3 me-2"></i> <span>Crop Production: ${farmer.CropProduction}</span>
                 </div>
             </div>
 
-           
+            <div class="card-body px-0 mb-0 pb-0">
+                <div class="alert alert-danger border border-danger align-items-center" role="alert">
+                   <i class="fas fa-kiwi-bird fs-3 me-2"></i> <span>Livestock Production: ${farmer.LivestockProduction}</span>
+                </div>
+            </div>
+
+             <div class="card-body px-0 mb-0 pb-0">
+                <div class="alert alert-info border border-info align-items-center" role="alert">
+                   <i class="fas fa-fish  fs-3 me-2"></i> <span>Fish Farming: ${farmer.FishFarming}</span>
+                </div>
+            </div>
+
             <div class="specific-data d-none">
-                <div class="subcounty">${farmer.SubCounty}</div>
-                <div class="FarmerName">${farmer.TypeModel}</div>
+                <div class="subcounty">${farmer.Subcounty}</div>
+                <div class="FarmerName">${farmer.FarmerName}</div>
                 <div class="Ward2">Ward ${farmer.Ward}</div>
-                <div class="ShoppingCenter">${farmer.CurrentStatus}</div>
+                <div class="ShoppingCenter">${farmer.ShoppingCenter}</div>
                 <div class="CropProduction">${farmer.CropProduction}</div>
                 <div class="FishFarming">${farmer.FishFarming}</div>
                 <div class="LivestockProduction">${farmer.LivestockProduction}</div>
                 <div class="HouseholdSize">${farmer.HouseholdSize}</div>
                 <div class="Gender">${farmer.Gender}</div>
                <div class="year">${farmer.YearOfBirth}</div>
-                <div class="phone">${farmer.OperatorsPhone}</div>
-               <div class="fullNames">${farmer.OperatorFirstName} ${farmer.OperatorLastName}</div>
+                <div class="phone">${farmer.FarmerMobileNumber}</div>
+               
             </div>
     
             <div class="card-body">
@@ -659,7 +666,6 @@ function initMap() {
                 var farmersHouse
                 var farmersGender
                 var farmersYear
-                var oppName
 
 
                 var theContent = infowindow.content.substr(18);
@@ -693,8 +699,6 @@ function initMap() {
                   farmersGender=$('.specific-data').children(".Gender").text()
                   farmersYear=$('.specific-data').children(".year").text()
                   farmersPhone=$('.specific-data').children(".phone").text()
-
-                  oppName=$('.specific-data').children(".fullNames").text()
                  // alert($('.specific-data').children(".ward2").text())
                  // farmersName=$(".FarmerName").text()
                  console.log($('.specific-data').children(".ward2").text())
@@ -712,8 +716,6 @@ function initMap() {
                 $('.farmeers-Gender').text(farmersGender)
                 $('.farmeers-Year').text(farmersYear)
                 $('.farmeers-Phone').text(farmersPhone)
-
-                $('.full-names').text(oppName)
                 // alert(farmersName)                  
                 } else {
                     console.log('specific-data class not found.');
