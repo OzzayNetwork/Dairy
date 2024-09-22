@@ -12,9 +12,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.373696208,
-      "GpsLongitude": 34.30631638,
-      "AccuracyLevel": 3.059999943,
+      "GpsLatitude": 0.1778467,
+      "GpsLongitude": 34.06750488,
+      "AccuracyLevel": 4.320000172,
       "CurrentStatus": "Working"
     },
     {
@@ -30,9 +30,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.468044013,
-      "GpsLongitude": 34.11443329,
-      "AccuracyLevel": 3.74000001,
+      "GpsLatitude": 0.176265001,
+    "GpsLongitude": 34.01409912,
+    "AccuracyLevel": 3.420000076,
       "CurrentStatus": "Dormant"
     },
     {
@@ -48,9 +48,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.1778467,
-      "GpsLongitude": 34.06750488,
-      "AccuracyLevel": 4.320000172,
+      "GpsLatitude": 0.338335007,
+      "GpsLongitude": 34.22901535,
+      "AccuracyLevel": 4.659999847,
       "CurrentStatus": "Under Service"
     },
     {
@@ -66,7 +66,10 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "CurrentStatus": "Dormant"
+      "CurrentStatus": "Dormant",
+      "GpsLatitude": 0.338335007,
+    "GpsLongitude": 34.22901535,
+    "AccuracyLevel": 4.659999847
     },
     {
       "TypeModel": "Mahindra 6075 4WD",
@@ -81,9 +84,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.709079027,
-      "GpsLongitude": 34.39999771,
-      "AccuracyLevel": 2.900000095,
+      "GpsLatitude": 0.121935003,
+    "GpsLongitude": 33.99762344,
+    "AccuracyLevel": 0,
       "CurrentStatus": "Working"
     },
     {
@@ -99,9 +102,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.603280187,
-      "GpsLongitude": 34.36991882,
-      "AccuracyLevel": 1.759999991,
+      "GpsLatitude": 0.119251899,
+      "GpsLongitude": 33.99073792,
+      "AccuracyLevel": 2.96600008,
       "CurrentStatus": "Under Service"
     },
     {
@@ -117,9 +120,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.065649003,
-      "GpsLongitude": 34.04936218,
-      "AccuracyLevel": 1.666000009,
+      "GpsLatitude": 0.477161407,
+    "GpsLongitude": 34.18306732,
+    "AccuracyLevel": 4.539999962,
       "CurrentStatus": "Working"
     },
     {
@@ -135,9 +138,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.119251899,
-      "GpsLongitude": 33.99073792,
-      "AccuracyLevel": 2.96600008,
+      "GpsLatitude": 0.327389985,
+    "GpsLongitude": 34.14689255,
+    "AccuracyLevel": 4.21999979,
       "CurrentStatus": "Dormant"
     },
     {
@@ -153,9 +156,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.719380915,
-      "GpsLongitude": 34.37903976,
-      "AccuracyLevel": 3.339999914,
+      "GpsLatitude": 0.176265001,
+      "GpsLongitude": 34.01409912,
+      "AccuracyLevel": 3.039999962,
       "CurrentStatus": "Under Service"
     },
     {
@@ -171,9 +174,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.667829514,
-      "GpsLongitude": 34.3902626,
-      "AccuracyLevel": 4.433000088,
+     "GpsLatitude": 0.295996994,
+    "GpsLongitude": 34.09895325,
+    "AccuracyLevel": 4,
       "CurrentStatus": "Working"
     },
     {
@@ -207,9 +210,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.42513594,
-      "GpsLongitude": 34.25931549,
-      "AccuracyLevel": 0,
+      "GpsLatitude": 0.451525211,
+    "GpsLongitude": 34.12308502,
+    "AccuracyLevel": 4.699999809,
       "CurrentStatus": "Under Service"
     },
     {
@@ -225,9 +228,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.477161407,
-      "GpsLongitude": 34.18306732,
-      "AccuracyLevel": 4.539999962,
+      "GpsLatitude": 0.473105997,
+      "GpsLongitude": 34.32313538,
+      "AccuracyLevel": 3.700000048,
       "CurrentStatus": "Working"
     },
     {
@@ -243,9 +246,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.338335007,
-      "GpsLongitude": 34.22901535,
-      "AccuracyLevel": 4.659999847,
+      "GpsLatitude": 0.459346503,
+      "GpsLongitude": 34.2451973,
+      "AccuracyLevel": 4.079999924,
       "CurrentStatus": "Dormant"
     },
     {
@@ -261,9 +264,9 @@
       "OperatorsEmail": "",
       "Status": "",
       "lastServiceDate": "",
-      "GpsLatitude": 0.44199124,
-      "GpsLongitude": 34.34884644,
-      "AccuracyLevel": 4.599999905,
+      "GpsLatitude": 0.36985141,
+      "GpsLongitude": 34.18194199,
+      "AccuracyLevel": 3.259999991,
       "CurrentStatus": "Working"
     },
     {
@@ -279,9 +282,9 @@
         "OperatorsEmail": "",
         "Status": "",
         "lastServiceDate": "",
-        "GpsLatitude": 0.176265001,
-        "GpsLongitude": 34.01409912,
-        "AccuracyLevel": 3.420000076,
+       "GpsLatitude": 0.502594888,
+    "GpsLongitude": 34.20062256,
+    "AccuracyLevel": 2.480000019,
         "CurrentStatus": "Under Service"
       },
       {
@@ -297,9 +300,9 @@
         "OperatorsEmail": "",
         "Status": "",
         "lastServiceDate": "",
-        "GpsLatitude": 0.388549,
-          "GpsLongitude": 34.12483978,
-          "AccuracyLevel": 1.360000014,
+        "GpsLatitude": 0.299773991,
+        "GpsLongitude": 34.22736359,
+        "AccuracyLevel": 2.339999914,
           "CurrentStatus": "Under Service"
       }
   ]
