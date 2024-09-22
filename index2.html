@@ -39,7 +39,7 @@
 
 </head>
 
-<body data-sidebar="dark">
+<body data-sidebar="colored" data-topbar="dark">
 
     <!-- Loader -->
     <div id="preloader">
@@ -58,41 +58,46 @@
 
     <!-- Begin page -->
     <div id="layout-wrapper">
-
-
         <header id="page-topbar">
             <div class="navbar-header">
                 <div class="d-flex">
                     <!-- LOGO -->
-                    <div class="navbar-brand-box">
+                    <div class="navbar-brand-box pl-15px d-none">
                         <a href="index.html" class="logo logo-dark">
                             <span class="logo-sm">
-                                <img src="assets/images/logo.svg" alt="" height="22">
-                            </span>
+                                    <img src="assets/images/logo.svg" alt="" height="22">
+                                </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-dark.png" alt="" height="17">
-                            </span>
+                                    <img src="assets/images/logo-dark.png" alt="" height="17">
+                                </span>
                         </a>
 
-                        <a href="index.html" class="logo logo-light">
-                            <span class="logo-sm">
-                                <img src="assets/images/the-logo.png" alt="" height="50">
-                            </span>
+                        <a href="index.html" class="logo logo-light ">
+                            <span class="logo-sm ">
+                                    <img  class="" src="assets/images/logo-light.svg" alt="" height="40">
+                                </span>
                             <span class="logo-lg">
-                                <img src="assets/images/logo-text-white.png" alt="" height="45">
-                            </span>
+                                    <img src="assets/images/logo-light.png" alt="" height="45">
+                                </span>
                         </a>
                     </div>
 
-                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect"
-                        id="vertical-menu-btn">
-                        <i class="fa fa-fw fa-bars"></i>
-                    </button>
-                    <!-- logo small -->
-                    <div class="phone-logo d-md-none d-sm-flex"> <img src="assets/images/color-log0.svg" alt=""
-                            class="img"></div>
+                    <div class="navbar-brand-box">
+                        <a class="logo logo-dark">
+                            <span class="logo-sm"><img alt="" height="22" src="assets/images/users/avatar-1.png"></span><span
+                                class="logo-lg"></span></a><a class="logo logo-light d-flex"><span class="logo-sm"><img
+                                    alt="" height="50" src="assets/images/users/avatar-1.png"></span><span class="logo-lg"><img
+                                    alt="" height="45" src="assets/images/users/avatar-1.png"></span>
+                            <div class="portal-title">
+                                <h4 class="text-white">Kilimosasa</h4>
+                                <h6 class="text-muted mb-0 text-white opacity-75"> Busia County</h6>
+                            </div>
+                        </a>
+                    </div>
 
-
+                    <button type="button" class="btn btn-sm px-3 font-size-16 header-item waves-effect" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
 
                     <!-- App Search-->
                     <form class="app-search d-none d-lg-block">
@@ -108,47 +113,36 @@
                 <div class="d-flex">
                     <!-- small search -->
                     <div class="dropdown d-inline-block d-lg-none ms-2">
-                        <button type="button" class="btn header-item noti-icon waves-effect"
-                            id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="mdi mdi-magnify"></i>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                            aria-labelledby="page-header-search-dropdown">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-search-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="mdi mdi-magnify"></i>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0" aria-labelledby="page-header-search-dropdown">
 
                             <form class="p-3">
                                 <div class="form-group m-0">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" placeholder="Search ..."
-                                            aria-label="Recipient's username">
+                                        <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
                                         <div class="input-group-append">
-                                            <button class="btn btn-primary" type="submit"><i
-                                                    class="mdi mdi-magnify"></i></button>
+                                            <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
                                         </div>
                                     </div>
                                 </div>
                             </form>
                         </div>
                     </div>
-
                     <div class="dropdown d-none d-lg-inline-block ms-1">
-                        <button type="button" class="btn header-item noti-icon waves-effect"
-                            data-bs-toggle="fullscreen">
-                            <i class="bx bx-fullscreen"></i>
-                        </button>
+                        <button type="button" class="btn header-item noti-icon waves-effect" data-bs-toggle="fullscreen">
+                                <i class="bx bx-fullscreen"></i>
+                            </button>
                     </div>
 
                     <div class="dropdown d-inline-block d-none">
-
                         <!-- notifications, i will come to this later -->
-                        <button type="button" class="btn header-item noti-icon waves-effect"
-                            id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true"
-                            aria-expanded="false">
-                            <i class="bx bx-bell bx-tada"></i>
-                            <span class="badge bg-danger rounded-pill">3</span>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
-                            aria-labelledby="page-header-notifications-dropdown">
+                        <button type="button" class="btn header-item noti-icon waves-effect" id="page-header-notifications-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="bx bx-bell bx-tada"></i>
+                                <span class="badge bg-danger rounded-pill">3</span>
+                            </button>
+                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0 " aria-labelledby="page-header-notifications-dropdown">
                             <div class="p-3">
                                 <div class="row align-items-center">
                                     <div class="col">
@@ -164,31 +158,26 @@
                                     <div class="d-flex">
                                         <div class="avatar-xs me-3">
                                             <span class="avatar-title bg-primary rounded-circle font-size-16">
-                                                <i class="bx bx-cart"></i>
-                                            </span>
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1" key="t-your-order">Your order is placed</h6>
                                             <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-grammer">If several languages coalesce the
-                                                    grammar</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                        key="t-min-ago">3 min ago</span></p>
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
                                             </div>
                                         </div>
                                     </div>
                                 </a>
                                 <a href="javascript: void(0);" class="text-reset notification-item">
                                     <div class="d-flex">
-                                        <img src="assets/images/users/avatar-3.jpg"
-                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">James Lemire</h6>
                                             <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.
-                                                </p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                        key="t-hours-ago">1 hours ago</span></p>
+                                                <p class="mb-1" key="t-simplified">It will seem like simplified English.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -197,16 +186,14 @@
                                     <div class="d-flex">
                                         <div class="avatar-xs me-3">
                                             <span class="avatar-title bg-success rounded-circle font-size-16">
-                                                <i class="bx bx-badge-check"></i>
-                                            </span>
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
                                         </div>
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1" key="t-shipped">Your item is shipped</h6>
                                             <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-grammer">If several languages coalesce the
-                                                    grammar</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                        key="t-min-ago">3 min ago</span></p>
+                                                <p class="mb-1" key="t-grammer">If several languages coalesce the grammar</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-min-ago">3 min ago</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -214,15 +201,12 @@
 
                                 <a href="javascript: void(0);" class="text-reset notification-item">
                                     <div class="d-flex">
-                                        <img src="assets/images/users/avatar-4.jpg"
-                                            class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                        <img src="assets/images/users/avatar-4.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
                                         <div class="flex-grow-1">
                                             <h6 class="mb-1">Salena Layfield</h6>
                                             <div class="font-size-12 text-muted">
-                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of
-                                                    mine occidental.</p>
-                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span
-                                                        key="t-hours-ago">1 hours ago</span></p>
+                                                <p class="mb-1" key="t-occidental">As a skeptical Cambridge friend of mine occidental.</p>
+                                                <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span key="t-hours-ago">1 hours ago</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -230,343 +214,205 @@
                             </div>
                             <div class="p-2 border-top d-grid">
                                 <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
-                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View
-                                        More..</span>
+                                    <i class="mdi mdi-arrow-right-circle me-1"></i> <span key="t-view-more">View More..</span>
                                 </a>
                             </div>
                         </div>
                     </div>
 
-
-
                     <div class="dropdown d-inline-block">
-                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
-                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
-                                alt="Header Avatar">
-                            <span class="d-none d-xl-inline-block ms-1" key="t-henry">Adroa Balinda</span>
-                            <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
-                        </button>
+                        <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.png"
+                                    alt="Header Avatar">
+                                <span class="d-none d-xl-inline-block ms-1" key="t-henry">Andrew Oduory</span>
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <!-- item-->
-                            <a class="dropdown-item" href="myprofile.html"><i
-                                    class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">My
-                                    Profile</span></a>
-                            <a class="dropdown-item" href="my-logs.html"><i
-                                    class="bx bx-time font-size-16 align-middle me-1"></i> <span key="t-profile">My
-                                    Logs</span></a>
-                            <a class="dropdown-item" href="auth-lock-screen.html"><i
-                                    class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span
-                                    key="t-lock-screen">Lock screen</span></a>
+                            <a class="dropdown-item" href="myprofile.html"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">My Profile</span></a>
+                            <a class="dropdown-item" href="my-logs.html"><i class="bx bx-time font-size-16 align-middle me-1"></i> <span key="t-profile">My Logs</span></a>
+                            <a class="dropdown-item" href="auth-lock-screen.html"><i class="bx bx-lock-open font-size-16 align-middle me-1"></i> <span key="t-lock-screen">Lock screen</span></a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item text-danger" href="auth-login.html"><i
-                                    class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span
-                                    key="t-logout">Logout</span></a>
+                            <a class="dropdown-item text-danger" href="auth-login.html"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-
         <!-- ========== Left Sidebar Start ========== -->
         <div class="vertical-menu">
-
             <div data-simplebar class="h-100">
-
                 <!--- Sidemenu -->
                 <div id="sidebar-menu">
                     <!-- Left Menu Start -->
-                    <ul class="metismenu list-unstyled text-capitalize" id="side-menu">
-                        <li class="menu-title" key="t-pages">Best Birdy Billing system. </li>
-
-                        <li class="side-bar-button">
-                            <a href="bill-new.html"
-                                class="waves-effect btn btn-light btn-rounded text-left write-msg-btn">
-                                <i class=""><img src="assets/images/plus-icon.svg" alt=""></i>
-                                <span class="text-capitalize">Create A Bill</span>
-                            </a>
-                        </li>
-
+                    <ul class="metismenu list-unstyled" id="side-menu">
+                        <li class="menu-title d-none" key="t-menu">Office Mate</li>
                         <li>
-                            <a href="index-RTech.html" class="waves-effect">
+                            <a href="index.html" class="waves-effect">
                                 <i class="bx bx-home-circle"></i><span>Dashboard</span>
                             </a>
                         </li>
-
-
-
-                        <li>
-                            <a href="live-monitoring.html" class="waves-effect">
-                                <i class="bx bx-user-voice"></i><span>Live Monitoring</span>
-                            </a>
-                        </li>
-
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-receipt"></i>
-                                <span>Payments & Receipting </span>
+                                <i class="mdi mdi-water-check"></i>
+                                <span>Collections/ Reductions</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="receipts-new.html">Receive Payment</a></li>
-                                <li><a href="receipts.html">View Receipts</a></li>
+                                <li><a href="milk-collections.html">Collections</a></li>
+                                <li><a href="milk-decutions.html">Reductions</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-sail-boat"></i>
-                                <span>Blue Economy</span>
+                                <i class="mdi mdi-tractor-variant"></i>
+                                <span>Tractors</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="blue-quick-stat.html">Quick Stats</a></li>
-                                <li><a href="blue-boat-register.html">Boat Register</a></li>
+                                <li><a href="equipment-add.html">Add Equipment</a></li>
+                                <li><a href="equipment-hire.html">Hire Equipment</a></li>
+                                <li><a href="equipment-register.html">Equipment Register</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-map-clock-outline"></i>
-                                <span>Land & Plots</span>
+                                <i class="mdi mdi-cow"></i>
+                                <span>Service Providers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="artificial-register.html">Service Providers Register</a></li>
+                                <li><a href="artificial-reports.html">Services Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-truck-delivery-outline"></i>
+                                <span>Off-Takers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="offtakers-register.html">Off-Taker Listings</a></li>
+                                <li><a href="offtakers-reports.html">Off-Taker Reports</a></li>
+                            </ul>
+                        </li>
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-badge-account-horizontal-outline"></i>
+                                <span>Extension Officers</span>
+                            </a>
+                            <ul class="sub-menu" aria-expanded="false">
+                                <li><a href="extension-register.html">Officer's Register</a></li>
+                                <li><a href="extension-reports.html">Officer's Reports</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li>
+                            <a href="javascript: void(0);" class="waves-effect has-arrow">
+                                <i class="mdi mdi-sprout"></i>
+                                <span>Farm Inputs</span>
                             </a>
                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="land-quick-stat.html">Quick Stats</a></li>
-                                <li><a href="land-register.html">Land Rates</a></li>
-                                <li><a href="plot-rent-register.html">Plot Rents</a></li>
-                                <li><a href="plot-rent-notices.html">Demand Notices</a></li>
-
-                                <li><a href="plot-pending-transfers.html">Pending Transfers</a></li>
-                                <li><a href="plot-approved-transfers.html">Approved Transfers</a></li>
-                                <li><a href="plot-rejected-transfers.html">Declined Transfers</a></li>
-                                <li><a href="plot-re-submitted-transfers.html">Re-Submitted Transfers</a></li>
-                                <li><a href="plot-waiver.html">Waivers</a></li>
+                                <li><a href="input-stores.html">Stores</a></li>
+                                <li><a href="input-inventory.html">Inputs Inventory</a></li>
+                                <li><a href="input-issuance.html">Input Issuance</a></li>
+                                <li><a href="input-inventory-items.html">Inventory Items</a></li>
+                                <li><a href="input-inventory-items-intake.html">Inventory Intake</a></li>
                             </ul>
                         </li>
 
                         <li>
+                            <a href="messages.html" class="waves-effect">
+                                <i class="bx bx-chat"></i>
+                                <span>Messages</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="input-intake.html" class="waves-effect">
+                                <i class="mdi mdi-sprout"></i>
+                                <span>Input Intake</span>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="map-view.html" class="waves-effect">
+                                <i class="mdi mdi-map-marker"></i>
+                                <span>Map View</span>
+                            </a>
+                        </li>
+
+                        <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-home-circle"></i>
-                                <span>Housing</span>
+                                <i class="mdi mdi-account-group"></i>
+                                <span>Members</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="housing-quick-stat.html">Quick Stats</a></li>
-                                <li><a href="housing-register.html">Rentals Register</a></li>
+                                <li><a href="member-register.html">Members register</a></li>
+                                <li class="d-none"><a href="member-payments-all.html">Member payments</a></li>
+                                <li class="d-none"><a href="toll-takernew.html">Member deductions</a></li>
+                                <li><a href="member-new.html">Add a Member</a></li>
                             </ul>
                         </li>
 
                         <li>
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-car-back"></i>
-                                <span>Parking </span>
+                                <i class="mdi mdi-badge-account-horizontal-outline"></i>
+                                <span>Collectors</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="parking-stats.html">Quick Stats</a></li>
-                                <li><a href="parking-fleet.html">Seasonal Parking</a></li>
-                                <li><a href="parking-street.html">Daily Parking</a></li>
-                                <li><a href="parking-monthly.html">Monthly Parking</a></li>
-                                <li><a href="parking-weekly.html">Weekly Parking</a></li>
-                                <li><a href="parking-clamped.html">Vehicle Clamping</a></li>
-                                <li><a href="parking-register.html">Vehicle Register</a></li>
+                                <li><a href="collector-register.html">Collector's register</a></li>
+                                <li><a href="collector-new.html">Add a Collector</a></li>
                             </ul>
                         </li>
 
-                        <li>
+                        <li class="d-none">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-hospital-box-outline"></i>
-                                <span>Hospital Collections</span>
-                            </a>
-                           <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="hospital-quick-stats.html">Quick Stats</a></li>
-                                <li><a href="hospital-sources.html">Chart of Accounts</a></li>
-                                <li><a href="hospital-sources-collections.html">Revenue sorces  Collections</a></li>
-                                <li><a href="hospital-unpaid-invoices.html">Unpaid Invoices</a></li>
-                                <li><a href="hospital-daily-cllections.html">Daily Collections</a></li>
-                                <li><a href="hospital-facilities.html">Collections by Facilites</a></li>
-                                <li><a href="hospital-receipted-bills.html">Receipted Invoices</a></li>
-                                <li><a href="hospital-register.html">Facilities</a></li>
-                                <li><a href="hospital-map.html">Map View</a></li>                               
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-map-marker-radius"></i>
-                                <span>Businesses Mapping</span>
+                                <i class="mdi mdi-cog"></i>
+                                <span>Setups</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="business-analytics.html">Analytics</a></li>
-                                <li><a href="business-mapping.html">Live Map</a></li>
-                                <li><a href="business-data.html">Business Register</a></li>
-                                <li><a href="business-data-archive.html">Archived Records</a></li>
-                                <li><a href="business-data-colectors.html">Data Collectors</a></li>
+                                <li><a href="toll-takerlist.html">System users</a></li>
+                                <li><a href="toll-takernew.html">Routes</a></li>
                             </ul>
                         </li>
+                        <hr class="bg-white text-white m-0 p-0">
 
-
-                        <li>
-                            <a href="zone-location.html" class="waves-effect">
-                                <i class="mdi mdi-map"></i><span>Collection Zones</span>
-                            </a>
-                        </li>
-
+                        <li class="menu-title" key="t-apps">Reports</li>
                         
                         <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow text-capitalize">
-                                <i class="dripicons-flag"></i>
-                                <span>Action Center</span>
-                                <span class="badge rounded-pill bg-danger float-end">10</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="flagged-transaction-correction.html">Transactions Correction</a></li>
-
-                                <li><a href="flagged-transaction-correction-report.html">Corrected Transactions report</a></li>
-                                <li><a href="flagged-payments.html">unmatched transactions</a></li>
-                                <li><a href="flagged-awaiting.html">Awaiting Receipting</a></li>
-                                <li><a href="flagged-mannualy.html">Mannualy Receipted Transactions </a></li>
-                                <li><a href="flagged-bank-statements.html">Bank Statements</a></li>
-                            </ul>
-                        </li>
-
-
-
-
-
-                        <li>
-                            <a href="finance-act.html" class="waves-effect">
-                                <i class="mdi mdi-currency-usd"></i><span>Finance act</span>
+                            <a href="equipment-tracking.html" class="waves-effect">
+                                <i class="bx bxs-report"></i>
+                                <span>Equipment Tracking</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="finance-chart.html" class="waves-effect">
-                                <i class="mdi mdi-table"></i><span>Chart of Account</span>
-                            </a>
-                        </li>
-
-                        <li class="menu-title d-none" key="t-pages">Market Stalls & Rentals</li>
-                        
-                        <li class="menu-title d-none" key="t-pages">
-                            <hr />
-                        </li>
-
-                        <li class="">
                             <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-receipt"></i>
-                                <span>Bills</span>
+                                <i class="mdi mdi-water-outline"></i>
+                                <span>Milk Collection</span>
                             </a>
                             <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="bills-raised.html">Bills raised</a></li>
-                                <li><a href="bills-receipted.html">Receipted Bills</a></li>
-                                <li><a href="bills-unpaid.html">Unpaid Bills</a></li>
-
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="recon.html" class="waves-effect">
-                                <i class="bx bx-calendar-check"></i><span>Auto Reconciliation</span>
-                            </a>
-                        </li> 
-                        <li class="">
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi-certificate mdi"></i>
-                                <span>Certificates & Licenses</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="cert-biz-stats.html">Business Permits</a></li>
-                                <li><a href="cert-fire-stats.html">Fire Certificate</a></li>
-                                <li><a href="cert-alcohol-stats.html">Alcoholic Drinks Licence</a></li>
-                                <li><a href="cert-public-health-stats.html">Public Health Analytics</a></li>
-                                <li><a href="cert-med.html">Medical Examination</a></li>
-                                <li><a href="cert-hygine.html">Food Hygiene Certificate</a></li>
-                                <li><a href="cert-clearance.html">Health Clearance</a></li>
-                                <li><a href="cert-private.html">Private Health Facilities</a></li>
-                                <li><a href="cert-occupational.html">Occupational Certificate</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="">
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="dripicons-browser-upload"></i>
-                                <span>Statements Uploading</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="statement-upload-mpesa.html">Upload MPESA Statement</a></li>
-                                <li><a href="statement-upload-bank.html">Upload Bank Statement</a></li>
-                                <li><a href="statement-assesment.html">Statement Assessment</a></li>
-
+                                <li><a href="collections-daily-report.html">Daily report</a></li>
+                                <li><a href="collections-monthly-report.html">Monthly report</a></li>
                             </ul>
                         </li>
 
 
                         <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-file"></i>
-                                <span>Reports</span>
+                            <a href="member-payments-all.html" class="waves-effect">
+                                <i class="mdi mdi-account-cash"></i>
+                                <span>Member Payments</span>
                             </a>
-                            <ul class="sub-menu text-capitalize" aria-expanded="false">
-                                <li><a href="reports-subconty.html">Collections By Sub County</a></li>
-                                <li class=""><a href="reports-streams.html">Revenue Streams Collections</a></li>
-                                <li class=""><a href="reports-wards.html">Wards Collections</a></li>
-                                <li class=""><a href="reports-tax-officials.html">County Tax Officials</a></li>
-                                <li class=""><a href="reports-tax-payer.html">Tax Payer Transactions</a></li>
-                                <li class=""><a href="reports-zones.html">Collection Zones</a></li>
-                                <li class="text-capitalize"><a href="reports-agents.html">Agents Daily Reports</a></li>
-                                <li class="text-capitalize"><a href="reports-departments.html">Departmental Reports</a></li>
-                                <li class="text-capitalize"><a href="reports-sources.html">Collection Sources</a></li>
-                                <li class="text-capitalize"><a href="reports-transactions.html">Receipted Transactions</a></li>
-                                <li class="text-capitalize"><a href="reports-unpaid-invoices.html">Unpaid Invoices</a></li>
-                                <li class="text-capitalize"><a href="reports-invoice-comparison.html">Invoice Period Analysis</a></li>
-                            </ul>
                         </li>
-
                         <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-slider"></i>
-                                <span>Settings & Setups</span>
+                            <a href="input-report.html" class="waves-effect">
+                                <i class="mdi mdi-account-arrow-right"></i>
+                                <span>Farm Input Issuance</span>
                             </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="finance-act.html">Finance atc</a></li>
-                                <li><a href="set-rentals.html">Rentals</a></li>
-                                <li><a href="set-targets.html">Revenue Targets</a></li>
-                                <li><a href="set-assets.html">County Assets</a></li>
-                                <li><a href="set-accounts.html">User Accounts</a></li>
-                                <li><a href="revenue-streams.html">Revenue Streams</a></li>
-                            </ul>
                         </li>
-
-
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="mdi mdi-monitor-multiple"></i>
-                                <span>System Users</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="user-userlist.html">Active Users</a></li>
-                                <li><a href="user-userlist-deactivated.html">Deactivated Users</a></li>
-                                <li><a href="user-userlist-deactivated-logs.html">Deactivated Accounts Logs</a></li>
-                                <li><a href="user-registration.html">Add a system user</a></li>
-                                <li><a href="user-system-logs.html">System Logs</a></li>
-                            </ul>
-                        </li>
-
-                        <li>
-                            <a href="javascript: void(0);" class="waves-effect has-arrow">
-                                <i class="bx bx-user-circle"></i>
-                                <span>Authentication Pages</span>
-                            </a>
-                            <ul class="sub-menu" aria-expanded="false">
-                                <li><a href="auth-login.html">Login Page</a></li>
-                                <li><a href="auth-login-login2.html">Login Page 2</a></li>
-                                <li><a href="auth-recoverpw.html">Forgot Password</a></li>
-                                <li><a href="auth-email-verification.html">Email Verification</a></li>
-                                <li><a href="auth-two-step-verification.html">OTP</a></li>
-                                <li><a href="auth-two-step-verification-OTP.html">OTP 2</a></li>
-                                <li><a href="auth-password-confirmation.html">New Password</a></li>
-                                
-                            </ul>
-                        </li>
-
-
 
                     </ul>
                 </div>
@@ -601,239 +447,182 @@
                         </div>
                     </div>
                     <!-- end page title -->
+
+                      <!-- end page title -->
+                      <div class="row">
+                        <div class="col-lg-12 px-sm-30px">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="d-flex">
+                                                <div class="flex-shrink-0 me-3">
+                                                    <img src="assets/images/users/avatar-1.png" alt="" class="avatar-md rounded-circle img-thumbnail">
+                                                </div>
+                                                <div class="flex-grow-1 align-self-center">
+                                                    <div class="text-muted">
+                                                        <p class="mb-2">Welcome Back</p>
+                                                        <h5 class="mb-1">Busia County</h5>
+                                                        <p class="mb-0">Summary overview with filters for more personalized experience.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-8 align-self-center">
+                                            <div class="text-lg-left mt-4 mt-lg-0">
+                                                <div class="row">
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">All Farmers</p>
+                                                            <h5 class="mb-0"> 142,226</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Tractors Under Service</p>
+                                                            <h5 class="mb-0">6 of 17</h5>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Female Farmers</p>
+                                                            <h5 class="mb-0">81651</h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-2">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Male Farmers</p>
+                                                            <h5 class="mb-0">60306</h5>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div>
+                                                            <p class="text-muted text-truncate mb-2">Farmers Below 35 yrs</p>
+                                                            <h5 class="mb-0">36,997(26.40%)</h5>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- end row -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- quick stats -->
+                    <div class="row">
+                        <div class="col-xl-4 px-sm-30px">
+                            <div class="card bg-primary bg-soft member-wedges-card">
+                                <div>
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap align-items-start">
+                                            <h5 class="card-title mb-3 me-2">Ploughed Land Overview</h5>
+                                        </div>
+                    
+                                        <div class="d-flex flex-wrap">
+                                            <div>
+                                                <p class="text-muted mb-1">Total Ploughed Land</p>
+                                                <h4 class="mb-3 fw-bold">456 Acres</h4>
+                                                <p class="text-success mb-0">
+                                                    <span>By 16 Tractors <i class="mdi mdi-arrow-top-right ms-1"></i></span>
+                                                </p>
+                                                
+                                            </div>
+                                            <div class="ms-auto align-self-end">
+                                                <i class="mdi mdi-tractor display-4 text-light"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="col-xl-8 px-sm-30px">
+                            <div class="row">
+                                <!-- Daily Ploughed Land -->
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-success bg-soft text-success font-size-18">
+                                                        <i class="mdi mdi-calendar-today h2 mb-0 pb-0 text-success"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <span>Today (Ploughed Land)</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>20 Acres<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <p class="text-muted mb-0">Farmers Benefited: 50 Farmers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Monthly Ploughed Land -->
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-danger bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-calendar-month h2 text-danger p-0 m-0"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <span>This Month (Ploughed Land)</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>600 Acres<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <p class="text-muted mb-0">Farmers Benefited: 300 Farmers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    
+                                <!-- Annually Ploughed Land -->
+                                <div class="col-sm-4">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <div class="d-flex align-items-center mb-3">
+                                                <div class="avatar-xs me-3">
+                                                    <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
+                                                        <i class="mdi mdi-calendar-year h2 mb-0 pb-0 text-info"></i>
+                                                    </span>
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <span>This Year (Ploughed Land)</span>
+                                                </div>
+                                            </div>
+                                            <div class="text-muted mt-4">
+                                                <h4>7,200 Acres<i class="mdi mdi-chevron-up ms-1 text-success"></i></h4>
+                                                <p class="text-muted mb-0">Farmers Benefited: 1,500 Farmers</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+                        </div>
+                    </div>
+                    
+                    <!-- end of quick stats -->
                  
                     <!-- quick stats -->
                     <div class="row">
-                        <div class="col-xl-5 col-lg-4 px-sm-30px d-non col-md-12">
-                            <div class="card member-wedges-card">
-                                <div class="card-header bg-transparent border-bottom">
-                                    <div class="">
-                                        <div class="d-flex justify-content-between">
-                                            <div>
-                                                <h4 class="card-title mb-1">Collections By Revenue streams</h4>
-                                            </div>
-                                            <div class="float-end d-flex align-items-center justify-content-center">
-                                                <div class="input-group input-group-sm fw-semibold text-uppercase">
-                                                    <label class="input-group-text text-uppercase">Period</label>
-                                                    <select class="form-select form-select-sm">
-                                                        <option value="JA" selected="">Today</option>
-                                                        <option value="DE">This week</option>
-                                                        <option value="NO">This Month</option>
-                                                        <option value="OC">This Year</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-                                        </div>
-
-                                    </div>
-                                </div>
-                               <div class="card-body">
-                                    <div id="revstreamtwo" style="height: 350px; width: 100%;"></div>
-                                    <div class="d-flex align-items-center justify-content-center">
-                                        <a href="reports-stream-details.html" class="btn btn-primary btn-sm">View More <i class="bx bx-right-arrow-alt"></i></a>
-                                    </div>
-                               </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-8 col-xl-7 px-sm-30px col-md-12">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="card calc-heigt8 card-blue-1 card-green-1">
-                                        <div class="card-body">
-                                            <div class="avatar-xs-2 me-3"><span class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18"><i class="mdi mdi-calendar-check-outline h2 mb-0 pb-0 text-white text-opacity-50"></i></span>
-                                            </div>
-                                            <div class="d-flex mb-3 flex-column">
-                                                <div class="d-flex flex-column">
-                                                    <h5 class="font-size-14 mb-0 mt-3 text-white fw-semibold">Daily
-                                                        Transactions</h5>
-                                                    <p class="text-white text-opacity-75 text-capitalize">Aug 31, 2023</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-muted mt-4">
-                                                <div class="d-flex flex-column">
-                                                    <p class="mb-0 text-white text-opacity-75">Collected Revenue</p>
-                                                    <h4 class="text-white fw-semibold text-uppercase">KES 609,326</h4>
-                                                    <!---->
-                                                    <!---->
-                                                    <div>
-                                                        <p class="text-white text-opacity-75 mb-0 comparison-txt mt-2">
-                                                            <span class="text-danger me-2 fw-semibold px-2 bg-black p-1 bg-opacity-50"><i class="mdi mdi-arrow-down me-2"></i>-31,880</span> 
-                                                            Since Yesterday</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer text-uppercase m-0 border-radius-0 text-white rev-type-cont">
-                                            <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Own sorce revenue collections for today">
-                                                <span class="mr-2">OSR</span>
-                                                <span class="text-right">1,256,000 (55%)</span>
-                                            </div>
-
-                                            <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
-                                            <div class="percenteage-holder bg-success bg-opacity-25" style="width: 55%;"></div>
-                                        </div>
-
-                                        <div class="card-footer  text-uppercase  m-0 border-radius-0 rev-type-cont">
-                                            <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Health Related Revenues for Today">
-                                                <span class="mr-2">Health </span>
-                                                <span class="text-right">432,890 (45%)</span>
-                                            </div>
-                                            <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
-                                            <div class="percenteage-holder bg-black bg-opacity-25" style="width: 54%;"></div>
-                                        </div>
-
-                                        <div class="card-footer p-4 text-capitalize bg-white ">
-                                            <p class="text-black opacity-75">Achieved <strong
-                                                    class="opacity-100 text-black">43.52%</strong> of <strong
-                                                    class="opacity-100 text-black">1,400,000</strong> target</p>
-                                            <div class="progress border-radius-0">
-
-                                                <!-- 0-25% use bg-danger on the progress bar -->
-                                                <div class="progress-bar bg-warning border-radius-0" aria-valuenow="25"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 43.52%;"></div>
-                                                <!-- 26% to 50% use bg-danger on the progress bar -->
-
-                                                <!-- 51% to 75% use bg-info on the progress bar -->
-
-                                                <!-- 76% to 100% use bg-success on the progress bar -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12 col-md-4 ">
-                                    <div class="card calc-heigt8 card-blue-1 ">
-                                        <div class="card-body">
-                                            <div class="avatar-xs-2 me-3"><span class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18"><i class="mdi mdi mdi-calendar-text-outline  h2 mb-0 pb-0 text-white text-opacity-50"></i></span>
-                                            </div>
-
-                                            <div class="d-flex mb-3 flex-column">
-                                                <div class="d-flex flex-column">
-                                                    <h5 class="font-size-14 mb-0 mt-3 text-white fw-semibold">Monthly Transactions</h5>
-                                                    <p class="text-white text-opacity-75 text-capitalize">Aug 2023</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-muted mt-4">
-                                                <div class="d-flex flex-column">
-                                                    <p class="mb-0 text-white text-opacity-75">Collected Revenue</p>
-                                                    <h4 class="text-white fw-semibold text-uppercase">KES 609,326</h4>
-                                                    <!---->
-                                                    <!---->
-                                                    <div>
-                                                        <p class="text-white text-opacity-75 mb-0 comparison-txt mt-2">
-                                                            <span class="text-warning me-2 fw-semibold px-2 bg-black p-1 bg-opacity-50"><i class="mdi mdi-arrow-down me-2"></i>-31,880</span> 
-                                                            Since Yesterday</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer text-uppercase m-0 border-radius-0 text-white rev-type-cont">
-                                            <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Own sorce revenue collections for today">
-                                                <span class="mr-2">OSR</span>
-                                                <span class="text-right">1,256,000 (55%)</span>
-                                            </div>
-
-                                            <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
-                                            <div class="percenteage-holder bg-success bg-opacity-25" style="width: 55%;"></div>
-                                        </div>
-
-                                        <div class="card-footer  text-uppercase  m-0 border-radius-0 rev-type-cont">
-                                            <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Health Related Revenues for Today">
-                                                <span class="mr-2">Health </span>
-                                                <span class="text-right">432,890 (45%)</span>
-                                            </div>
-                                            <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
-                                            <div class="percenteage-holder bg-black bg-opacity-25" style="width: 54%;"></div>
-                                        </div>
-
-                                        <div class="card-footer p-4 text-capitalize bg-white ">
-                                            <p class="text-black opacity-75">Achieved <strong
-                                                    class="opacity-100 text-black">43.52%</strong> of <strong
-                                                    class="opacity-100 text-black">1,400,000</strong> target</p>
-                                            <div class="progress border-radius-0">
-
-                                                <!-- 0-25% use bg-danger on the progress bar -->
-                                                <div class="progress-bar bg-warning border-radius-0" aria-valuenow="25"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 43.52%;"></div>
-                                                <!-- 26% to 50% use bg-danger on the progress bar -->
-
-                                                <!-- 51% to 75% use bg-info on the progress bar -->
-
-                                                <!-- 76% to 100% use bg-success on the progress bar -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="col-sm-12 col-md-4">
-                                    <div class="card calc-heigt8 card-purple-1 card-blue-1">
-                                        <div class="card-body">
-                                            <div class="avatar-xs-2 me-3"><span class="avatar-title rounded-circle bg-dark bg-soft text-success font-size-18"><i class="mdi mdi-calendar-month-outline  h2 mb-0 pb-0 text-white text-opacity-50"></i></span>
-                                            </div>
-
-                                            <div class="d-flex mb-3 flex-column">
-                                                <div class="d-flex flex-column">
-                                                    <h5 class="font-size-14 mb-0 mt-3 text-white fw-semibold">Annual Transactions</h5>
-                                                    <p class="text-white text-opacity-75 text-capitalize">2024</p>
-                                                </div>
-                                            </div>
-                                            <div class="text-muted mt-4">
-                                                <div class="d-flex flex-column">
-                                                    <p class="mb-0 text-white text-opacity-75">Collected Revenue</p>
-                                                    <h4 class="text-white fw-semibold text-uppercase">KES 609,326</h4>
-                                                    <!---->
-                                                    <!---->
-                                                    <div>
-                                                        <p class="text-white text-opacity-75 mb-0 comparison-txt mt-2">
-                                                            <span class="text-success me-2 fw-semibold px-2 bg-black p-1 bg-opacity-50"><i class="mdi mdi-arrow-up me-2"></i>+31,880</span> 
-                                                            Since Yesterday</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card-footer text-uppercase m-0 border-radius-0 text-white rev-type-cont">
-                                            <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Own sorce revenue collections for today">
-                                                <span class="mr-2">OSR</span>
-                                                <span class="text-right">1,256,000 (95%)</span>
-                                            </div>
-
-                                            <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
-                                            <div class="percenteage-holder bg-success bg-opacity-25" style="width: 95%;"></div>
-                                        </div>
-
-                                        <div class="card-footer  text-uppercase  m-0 border-radius-0 rev-type-cont">
-                                            <div class="d-flex justify-content-between w-100 fw-bold text-white" title="Health Related Revenues for Today">
-                                                <span class="mr-2">Health </span>
-                                                <span class="text-right">432,890 (5%)</span>
-                                            </div>
-                                            <!-- the length of the percentage holder shopuld be equivalent to how much revenue it has contributed in % -->
-                                            <div class="percenteage-holder bg-black bg-opacity-25" style="width: 5%;"></div>
-                                        </div>
-
-                                        <div class="card-footer p-4 text-capitalize bg-white ">
-                                            <p class="text-black opacity-75">Achieved <strong
-                                                    class="opacity-100 text-black">43.52%</strong> of <strong
-                                                    class="opacity-100 text-black">1,400,000</strong> target</p>
-                                            <div class="progress border-radius-0">
-
-                                                <!-- 0-25% use bg-danger on the progress bar -->
-                                                <div class="progress-bar bg-info border-radius-0" aria-valuenow="25"
-                                                    aria-valuemin="0" aria-valuemax="100" style="width: 83.52%;"></div>
-                                                <!-- 26% to 50% use bg-danger on the progress bar -->
-
-                                                <!-- 51% to 75% use bg-info on the progress bar -->
-
-                                                <!-- 76% to 100% use bg-success on the progress bar -->
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- end of quick stats -->
-
+                       
                         <!-- map view starts here -->
                          <div class="col-12 px-sm-30px">
                             <div class="card">
@@ -912,7 +701,7 @@
                                                             <div class="flex-grow-1 ">
                                                                 <div>
                                                                     <h5 class="font-size-14">Urgent !</h5>
-                                                                    <p class="text-muted">Over <strong class="text-danger">90%</strong> of <strong class="text-danger">Rachuonyo North</strong> collectors are inactive, threatening revenue collections. Immediate action is needed!</p>
+                                                                    <p class="text-muted">Over <strong class="text-danger">90%</strong> of <strong class="text-danger">Busia</strong> agricultural extension officers are inactive, jeopardizing essential farming support and services. Immediate intervention is required to ensure continued agricultural productivity!</p>
                                                                     
                                                                 </div>
                                                             </div>
@@ -936,57 +725,33 @@
 
                                             <div id="Map-data" class="border-info p-1"></div>
                                             <div class="table-responsive font-12">
-                                                <table class="table table-sm font-12 sources-table text-uppercase text-blac table-bordered">
-
-                                                    <!-- put the colors on the row depending on how each sub county is performing -->
+                                                <table class="table table-sm font-12 sources-table text-uppercase text-blac table-bordered d-non">
                                                     <thead>
                                                         <tr class="font-weight-bold table-dark text-black text-white">
-                                                            <th scope="col">Sub County</th>
-                                                            <th scope="col" class="text-right">Today <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
-                                                            <th scope="col" class="text-right">FY <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
+                                                            <th scope="col">Extesion officers by Category</th>
+                                                            <th scope="col" class="text-right">Value</th>
                                                         </tr>
                                                     </thead>
-                                                    <tbody class="align-middle text-uppercase ">
-                                                        <tr value="[object Object]" style="cursor: pointer;" class="text-uppercase table-success border-success">
-                                                            <!-- if the collections are above target -->
-                                                            <th scope="row"><small class="mdi mdi-rectangle text-success "></small> Mvita</th>
-                                                            <td class="text-right">93,681 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
-                                                            <td class="text-right">1,675,191 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                    <tbody class="align-middle text-uppercase">
+                                                        <tr>
+                                                            <th scope="row">Agribusiness</th>
+                                                            <td class="text-right">4</td>
                                                         </tr>
-
-                                                        <!-- use the class text-underline and fw-bold for the sub county the current user is logged in for -->
-                                                        <tr value="[object Object]" style="cursor: pointer;" class="table-info text-bold fw-bold text-underline border-info">
-                                                            <!-- if collections are performing in relation to the target -->
-                                                            <th scope="row"><small class="mdi mdi-rectangle text-info"></small> Nyali</th>
-                                                            <td class="text-right">97,220 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
-                                                            <td class="text-right">1,493,250 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        <tr>
+                                                            <th scope="row">Crops</th>
+                                                            <td class="text-right">51</td>
                                                         </tr>
-                                                        <tr value="[object Object]" style="cursor: pointer;" class="table-warning border-warning">
-                                                            <!-- if collections are below target in relation to the target -->
-                                                            <th scope="row"><small class="mdi mdi-rectangle text-warning"></small> Likoni</th>
-                                                            <td class="text-right">55,630 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
-                                                            <td class="text-right">1,147,013 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        <tr>
+                                                            <th scope="row">Fisheries</th>
+                                                            <td class="text-right">17</td>
                                                         </tr>
-                                                        <tr value="[object Object]" style="cursor: pointer;" class="table-danger border-danger">
-                                                            <!-- if collections are underperforming in relation to the target -->
-                                                            <th scope="row"><small class="mdi mdi-rectangle text-danger"></small> Changamwe</th>
-                                                            <td class="text-right">74,120 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
-                                                            <td class="text-right">705,642 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
+                                                        <tr>
+                                                            <th scope="row">Livestock</th>
+                                                            <td class="text-right">34</td>
                                                         </tr>
-                                                        <tr value="[object Object]" style="cursor: pointer;" class="table-success border-success">
-                                                            <th scope="row"><small class="mdi mdi-rectangle text-success"></small> Jomvu</th>
-                                                            <td class="text-right">53,660 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
-                                                            <td class="text-right">647,090 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
-                                                        </tr>
-                                                        <tr value="[object Object]" style="cursor: pointer;" class="table-success border-success">
-                                                            <th scope="row"><small class="mdi mdi-rectangle text-success"></small> Kisauni</th>
-                                                            <td class="text-right">67,800 <span class="mdi mdi-menu-up text-success fs-5"></span></td>
-                                                            <td class="text-right">616,541 <span class="mdi mdi-menu-down text-danger fs-5"></span></td>
-                                                        </tr>
-                                                        <tr  class="text-white table-dark">
-                                                            <th><small class="mdi mdi-rectangle text-danger"></small> <strong>Total</strong></th>
-                                                            <th class="text-right">KES 515,371 <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
-                                                            <th class="text-right">KES 7,237,787 <span class="mdi mdi-menu-down text-danger fs-5"></span></th>
+                                                        <tr>
+                                                            <th scope="row">Veterinary</th>
+                                                            <td class="text-right">27</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -999,7 +764,7 @@
                          </div>
                          <!-- end of map view -->
 
-                         <div class="col-12 px-sm-30px">
+                         <div class="col-12 px-sm-30px d-none">
                             <div class="card">
                                 <div class="row">
                                     <div class=" col-sm-12 col-md-7 border-right-1">
@@ -1149,175 +914,229 @@
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-sm-12 col-md-4">
-                                            <div class="p-3  border-success border">
+                                            <div class="p-3 border-success border">
                                                 <h4 class="card-title text-uppercase mb-4">
-                                                    Revenue collection By wards
+                                                    Farmers in Busia Wards
                                                 </h4>
                                                 <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
                                                     <table class="table table-striped table-sm font-12 sources-table">
                                                         <thead class="table-dark">
                                                             <tr class="font-weight-bold">
                                                                 <th scope="col">Wards</th>
-                                                                <th scope="col">Today</th>
-                                                                <th scope="col">FY</th>
+                                                                <th scope="col">Number of Farmers</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Jomvu Kuu</td>
-                                                                <td>84,571</td>
-                                                                <td>1,445,281</td>
+                                                            <!-- Group 1 -->
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Angenga Nanguba</td>
+                                                                <td>5,034</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Miritini</td>
-                                                                <td>72,700</td>
-                                                                <td>1,043,160</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Nangina</td>
+                                                                <td>4,356</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Mishomoroni</td>
-                                                                <td>25,440</td>
-                                                                <td>492,840</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Bwiri</td>
+                                                                <td>3,838</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Magogoni</td>
-                                                                <td>55,150</td>
-                                                                <td>471,222</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Namboboto Nambuku</td>
+                                                                <td>5,851</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Shanzu</td>
-                                                                <td>43,430</td>
-                                                                <td>427,030</td>
+                                                            <!-- Group 2 -->
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Bukhayo West</td>
+                                                                <td>6,342</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Kisauni</td>
-                                                                <td>7,800</td>
-                                                                <td>329,060</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Burumba</td>
+                                                                <td>5,086</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Mjambere</td>
-                                                                <td>19,960</td>
-                                                                <td>285,800</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Busiwabo</td>
+                                                                <td>2,366</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Bamburi</td>
-                                                                <td>16,270</td>
-                                                                <td>273,980</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Matayos South</td>
+                                                                <td>5,378</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Bamburi Kiembeni</td>
-                                                                <td>11,000</td>
-                                                                <td>230,540</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Mayenje</td>
+                                                                <td>1,561</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Junda</td>
-                                                                <td>11,140</td>
-                                                                <td>225,120</td>
+                                                            <!-- Group 3 -->
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Elugulu</td>
+                                                                <td>3,745</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Frere Town</td>
-                                                                <td>8,140</td>
-                                                                <td>185,930</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Kingandole</td>
+                                                                <td>3,417</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Nyali</td>
-                                                                <td>9,440</td>
-                                                                <td>175,040</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Marachi Central</td>
+                                                                <td>4,114</td>
                                                             </tr>
-                                                            <!-- Continue replacing ward names in the same manner for other rows -->
-                                                    
-                                                            <tr style="background: rgb(206, 233, 216);">
-                                                                <th><strong>Total</strong></th>
-                                                                <th>KES 515,371</th>
-                                                                <th>KES 7,237,787</th>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Marachi East</td>
+                                                                <td>4,002</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Marachi North</td>
+                                                                <td>4,901</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Marachi West</td>
+                                                                <td>3,880</td>
+                                                            </tr>
+                                                            <!-- Group 4 -->
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Bukhayo Central</td>
+                                                                <td>3,116</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Bukhayo East</td>
+                                                                <td>3,702</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Bukhayo North</td>
+                                                                <td>4,416</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Nambale Township</td>
+                                                                <td>5,608</td>
+                                                            </tr>
+                                                            <!-- Group 5 -->
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Ang'urai East</td>
+                                                                <td>3,067</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Ang'urai North</td>
+                                                                <td>4,479</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Ang'urai South</td>
+                                                                <td>4,231</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Malaba Central</td>
+                                                                <td>4,017</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Malaba North</td>
+                                                                <td>2,780</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Malaba South</td>
+                                                                <td>3,755</td>
+                                                            </tr>
+                                                            <!-- Group 6 -->
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Amukura Central</td>
+                                                                <td>4,025</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Amukura East</td>
+                                                                <td>4,118</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Amukura West</td>
+                                                                <td>3,364</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Angorom</td>
+                                                                <td>4,286</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Chakol North</td>
+                                                                <td>3,877</td>
+                                                            </tr>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Chakol South</td>
+                                                                <td>6,358</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    
                                                 </div>
                                             </div>
+                                            
                                         </div>
 
                                         <div class="col-sm-12 col-md-4">
                                             <div class="p-3  border-success border">
                                                 <h4 class="card-title text-uppercase mb-4">
-                                                    Revenue collection By Zone
+                                                    Farmers Distribution By diffrent classifications
                                                 </h4>
                                                 <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
                                                     <table class="table table-striped table-sm font-12 sources-table">
                                                         <thead class="table-dark text-uppercase">
                                                             <tr class="font-weight-bold">
-                                                                <th scope="col">Collection Points/Zones</th>
-                                                                <th scope="col">Today</th>
-                                                                <th scope="col">FY</th>
+                                                                <th scope="col" colspan="2">By Gender</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Mackinnon Market</td>
-                                                                <td>84,571</td>
-                                                                <td>1,445,281</td>
+                                                            <tr>
+                                                                <td>Female</td>
+                                                                <td>81,651</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Kongowea Market</td>
-                                                                <td>72,700</td>
-                                                                <td>1,043,160</td>
+                                                            <tr>
+                                                                <td>Male</td>
+                                                                <td>60,306</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Marikiti Market</td>
-                                                                <td>25,440</td>
-                                                                <td>492,840</td>
+                                                            <tr class="table-dark">
+                                                                <th colspan="2" class="text-uppercase">Age Classification</th>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Mombasa Port Area</td>
-                                                                <td>55,150</td>
-                                                                <td>471,222</td>
+                                                            <tr>
+                                                                <td>Below 35 yrs</td>
+                                                                <td>36,997</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Nyali Suburb</td>
-                                                                <td>43,430</td>
-                                                                <td>427,030</td>
+                                                            <tr>
+                                                                <td>36 yrs to 60 yrs</td>
+                                                                <td>69,972</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Tudor Area</td>
-                                                                <td>7,800</td>
-                                                                <td>329,060</td>
+                                                            <tr>
+                                                                <td>Above 61 yrs</td>
+                                                                <td>33,162</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Moi International Airport</td>
-                                                                <td>19,960</td>
-                                                                <td>285,800</td>
+                                                            <tr class="table-dark">
+                                                                <th colspan="2" class="text-uppercase">Farmers Education Levels</th>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Likoni Ferry Crossing</td>
-                                                                <td>16,270</td>
-                                                                <td>273,980</td>
+                                                            <tr>
+                                                                <td>Primary</td>
+                                                                <td>74,266</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">County Hospitals</td>
-                                                                <td>11,000</td>
-                                                                <td>230,540</td>
+                                                            <tr>
+                                                                <td>Secondary</td>
+                                                                <td>35,595</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Kilindini Harbour</td>
-                                                                <td>11,140</td>
-                                                                <td>225,120</td>
+                                                            <tr>
+                                                                <td>College - Certificate</td>
+                                                                <td>5,903</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">County Government Offices</td>
-                                                                <td>8,140</td>
-                                                                <td>185,930</td>
+                                                            <tr>
+                                                                <td>College - Diploma</td>
+                                                                <td>6,391</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Mombasa CBD</td>
-                                                                <td>9,440</td>
-                                                                <td>175,040</td>
+                                                            <tr>
+                                                                <td>College - Degree</td>
+                                                                <td>3,380</td>
                                                             </tr>
-                                                            <!-- Continue replacing collection points/zones in the same manner for other rows -->
-                                                            
-                                                            <tr style="background: rgb(206, 233, 216);">
-                                                                <th><strong>Total</strong></th>
-                                                                <th>KES 515,371</th>
-                                                                <th>KES 7,237,787</th>
+                                                            <tr class="table-dark">
+                                                                <th colspan="2" class="text-uppercase">Households</th>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Less than 5</td>
+                                                                <td>47,351</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Between 5 and 10</td>
+                                                                <td>63,007</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>Above 10</td>
+                                                                <td>76,468</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -1327,97 +1146,56 @@
                                         </div>
 
                                         <div class="col-sm-12 col-md-4">
-                                            <div class="p-3  border-success border">
+                                            <div class="p-3 border-success border">
                                                 <h4 class="card-title text-uppercase mb-4">
-                                                    Revenue collection By Department
+                                                    Farmers in Busia Sub-counties
                                                 </h4>
                                                 <div class="table-responsive font-12" style="height: 450px; overflow-y: auto;">
-                                                    <table class="table table-striped table-sm font-12 sources-table text-uppercase">
-                                                        <thead >
-                                                            <tr class="font-weight-bold table-dark">
-                                                                <th scope="col">Departments</th>
-                                                                <th scope="col">Today</th>
-                                                                <th scope="col">FY</th>
+                                                    <table class="table table-striped table-sm font-12 sources-table">
+                                                        <thead class="table-dark">
+                                                            <tr class="font-weight-bold">
+                                                                <th scope="col">Sub-county</th>
+                                                                <th scope="col">Number of Farmers</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Trade, Industry, Tourism, Co-operative
-                                                                    Development And Markerting</td>
-                                                                <td>207,100</td>
-                                                                <td>2,681,212</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Bunyula</td>
+                                                                <td>13,111</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Roads, Public Works, Transport And
-                                                                    Infrastructure</td>
-                                                                <td>195,270</td>
-                                                                <td>2,582,020</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Busia</td>
+                                                                <td>20,729</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Blue Economy, Fisheries, Mining And Digital
-                                                                    Economy</td>
-                                                                <td>33,000</td>
-                                                                <td>1,040,940</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Butula</td>
+                                                                <td>24,054</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Agriculture And Livestock</td>
-                                                                <td>0</td>
-                                                                <td>78,930</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Nambale</td>
+                                                                <td>16,839</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Housing And Urban Development</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Samia</td>
+                                                                <td>19,086</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Lands And Physical Planning</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Teso North</td>
+                                                                <td>22,324</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Water, Irrigation, Sanitation, Environment,
-                                                                    Energy, Forestry And Climate
-                                                                    Change</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
+                                                            <tr style="cursor: pointer;">
+                                                                <td scope="row">Teso South</td>
+                                                                <td>26,083</td>
                                                             </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Governance And Administration</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Finance And Economic Planning</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Youth, Sports, Talent Development And Social
-                                                                    Services</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Education, Human Capital Development And
-                                                                    Vocational Training</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr value="[object Object]" style="cursor: pointer;">
-                                                                <td scope="row">Health And Medical Services</td>
-                                                                <td>0</td>
-                                                                <td>0</td>
-                                                            </tr>
-                                                            <tr style="background: rgb(206, 233, 216);">
-                                                                <th><strong>Total</strong></th>
-                                                                <th>KES 435,370</th>
-                                                                <th>KES 6,383,102</th>
+                                                            <tr class="table-dark font-weight-bold">
+                                                                <td scope="row">Total</td>
+                                                                <td>142,226</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
-                                                    
                                                 </div>
                                             </div>
+                                            
                                         </div>
 
                                         
@@ -1431,6 +1209,53 @@
 
                     </div>
                     <!-- container-fluid -->
+
+                    <div class="row d-none">
+                        <div class="col-xl-6 px-sm-30px">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="float-end d-none">
+                                        <a href="member-payments-all.html" class="btn btn-primary waves-effect waves-light text-white btn-sm"><i class="font-size-16 align-middle me-2 me-2 mdi-account-cash mdi"></i> Payments Table</a>
+                                    </div>
+                                    <h4 class="card-title mb-0">Farm inputs Graphic representation in Value</h4>
+                                    <small class="mb-3 text-muted">The last 12 Months</small>
+
+                                    <div>
+                                        <div id="member-salary-chart" class="apex-charts" dir="ltr"></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-xl-6 px-sm-30px">
+                            <div class="card">
+                                <div class="card-body">
+                                    <div class="d-sm-flex flex-wrap">
+                                        <div class="d-flex flex-column">
+                                            <h4 class="card-title mb-0">Loan and Loan Repayment Graph</h4>
+                                            <small class="mb-3 text-muted">The last 12 Months</small>
+                                        </div>
+                                        <div class="ms-auto">
+                                            <ul class="nav nav-pills">
+                                                <li class="nav-item">
+                                                    <a class="nav-link" href="#">Month</a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" href="#">Year</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div id="member-wedges" class="apex-charts" dir="ltr"></div>
+                                </div>
+                            </div>
+                            <!-- end row -->
+
+
+
+                        </div>
+                    </div>
                 </div>
                 <!-- End Page-content -->
 
