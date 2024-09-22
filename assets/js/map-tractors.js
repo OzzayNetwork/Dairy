@@ -332,79 +332,79 @@ function initMap() {
 
 
     //taxi on transit
-    addMarker({
-        coords: { lat: 0.4867, lng: 34.1146 },
-        iconImage: working_tractor,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
+    // addMarker({
+    //     coords: { lat: 0.4867, lng: 34.1146 },
+    //     iconImage: working_tractor,
+    //     content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+    //     <div class="card mb-0">
+    //     <div class="card-body p-0 mb-2">
+    //            <div class="d-flex">
              
-               <div class="flex-shrink-0 align-self-center me-3 d-none">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
+    //            <div class="flex-shrink-0 align-self-center me-3 d-none">
+    //                <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
+    //            </div>
                
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
-               </div>
+    //            <div class="flex-grow-1 overflow-hidden pe-5">
+    //                <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+    //                Kelvin Kinoti
+    //                 <div class="rating-star">
+    //                         <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
+    //                     </div>
+    //                </h5>
+    //                <p class="text-truncate mb-0 text-uppercase">2 Ha</p>
+    //            </div>
 
-               <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
-               </div>
-               </div>
-        </div>
+    //            <div class="font-size-11 text-right">
+    //                 <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
+    //                 <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
+    //            </div>
+    //            </div>
+    //     </div>
 
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
+    //     <div class="card-body bg-light p-1>                
+    //         <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
+    //     </div>
 
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled d-none">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
+    //     <div class="card-body">
+    //         <ul class="verti-timeline list-unstyled d-none">        
+    //             <li class="event-list">
+    //                 <div class="event-timeline-dot">
+    //                     <i class="mdi mdi-square font-size-18 text-black"></i>
+    //                 </div>
+    //                 <div class="d-flex">
                         
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Base Location
-                        </span>
-                            <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
+    //                     <div class="flex-grow-1">
+    //                     <span class="text-muted">
+    //                      Base Location
+    //                     </span>
+    //                         <div>
+    //                         90 Degrees by TSAVO, Nairobi, Kenya
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             </li>
+    //             <li class="event-list">
+    //                 <div class="event-timeline-dot">
+    //                     <i class="mdi mdi-circle font-size-18 text-primary"></i>
+    //                 </div>
+    //                 <div class="d-flex">
                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Destination
-                        </span>
-                            <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    //                     <div class="flex-grow-1">
+    //                     <span class="text-muted">
+    //                      Destination
+    //                     </span>
+    //                         <div>
+    //                         Tulip House, Mombasa Road, Nairobi, Kenya
+    //                         </div>
+    //                     </div>
+    //                 </div>
+    //             </li>
+    //         </ul>
+    //     </div>
+    // </div>
        
-        `
-    });
+    //     `
+    // });
 
     //fetching data starts here
     // Use fetch to get the JSON data
