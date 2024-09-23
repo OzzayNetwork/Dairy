@@ -223,7 +223,7 @@ function initMap() {
 
     //the map options
     var options = {
-        zoom: 13,
+        zoom: 11,
         center: { lat:  0.43495099828700357, lng: 34.24214897111555 }
 
     }
@@ -421,7 +421,7 @@ function initMap() {
     console.log('Number of farmers:', farmersData.length); // Log the number of items
 
     // Loop through the first five farmers
-    for (let i = 0; i < Math.min(20, farmersData.length); i++) {
+    for (let i = 0; i < Math.min(farmersData.length, farmersData.length); i++) {
         const farmer = farmersData[i];
         console.log(`Farmer ${i + 1}: GpsLatitude: ${farmer.GpsLatitude}, GpsLongitude: ${farmer.GpsLongitude}`);
 
@@ -464,7 +464,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase fs-7">Household Size: ${farmer.HouseholdSize}</p>
+                       <p class="text-truncate mb-0 text-uppercase fs-7">${farmer.HouseholdSize}</p>
                    </div>
     
                    <div class="font-size-11 text-right">
@@ -478,23 +478,7 @@ function initMap() {
                 <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
             </div>
 
-            <div class="card-body px-0 mb-0 pb-0">
-                <div class="alert alert-success border border-success align-items-center" role="alert">
-                   <i class="mdi-leaf mdi  fs-3 me-2"></i> <span>Crop Production: ${farmer.CropProduction}</span>
-                </div>
-            </div>
-
-            <div class="card-body px-0 mb-0 pb-0">
-                <div class="alert alert-danger border border-danger align-items-center" role="alert">
-                   <i class="fas fa-kiwi-bird fs-3 me-2"></i> <span>Livestock Production: ${farmer.LivestockProduction}</span>
-                </div>
-            </div>
-
-             <div class="card-body px-0 mb-0 pb-0">
-                <div class="alert alert-info border border-info align-items-center" role="alert">
-                   <i class="fas fa-fish  fs-3 me-2"></i> <span>Fish Farming: ${farmer.FishFarming}</span>
-                </div>
-            </div>
+          
 
             <div class="specific-data d-none">
                 <div class="subcounty">${farmer.Subcounty}</div>
