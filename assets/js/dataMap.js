@@ -1601,7 +1601,7 @@ const Mapchart=Highcharts.mapChart('Map-data', {
 
     legend: {
         title: {
-            text: 'Revenue Collection By Sub-Counties'
+            text: 'Farmrs Distribution By Sub County'
         },
         
     },
